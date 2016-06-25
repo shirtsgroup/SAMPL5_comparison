@@ -1,0 +1,990 @@
+INFO 2016-06-21 13:58:31 Beginning InterMol conversion
+INFO 2016-06-21 13:58:32 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G1_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G1_from_amber.gro'.
+INFO 2016-06-21 13:58:32 ...loaded.
+INFO 2016-06-21 13:58:32 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G1/CBC-G1_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G1/CBC-G1_converted.gro'.
+INFO 2016-06-21 13:58:32 ...done.
+INFO 2016-06-21 13:58:32 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G1/CBC-G1_converted.input'
+INFO 2016-06-21 13:58:33 ...done.
+INFO 2016-06-21 13:58:33 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G1/CBC-G1_converted.cms
+WARNING 2016-06-21 13:58:33 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 13:58:34 ...done
+INFO 2016-06-21 13:58:35 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G1.rst7
+INFO 2016-06-21 13:58:36 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G1/CBC-G1_converted.input
+INFO 2016-06-21 13:58:37 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G1/CBC-G1_converted.cms
+WARNING 2016-06-21 13:59:09 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 13:59:09 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G1/CBC-G1_converted.inp
+INFO 2016-06-21 13:59:11 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G1/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G1/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G1/CBC-G1_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G1/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       113.54270000      113.54243641       -0.00026359      113.54272000        0.00002000      113.54258200       -0.00011800      113.54233000       -0.00037000
+           Potential    -20853.28430000   -20855.14011711       -1.85581711   -20854.31900000       -1.03470000   -20854.41140000       -1.12710000   -20854.74265000       -1.45835000
+       van der Waals      2921.53290000     2921.48941835       -0.04348165     2921.47970000       -0.05320000               n/a               n/a     2921.54699000        0.01409000
+           Nonbonded    -21071.09420000   -21072.94909494       -1.85489494   -21072.13330000       -1.03910000               n/a               n/a   -21072.55555000       -1.46135000
+               LJ-14        43.84160000       43.84162640        0.00002640               n/a               n/a       43.84167740        0.00007740               n/a               n/a
+          Coulomb-14         0.81890000        0.81890263        0.00000263               n/a               n/a        0.81898102        0.00008102               n/a               n/a
+                Bond        36.52120000       36.52109471       -0.00010529       36.52115500       -0.00004500       36.52073620       -0.00046380       36.52116000       -0.00004000
+       Electrostatic    -23992.62710000   -23994.43851329       -1.81141329   -23993.61300000       -0.98590000               n/a               n/a   -23994.10254000       -1.47544000
+       All dihedrals        67.74600000       67.74585721       -0.00014279       67.74592900       -0.00007100       67.74597980       -0.00002020       67.74942000        0.00342000
+              Bonded       217.80990000      217.80938833       -0.00051167      217.80980400       -0.00009600      217.80929800       -0.00060200      217.81291000        0.00301000
+
+Input amber potential energy:        -20853.28430000
+Difference in potential energy from amber=>gromacs conversion:        -1.85581711
+Difference in potential energy from amber=>lammps conversion:        -1.03470000
+Difference in potential energy from amber=>desmond conversion:        -1.12710000
+Difference in potential energy from amber=>charmm conversion:        -1.45835000
+=======================================================================
+INFO 2016-06-21 13:59:11 Finished!
+INFO 2016-06-21 13:59:12 Beginning InterMol conversion
+INFO 2016-06-21 13:59:12 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G7_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G7_from_amber.gro'.
+INFO 2016-06-21 13:59:13 ...loaded.
+INFO 2016-06-21 13:59:13 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G7/CBC-G7_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G7/CBC-G7_converted.gro'.
+INFO 2016-06-21 13:59:13 ...done.
+INFO 2016-06-21 13:59:13 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G7/CBC-G7_converted.input'
+INFO 2016-06-21 13:59:14 ...done.
+INFO 2016-06-21 13:59:14 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G7/CBC-G7_converted.cms
+WARNING 2016-06-21 13:59:14 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 13:59:15 ...done
+INFO 2016-06-21 13:59:16 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G7.rst7
+INFO 2016-06-21 13:59:17 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G7/CBC-G7_converted.input
+INFO 2016-06-21 13:59:18 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G7/CBC-G7_converted.cms
+WARNING 2016-06-21 13:59:50 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 13:59:50 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G7/CBC-G7_converted.inp
+INFO 2016-06-21 13:59:52 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G7/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G7/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G7/CBC-G7_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G7/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       128.56230000      128.56197904       -0.00032096      128.56234000        0.00004000      128.56153400       -0.00076600      128.56180000       -0.00050000
+           Potential    -21303.79440000   -21305.55763026       -1.76323026   -21304.72100000       -0.92660000   -21304.76320000       -0.96880000   -21305.15904000       -1.36464000
+       van der Waals      2920.46270000     2920.44181350       -0.02088650     2920.42770000       -0.03500000               n/a               n/a     2920.47951000        0.01681000
+           Nonbonded    -21560.62910000   -21562.39327053       -1.76417053   -21561.55230000       -0.92320000               n/a               n/a   -21561.99688000       -1.36778000
+               LJ-14        59.70560000       59.70554826       -0.00005174               n/a               n/a       59.70557630       -0.00002370               n/a               n/a
+          Coulomb-14       -68.84550000      -68.84783860       -0.00233860               n/a               n/a      -68.84774850       -0.00224850               n/a               n/a
+                Bond        41.02110000       41.02132152        0.00022152       41.02111700        0.00001700       41.02185890        0.00075890       41.02112000        0.00002000
+       Electrostatic    -24481.09180000   -24482.83508403       -1.74328403   -24481.98000000       -0.88820000               n/a               n/a   -24482.47639000       -1.38459000
+       All dihedrals        87.25130000       87.25125885       -0.00004115       87.25124800       -0.00005200       87.25104690       -0.00025310       87.25491000        0.00361000
+              Bonded       256.83470000      256.83455941       -0.00014059      256.83470500        0.00000500      256.83443980       -0.00026020      256.83783000        0.00313000
+
+Input amber potential energy:        -21303.79440000
+Difference in potential energy from amber=>gromacs conversion:        -1.76323026
+Difference in potential energy from amber=>lammps conversion:        -0.92660000
+Difference in potential energy from amber=>desmond conversion:        -0.96880000
+Difference in potential energy from amber=>charmm conversion:        -1.36464000
+=======================================================================
+INFO 2016-06-21 13:59:52 Finished!
+INFO 2016-06-21 13:59:53 Beginning InterMol conversion
+INFO 2016-06-21 13:59:53 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G2_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G2_from_amber.gro'.
+INFO 2016-06-21 13:59:54 ...loaded.
+INFO 2016-06-21 13:59:54 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G2/CBC-G2_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G2/CBC-G2_converted.gro'.
+INFO 2016-06-21 13:59:54 ...done.
+INFO 2016-06-21 13:59:54 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G2/CBC-G2_converted.input'
+INFO 2016-06-21 13:59:55 ...done.
+INFO 2016-06-21 13:59:55 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G2/CBC-G2_converted.cms
+WARNING 2016-06-21 13:59:55 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 13:59:56 ...done
+INFO 2016-06-21 13:59:57 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G2.rst7
+INFO 2016-06-21 13:59:58 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G2/CBC-G2_converted.input
+INFO 2016-06-21 13:59:59 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G2/CBC-G2_converted.cms
+WARNING 2016-06-21 14:00:31 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:00:31 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G2/CBC-G2_converted.inp
+INFO 2016-06-21 14:00:33 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G2/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G2/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G2/CBC-G2_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G2/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       109.27530000      109.27512495       -0.00017505      109.27532000        0.00002000      109.27460300       -0.00069700      109.27490000       -0.00040000
+           Potential    -20743.68880000   -20745.49997012       -1.81117012   -20744.57800000       -0.88920000   -20744.70140000       -1.01260000   -20745.02515000       -1.33635000
+       van der Waals      3017.09360000     3017.09202280       -0.00157720     3017.07800000       -0.01560000               n/a               n/a     3017.08782000       -0.00578000
+           Nonbonded    -20953.15300000   -20954.96391566       -1.81091566   -20954.04500000       -0.89200000               n/a               n/a   -20954.49250000       -1.33950000
+               LJ-14        40.19610000       40.19600119       -0.00009881               n/a               n/a       40.19605290       -0.00004710               n/a               n/a
+          Coulomb-14       -19.95630000      -19.95700450       -0.00070450               n/a               n/a      -19.95709310       -0.00079310               n/a               n/a
+                Bond        30.58310000       30.58301149       -0.00008851       30.58315000        0.00005000       30.58356080        0.00046080       30.58315000        0.00005000
+       Electrostatic    -23970.24660000   -23972.05593846       -1.80933846   -23971.12300000       -0.87640000               n/a               n/a   -23971.58032000       -1.33372000
+       All dihedrals        69.60580000       69.60565775       -0.00014225       69.60569500       -0.00010500       69.60563220       -0.00016780       69.60929000        0.00349000
+              Bonded       209.46420000      209.46379419       -0.00040581      209.46416500       -0.00003500      209.46379600       -0.00040400      209.46734000        0.00314000
+
+Input amber potential energy:        -20743.68880000
+Difference in potential energy from amber=>gromacs conversion:        -1.81117012
+Difference in potential energy from amber=>lammps conversion:        -0.88920000
+Difference in potential energy from amber=>desmond conversion:        -1.01260000
+Difference in potential energy from amber=>charmm conversion:        -1.33635000
+=======================================================================
+INFO 2016-06-21 14:00:33 Finished!
+INFO 2016-06-21 14:00:34 Beginning InterMol conversion
+INFO 2016-06-21 14:00:34 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G4_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G4_from_amber.gro'.
+INFO 2016-06-21 14:00:35 ...loaded.
+INFO 2016-06-21 14:00:35 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G4/CBC-G4_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G4/CBC-G4_converted.gro'.
+INFO 2016-06-21 14:00:35 ...done.
+INFO 2016-06-21 14:00:35 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G4/CBC-G4_converted.input'
+INFO 2016-06-21 14:00:36 ...done.
+INFO 2016-06-21 14:00:36 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G4/CBC-G4_converted.cms
+WARNING 2016-06-21 14:00:36 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:00:36 ...done
+INFO 2016-06-21 14:00:38 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G4.rst7
+INFO 2016-06-21 14:00:39 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G4/CBC-G4_converted.input
+INFO 2016-06-21 14:00:40 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G4/CBC-G4_converted.cms
+WARNING 2016-06-21 14:01:12 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:01:12 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G4/CBC-G4_converted.inp
+INFO 2016-06-21 14:01:14 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G4/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G4/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G4/CBC-G4_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G4/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       111.37900000      111.37884662       -0.00015338      111.37898000       -0.00002000      111.37885800       -0.00014200      111.37863000       -0.00037000
+           Potential    -20854.21100000   -20856.04385755       -1.83285755   -20855.23200000       -1.02100000   -20855.39110000       -1.18010000   -20855.67597000       -1.46497000
+       van der Waals      3056.62830000     3056.50895048       -0.11934952     3056.50270000       -0.12560000               n/a               n/a     3056.63071000        0.00241000
+           Nonbonded    -21079.55160000   -21081.38419748       -1.83259748   -21080.57130000       -1.01970000               n/a               n/a   -21081.01965000       -1.46805000
+               LJ-14        50.66640000       50.66630216       -0.00009784               n/a               n/a       50.66625880       -0.00014120               n/a               n/a
+          Coulomb-14      -192.66300000     -192.66965148       -0.00665148               n/a               n/a     -192.66969000       -0.00669000               n/a               n/a
+                Bond        41.22390000       41.22396728        0.00006728       41.22391500        0.00001500       41.22319990       -0.00070010       41.22391000        0.00001000
+       Electrostatic    -24136.17990000   -24137.89314795       -1.71324795   -24137.07400000       -0.89410000               n/a               n/a   -24137.65036000       -1.47046000
+       All dihedrals        72.73770000       72.73754153       -0.00015847       72.73762600       -0.00007400       72.73763340       -0.00006660       72.74113000        0.00343000
+              Bonded       225.34060000      225.34035542       -0.00024458      225.34052100       -0.00007900      225.33969130       -0.00090870      225.34367000        0.00307000
+
+Input amber potential energy:        -20854.21100000
+Difference in potential energy from amber=>gromacs conversion:        -1.83285755
+Difference in potential energy from amber=>lammps conversion:        -1.02100000
+Difference in potential energy from amber=>desmond conversion:        -1.18010000
+Difference in potential energy from amber=>charmm conversion:        -1.46497000
+=======================================================================
+INFO 2016-06-21 14:01:14 Finished!
+INFO 2016-06-21 14:01:14 Beginning InterMol conversion
+INFO 2016-06-21 14:01:15 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G10_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G10_from_amber.gro'.
+INFO 2016-06-21 14:01:15 ...loaded.
+INFO 2016-06-21 14:01:15 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G10/CBC-G10_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G10/CBC-G10_converted.gro'.
+INFO 2016-06-21 14:01:16 ...done.
+INFO 2016-06-21 14:01:16 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G10/CBC-G10_converted.input'
+INFO 2016-06-21 14:01:17 ...done.
+INFO 2016-06-21 14:01:17 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G10/CBC-G10_converted.cms
+WARNING 2016-06-21 14:01:17 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:01:17 ...done
+INFO 2016-06-21 14:01:18 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G10.rst7
+INFO 2016-06-21 14:01:20 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G10/CBC-G10_converted.input
+INFO 2016-06-21 14:01:21 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G10/CBC-G10_converted.cms
+WARNING 2016-06-21 14:01:53 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:01:53 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G10/CBC-G10_converted.inp
+INFO 2016-06-21 14:01:55 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G10/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G10/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G10/CBC-G10_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G10/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       132.08800000      132.08808680        0.00008680      132.08804000        0.00004000      132.08791500       -0.00008500      132.08782000       -0.00018000
+           Potential    -20788.10590000   -20789.32577976       -1.21987976   -20788.45700000       -0.35110000   -20788.53860000       -0.43270000   -20788.93478000       -0.82888000
+       van der Waals      2986.81060000     2986.72279664       -0.08780336     2986.70420000       -0.10640000               n/a               n/a     2986.81706000        0.00646000
+           Nonbonded    -21040.92800000   -21042.15004157       -1.22204157   -21041.28080000       -0.35280000               n/a               n/a   -21041.75995000       -0.83195000
+               LJ-14        48.20480000       48.20462623       -0.00017377               n/a               n/a       48.20467050       -0.00012950               n/a               n/a
+          Coulomb-14       -26.63240000      -26.63338845       -0.00098845               n/a               n/a      -26.63320760       -0.00080760               n/a               n/a
+                Bond        42.61870000       42.61886640        0.00016640       42.61874100        0.00004100       42.61954080        0.00084080       42.61874000        0.00004000
+       Electrostatic    -24027.73860000   -24028.87283821       -1.13423821   -24027.98500000       -0.24640000               n/a               n/a   -24028.57701000       -0.83841000
+       All dihedrals        78.11540000       78.11528273       -0.00011727       78.11532800       -0.00007200       78.11526500       -0.00013500       78.11860000        0.00320000
+              Bonded       252.82210000      252.82223594        0.00013594      252.82210900        0.00000900      252.82272080        0.00062080      252.82516000        0.00306000
+
+Input amber potential energy:        -20788.10590000
+Difference in potential energy from amber=>gromacs conversion:        -1.21987976
+Difference in potential energy from amber=>lammps conversion:        -0.35110000
+Difference in potential energy from amber=>desmond conversion:        -0.43270000
+Difference in potential energy from amber=>charmm conversion:        -0.82888000
+=======================================================================
+INFO 2016-06-21 14:01:55 Finished!
+INFO 2016-06-21 14:01:56 Beginning InterMol conversion
+INFO 2016-06-21 14:01:56 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G8_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G8_from_amber.gro'.
+INFO 2016-06-21 14:01:57 ...loaded.
+INFO 2016-06-21 14:01:57 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G8/CBC-G8_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G8/CBC-G8_converted.gro'.
+INFO 2016-06-21 14:01:57 ...done.
+INFO 2016-06-21 14:01:57 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G8/CBC-G8_converted.input'
+INFO 2016-06-21 14:01:58 ...done.
+INFO 2016-06-21 14:01:58 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G8/CBC-G8_converted.cms
+WARNING 2016-06-21 14:01:58 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:01:58 ...done
+INFO 2016-06-21 14:02:00 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G8.rst7
+INFO 2016-06-21 14:02:01 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G8/CBC-G8_converted.input
+INFO 2016-06-21 14:02:02 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G8/CBC-G8_converted.cms
+WARNING 2016-06-21 14:02:34 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:02:34 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G8/CBC-G8_converted.inp
+INFO 2016-06-21 14:02:36 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G8/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G8/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G8/CBC-G8_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G8/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       142.00350000      142.00352802        0.00002802      142.00348000       -0.00002000      142.00341800       -0.00008200      142.00314000       -0.00036000
+           Potential    -20666.08600000   -20667.81937141       -1.73337141   -20666.97500000       -0.88900000   -20666.98400000       -0.89800000   -20667.40862000       -1.32262000
+       van der Waals      3020.20920000     3020.07643625       -0.13276375     3020.06400000       -0.14520000               n/a               n/a     3020.22184000        0.01264000
+           Nonbonded    -20945.18840000   -20946.92257873       -1.73417873   -20946.07900000       -0.89060000               n/a               n/a   -20946.51448000       -1.32608000
+               LJ-14        57.22730000       57.22733346        0.00003346               n/a               n/a       57.22724740       -0.00005260               n/a               n/a
+          Coulomb-14        -3.22290000       -3.22301552       -0.00011552               n/a               n/a       -3.22304847       -0.00014847               n/a               n/a
+                Bond        49.09910000       49.09964684        0.00054684       49.09914500        0.00004500       49.09812990       -0.00097010       49.09915000        0.00005000
+       Electrostatic    -23965.39760000   -23966.99901498       -1.60141498   -23966.14300000       -0.74540000               n/a               n/a   -23966.73632000       -1.33872000
+       All dihedrals        87.99980000       87.99967027       -0.00012973       87.99974600       -0.00005400       87.99978730       -0.00001270       88.00356000        0.00376000
+              Bonded       279.10240000      279.10284513        0.00044513      279.10237100       -0.00002900      279.10133520       -0.00106480      279.10585000        0.00345000
+
+Input amber potential energy:        -20666.08600000
+Difference in potential energy from amber=>gromacs conversion:        -1.73337141
+Difference in potential energy from amber=>lammps conversion:        -0.88900000
+Difference in potential energy from amber=>desmond conversion:        -0.89800000
+Difference in potential energy from amber=>charmm conversion:        -1.32262000
+=======================================================================
+INFO 2016-06-21 14:02:36 Finished!
+INFO 2016-06-21 14:02:37 Beginning InterMol conversion
+INFO 2016-06-21 14:02:37 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G3_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G3_from_amber.gro'.
+INFO 2016-06-21 14:02:38 ...loaded.
+INFO 2016-06-21 14:02:38 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G3/CBC-G3_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G3/CBC-G3_converted.gro'.
+INFO 2016-06-21 14:02:38 ...done.
+INFO 2016-06-21 14:02:38 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G3/CBC-G3_converted.input'
+INFO 2016-06-21 14:02:39 ...done.
+INFO 2016-06-21 14:02:39 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G3/CBC-G3_converted.cms
+WARNING 2016-06-21 14:02:39 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:02:39 ...done
+INFO 2016-06-21 14:02:41 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G3.rst7
+INFO 2016-06-21 14:02:42 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G3/CBC-G3_converted.input
+INFO 2016-06-21 14:02:43 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G3/CBC-G3_converted.cms
+WARNING 2016-06-21 14:03:15 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:03:15 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G3/CBC-G3_converted.inp
+INFO 2016-06-21 14:03:17 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G3/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G3/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G3/CBC-G3_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G3/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       131.41690000      131.41690431        0.00000431      131.41693000        0.00003000      131.41675800       -0.00014200      131.41648000       -0.00042000
+           Potential    -20497.67840000   -20499.62842077       -1.95002077   -20498.81600000       -1.13760000   -20498.75010000       -1.07170000   -20499.22865000       -1.55025000
+       van der Waals      2936.32240000     2936.24109520       -0.08130480     2936.23110000       -0.09130000               n/a               n/a     2936.32791000        0.00551000
+           Nonbonded    -20728.82730000   -20730.77697462       -1.94967462   -20729.96690000       -1.13960000               n/a               n/a   -20730.38125000       -1.55395000
+               LJ-14        39.70930000       39.70924800       -0.00005200               n/a               n/a       39.70923090       -0.00006910               n/a               n/a
+          Coulomb-14        43.26440000       43.26589887        0.00149887               n/a               n/a       43.26584690        0.00144690               n/a               n/a
+                Bond        27.17510000       27.17508094       -0.00001906       27.17514400        0.00004400       27.17542010        0.00032010       27.17514000        0.00004000
+       Electrostatic    -23665.14970000   -23667.01806982       -1.86836982   -23666.19800000       -1.04830000               n/a               n/a   -23666.70916000       -1.55946000
+       All dihedrals        72.55690000       72.55680269       -0.00009731       72.55683800       -0.00006200       72.55661450       -0.00028550       72.56096000        0.00406000
+              Bonded       231.14890000      231.14878794       -0.00011206      231.14891200        0.00001200      231.14879260       -0.00010740      231.15258000        0.00368000
+
+Input amber potential energy:        -20497.67840000
+Difference in potential energy from amber=>gromacs conversion:        -1.95002077
+Difference in potential energy from amber=>lammps conversion:        -1.13760000
+Difference in potential energy from amber=>desmond conversion:        -1.07170000
+Difference in potential energy from amber=>charmm conversion:        -1.55025000
+=======================================================================
+INFO 2016-06-21 14:03:17 Finished!
+INFO 2016-06-21 14:03:18 Beginning InterMol conversion
+INFO 2016-06-21 14:03:18 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G6_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G6_from_amber.gro'.
+INFO 2016-06-21 14:03:19 ...loaded.
+INFO 2016-06-21 14:03:19 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G6/CBC-G6_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G6/CBC-G6_converted.gro'.
+INFO 2016-06-21 14:03:19 ...done.
+INFO 2016-06-21 14:03:19 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G6/CBC-G6_converted.input'
+INFO 2016-06-21 14:03:20 ...done.
+INFO 2016-06-21 14:03:20 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G6/CBC-G6_converted.cms
+WARNING 2016-06-21 14:03:20 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:03:21 ...done
+INFO 2016-06-21 14:03:22 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G6.rst7
+INFO 2016-06-21 14:03:23 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G6/CBC-G6_converted.input
+INFO 2016-06-21 14:03:24 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G6/CBC-G6_converted.cms
+WARNING 2016-06-21 14:03:56 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:03:56 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G6/CBC-G6_converted.inp
+INFO 2016-06-21 14:03:58 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G6/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G6/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G6/CBC-G6_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G6/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       119.91280000      119.91306108        0.00026108      119.91284000        0.00004000      119.91265700       -0.00014300      119.91233000       -0.00047000
+           Potential    -20722.43100000   -20724.12016013       -1.68916013   -20723.28600000       -0.85500000   -20723.31300000       -0.88200000   -20723.72343000       -1.29243000
+       van der Waals      3063.61910000     3063.51894357       -0.10015643     3063.51340000       -0.10570000               n/a               n/a     3063.63096000        0.01186000
+           Nonbonded    -20960.58560000   -20962.27604299       -1.69044299   -20961.44360000       -0.85800000               n/a               n/a   -20961.88152000       -1.29592000
+               LJ-14        62.55860000       62.55856983       -0.00003017               n/a               n/a       62.55858460       -0.00001540               n/a               n/a
+          Coulomb-14       -35.10570000      -35.10686316       -0.00116316               n/a               n/a      -35.10682870       -0.00112870               n/a               n/a
+                Bond        38.21500000       38.21480935       -0.00019065       38.21500800        0.00000800       38.21609640        0.00109640       38.21501000        0.00001000
+       Electrostatic    -24024.20470000   -24025.79498656       -1.59028656   -24024.95700000       -0.75230000               n/a               n/a   -24025.51248000       -1.30778000
+       All dihedrals        80.02680000       80.02662522       -0.00017478       80.02672900       -0.00007100       80.02691140        0.00011140       80.03075000        0.00395000
+              Bonded       238.15460000      238.15449565       -0.00010435      238.15457700       -0.00002300      238.15566480        0.00106480      238.15809000        0.00349000
+
+Input amber potential energy:        -20722.43100000
+Difference in potential energy from amber=>gromacs conversion:        -1.68916013
+Difference in potential energy from amber=>lammps conversion:        -0.85500000
+Difference in potential energy from amber=>desmond conversion:        -0.88200000
+Difference in potential energy from amber=>charmm conversion:        -1.29243000
+=======================================================================
+INFO 2016-06-21 14:03:58 Finished!
+INFO 2016-06-21 14:03:58 Beginning InterMol conversion
+INFO 2016-06-21 14:03:59 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G9_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G9_from_amber.gro'.
+INFO 2016-06-21 14:04:00 ...loaded.
+INFO 2016-06-21 14:04:00 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G9/CBC-G9_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G9/CBC-G9_converted.gro'.
+INFO 2016-06-21 14:04:00 ...done.
+INFO 2016-06-21 14:04:00 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G9/CBC-G9_converted.input'
+INFO 2016-06-21 14:04:01 ...done.
+INFO 2016-06-21 14:04:01 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G9/CBC-G9_converted.cms
+WARNING 2016-06-21 14:04:01 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:04:01 ...done
+INFO 2016-06-21 14:04:03 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G9.rst7
+INFO 2016-06-21 14:04:04 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G9/CBC-G9_converted.input
+INFO 2016-06-21 14:04:05 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G9/CBC-G9_converted.cms
+WARNING 2016-06-21 14:04:37 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:04:37 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G9/CBC-G9_converted.inp
+INFO 2016-06-21 14:04:44 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G9/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G9/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G9/CBC-G9_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G9/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       134.08380000      134.08374969       -0.00005031      134.08377000       -0.00003000      134.08401800        0.00021800      134.08358000       -0.00022000
+           Potential    -20794.91280000   -20796.66026828       -1.74746828   -20795.80500000       -0.89220000   -20795.84860000       -0.93580000   -20796.24309000       -1.33029000
+       van der Waals      2998.87190000     2998.74083991       -0.13106009     2998.73050000       -0.14140000               n/a               n/a     2998.88434000        0.01244000
+           Nonbonded    -21040.03470000   -21041.78145465       -1.74675465   -21040.92650000       -0.89180000               n/a               n/a   -21041.36824000       -1.33354000
+               LJ-14        50.67890000       50.67886586       -0.00003414               n/a               n/a       50.67869800       -0.00020200               n/a               n/a
+          Coulomb-14        11.36000000       11.36036357        0.00036357               n/a               n/a       11.36028970        0.00028970               n/a               n/a
+                Bond        38.51260000       38.51291372        0.00031372       38.51263000        0.00003000       38.51274190        0.00014190       38.51263000        0.00003000
+       Electrostatic    -24038.90660000   -24040.52229456       -1.61569456   -24039.65700000       -0.75040000               n/a               n/a   -24040.25258000       -1.34598000
+       All dihedrals        72.52550000       72.52536791       -0.00013209       72.52543400       -0.00006600       72.52540920       -0.00009080       72.52894000        0.00344000
+              Bonded       245.12190000      245.12203132        0.00013132      245.12183400       -0.00006600      245.12216910        0.00026910      245.12515000        0.00325000
+
+Input amber potential energy:        -20794.91280000
+Difference in potential energy from amber=>gromacs conversion:        -1.74746828
+Difference in potential energy from amber=>lammps conversion:        -0.89220000
+Difference in potential energy from amber=>desmond conversion:        -0.93580000
+Difference in potential energy from amber=>charmm conversion:        -1.33029000
+=======================================================================
+INFO 2016-06-21 14:04:44 Finished!
+INFO 2016-06-21 14:04:45 Beginning InterMol conversion
+INFO 2016-06-21 14:04:45 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G5_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G5_from_amber.gro'.
+INFO 2016-06-21 14:04:46 ...loaded.
+INFO 2016-06-21 14:04:46 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G5/CBC-G5_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G5/CBC-G5_converted.gro'.
+INFO 2016-06-21 14:04:46 ...done.
+INFO 2016-06-21 14:04:46 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G5/CBC-G5_converted.input'
+INFO 2016-06-21 14:04:47 ...done.
+INFO 2016-06-21 14:04:47 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G5/CBC-G5_converted.cms
+WARNING 2016-06-21 14:04:47 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:04:48 ...done
+INFO 2016-06-21 14:04:49 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G5.rst7
+INFO 2016-06-21 14:04:50 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G5/CBC-G5_converted.input
+INFO 2016-06-21 14:04:51 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G5/CBC-G5_converted.cms
+WARNING 2016-06-21 14:05:23 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:05:23 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G5/CBC-G5_converted.inp
+INFO 2016-06-21 14:05:25 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G5/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G5/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G5/CBC-G5_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G5/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       120.67850000      120.67850233        0.00000233      120.67855000        0.00005000      120.67823900       -0.00026100      120.67820000       -0.00030000
+           Potential    -20751.29530000   -20752.81391910       -1.51861910   -20751.97900000       -0.68370000   -20752.19380000       -0.89850000   -20752.43901000       -1.14371000
+       van der Waals      2988.43190000     2988.34185664       -0.09004336     2988.32640000       -0.10550000               n/a               n/a     2988.42738000       -0.00452000
+           Nonbonded    -20980.90420000   -20982.42288703       -1.51868703   -20981.58460000       -0.68040000               n/a               n/a   -20982.05072000       -1.14652000
+               LJ-14        54.28040000       54.28029383       -0.00010617               n/a               n/a       54.28039030       -0.00000970               n/a               n/a
+          Coulomb-14       -60.96760000      -60.96960618       -0.00200618               n/a               n/a      -60.96969040       -0.00209040               n/a               n/a
+                Bond        35.35210000       35.35239692        0.00029692       35.35212200        0.00002200       35.35259120        0.00049120       35.35212000        0.00002000
+       Electrostatic    -23969.33610000   -23970.76474367       -1.42864367   -23969.91100000       -0.57490000               n/a               n/a   -23970.47810000       -1.14200000
+       All dihedrals        73.57830000       73.57812953       -0.00017047       73.57819400       -0.00010600       73.57808100       -0.00021900       73.58141000        0.00311000
+              Bonded       229.60890000      229.60902879        0.00012879      229.60886600       -0.00003400      229.60891120        0.00001120      229.61173000        0.00283000
+
+Input amber potential energy:        -20751.29530000
+Difference in potential energy from amber=>gromacs conversion:        -1.51861910
+Difference in potential energy from amber=>lammps conversion:        -0.68370000
+Difference in potential energy from amber=>desmond conversion:        -0.89850000
+Difference in potential energy from amber=>charmm conversion:        -1.14371000
+=======================================================================
+INFO 2016-06-21 14:05:25 Finished!
+INFO 2016-06-21 14:05:26 Beginning InterMol conversion
+INFO 2016-06-21 14:05:26 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G4_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G4_from_amber.gro'.
+INFO 2016-06-21 14:05:27 ...loaded.
+INFO 2016-06-21 14:05:27 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G4/OAH-G4_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G4/OAH-G4_converted.gro'.
+INFO 2016-06-21 14:05:27 ...done.
+INFO 2016-06-21 14:05:27 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G4/OAH-G4_converted.input'
+INFO 2016-06-21 14:05:28 ...done.
+INFO 2016-06-21 14:05:28 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G4/OAH-G4_converted.cms
+WARNING 2016-06-21 14:05:28 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:05:29 ...done
+INFO 2016-06-21 14:05:30 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G4.rst7
+INFO 2016-06-21 14:05:31 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G4/OAH-G4_converted.input
+INFO 2016-06-21 14:05:32 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G4/OAH-G4_converted.cms
+WARNING 2016-06-21 14:06:04 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:06:04 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G4/OAH-G4_converted.inp
+INFO 2016-06-21 14:06:06 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G4/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G4/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G4/OAH-G4_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G4/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       110.04100000      110.04092361       -0.00007639      110.04105000        0.00005000      110.04031100       -0.00068900      110.04057000       -0.00043000
+           Potential    -21732.99730000   -21734.54118368       -1.54388368   -21733.61300000       -0.61570000   -21733.77510000       -0.77780000   -21734.10649000       -1.10919000
+       van der Waals      3160.91670000     3160.86014005       -0.05655995     3160.85050000       -0.06620000               n/a               n/a     3160.92253000        0.00583000
+           Nonbonded    -22026.83800000   -22028.38272438       -1.54472438   -22027.45450000       -0.61650000               n/a               n/a   -22027.94580000       -1.10780000
+               LJ-14        91.65210000       91.65220097        0.00010097               n/a               n/a       91.65220500        0.00010500               n/a               n/a
+          Coulomb-14       -69.84340000      -69.84573568       -0.00233568               n/a               n/a      -69.84586710       -0.00246710               n/a               n/a
+                Bond        49.82790000       49.82793673        0.00003673       49.82792100        0.00002100       49.82811320        0.00021320       49.82792000        0.00002000
+       Electrostatic    -25187.75470000   -25189.24286443       -1.48816443   -25188.30500000       -0.55030000               n/a               n/a   -25188.86833000       -1.11363000
+       All dihedrals       133.97180000      133.97185365        0.00005365      133.97178000       -0.00002000      133.97189900        0.00009900      133.97082000       -0.00098000
+              Bonded       293.84070000      293.84071398        0.00001398      293.84075100        0.00005100      293.84032320       -0.00037680      293.83931000       -0.00139000
+
+Input amber potential energy:        -21732.99730000
+Difference in potential energy from amber=>gromacs conversion:        -1.54388368
+Difference in potential energy from amber=>lammps conversion:        -0.61570000
+Difference in potential energy from amber=>desmond conversion:        -0.77780000
+Difference in potential energy from amber=>charmm conversion:        -1.10919000
+=======================================================================
+INFO 2016-06-21 14:06:06 Finished!
+INFO 2016-06-21 14:06:07 Beginning InterMol conversion
+INFO 2016-06-21 14:06:07 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G5_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G5_from_amber.gro'.
+INFO 2016-06-21 14:06:08 ...loaded.
+INFO 2016-06-21 14:06:08 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G5/OAH-G5_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G5/OAH-G5_converted.gro'.
+INFO 2016-06-21 14:06:08 ...done.
+INFO 2016-06-21 14:06:08 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G5/OAH-G5_converted.input'
+INFO 2016-06-21 14:06:09 ...done.
+INFO 2016-06-21 14:06:09 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G5/OAH-G5_converted.cms
+WARNING 2016-06-21 14:06:09 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:06:10 ...done
+INFO 2016-06-21 14:06:11 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G5.rst7
+INFO 2016-06-21 14:06:12 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G5/OAH-G5_converted.input
+INFO 2016-06-21 14:06:13 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G5/OAH-G5_converted.cms
+WARNING 2016-06-21 14:06:45 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:06:45 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G5/OAH-G5_converted.inp
+INFO 2016-06-21 14:06:47 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G5/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G5/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G5/OAH-G5_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G5/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       101.89780000      101.89788702        0.00008702      101.89785000        0.00005000      101.89753300       -0.00026700      101.89749000       -0.00031000
+           Potential    -21540.89100000   -21543.12933198       -2.23833198   -21542.23300000       -1.34200000   -21542.35610000       -1.46510000   -21542.66609000       -1.77509000
+       van der Waals      3103.09630000     3103.03748224       -0.05881776     3103.01930000       -0.07700000               n/a               n/a     3103.11135000        0.01505000
+           Nonbonded    -21820.33990000   -21822.57839371       -2.23849371   -21821.68370000       -1.34380000               n/a               n/a   -21822.11404000       -1.77414000
+               LJ-14        86.15440000       86.15431047       -0.00008953               n/a               n/a       86.15439020       -0.00000980               n/a               n/a
+          Coulomb-14      -112.85830000     -112.86205635       -0.00375635               n/a               n/a     -112.86216600       -0.00386600               n/a               n/a
+                Bond        51.82230000       51.82269518        0.00039518       51.82232500        0.00002500       51.82296670        0.00066670       51.82233000        0.00003000
+       Electrostatic    -24923.43620000   -24925.61587594       -2.17967594   -24924.70300000       -1.26680000               n/a               n/a   -24925.22539000       -1.78919000
+       All dihedrals       125.72880000      125.72881095        0.00001095      125.72880000        0.00000000      125.72884400        0.00004400      125.72814000       -0.00066000
+              Bonded       279.44890000      279.44939314        0.00049314      279.44897500        0.00007500      279.44934370        0.00044370      279.44796000       -0.00094000
+
+Input amber potential energy:        -21540.89100000
+Difference in potential energy from amber=>gromacs conversion:        -2.23833198
+Difference in potential energy from amber=>lammps conversion:        -1.34200000
+Difference in potential energy from amber=>desmond conversion:        -1.46510000
+Difference in potential energy from amber=>charmm conversion:        -1.77509000
+=======================================================================
+INFO 2016-06-21 14:06:47 Finished!
+INFO 2016-06-21 14:06:48 Beginning InterMol conversion
+INFO 2016-06-21 14:06:48 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G2_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G2_from_amber.gro'.
+INFO 2016-06-21 14:06:49 ...loaded.
+INFO 2016-06-21 14:06:49 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G2/OAH-G2_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G2/OAH-G2_converted.gro'.
+INFO 2016-06-21 14:06:49 ...done.
+INFO 2016-06-21 14:06:49 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G2/OAH-G2_converted.input'
+INFO 2016-06-21 14:06:50 ...done.
+INFO 2016-06-21 14:06:50 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G2/OAH-G2_converted.cms
+WARNING 2016-06-21 14:06:50 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:06:51 ...done
+INFO 2016-06-21 14:06:52 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G2.rst7
+INFO 2016-06-21 14:06:53 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G2/OAH-G2_converted.input
+INFO 2016-06-21 14:06:54 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G2/OAH-G2_converted.cms
+WARNING 2016-06-21 14:07:26 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:07:26 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G2/OAH-G2_converted.inp
+INFO 2016-06-21 14:07:28 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G2/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G2/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G2/OAH-G2_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G2/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       113.55020000      113.55003663       -0.00016337      113.55025000        0.00005000      113.55079900        0.00059900      113.54980000       -0.00040000
+           Potential    -21627.45180000   -21629.95750179       -2.50570179   -21629.15500000       -1.70320000   -21629.05330000       -1.60150000   -21629.55690000       -2.10510000
+       van der Waals      3062.80820000     3062.83993292        0.03173292     3062.82690000        0.01870000               n/a               n/a     3062.82594000        0.01774000
+           Nonbonded    -21924.76790000   -21927.27493556       -2.50703556   -21926.47510000       -1.70720000               n/a               n/a   -21926.87165000       -2.10375000
+               LJ-14        87.35100000       87.35092922       -0.00007078               n/a               n/a       87.35081120       -0.00018880               n/a               n/a
+          Coulomb-14       -30.35580000      -30.35684662       -0.00104662               n/a               n/a      -30.35687280       -0.00107280               n/a               n/a
+                Bond        62.93510000       62.93521101        0.00011101       62.93515000        0.00005000       62.93331510       -0.00178490       62.93515000        0.00005000
+       Electrostatic    -24987.57610000   -24990.11486848       -2.53876848   -24989.30200000       -1.72590000               n/a               n/a   -24989.69759000       -2.12149000
+       All dihedrals       120.83080000      120.83093181        0.00013181      120.83083000        0.00003000      120.83029000       -0.00051000      120.82979000       -0.00101000
+              Bonded       297.31610000      297.31617945        0.00007945      297.31623000        0.00013000      297.31440410       -0.00169590      297.31474000       -0.00136000
+
+Input amber potential energy:        -21627.45180000
+Difference in potential energy from amber=>gromacs conversion:        -2.50570179
+Difference in potential energy from amber=>lammps conversion:        -1.70320000
+Difference in potential energy from amber=>desmond conversion:        -1.60150000
+Difference in potential energy from amber=>charmm conversion:        -2.10510000
+=======================================================================
+INFO 2016-06-21 14:07:28 Finished!
+INFO 2016-06-21 14:07:29 Beginning InterMol conversion
+INFO 2016-06-21 14:07:30 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G6_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G6_from_amber.gro'.
+INFO 2016-06-21 14:07:30 ...loaded.
+INFO 2016-06-21 14:07:30 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G6/OAH-G6_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G6/OAH-G6_converted.gro'.
+INFO 2016-06-21 14:07:30 ...done.
+INFO 2016-06-21 14:07:30 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G6/OAH-G6_converted.input'
+INFO 2016-06-21 14:07:31 ...done.
+INFO 2016-06-21 14:07:31 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G6/OAH-G6_converted.cms
+WARNING 2016-06-21 14:07:31 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:07:32 ...done
+INFO 2016-06-21 14:07:33 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G6.rst7
+INFO 2016-06-21 14:07:34 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G6/OAH-G6_converted.input
+INFO 2016-06-21 14:07:35 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G6/OAH-G6_converted.cms
+WARNING 2016-06-21 14:08:07 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:08:07 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G6/OAH-G6_converted.inp
+INFO 2016-06-21 14:08:09 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G6/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G6/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G6/OAH-G6_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G6/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle        99.49730000       99.49726812       -0.00003188       99.49735600        0.00005600       99.49761680        0.00031680       99.49694000       -0.00036000
+           Potential    -21648.04240000   -21650.32340464       -2.28100464   -21649.42000000       -1.37760000   -21649.46400000       -1.42160000   -21649.82174000       -1.77934000
+       van der Waals      3043.60820000     3043.65595714        0.04775714     3043.64140000        0.03320000               n/a               n/a     3043.64168000        0.03348000
+           Nonbonded    -21936.25280000   -21938.53534203       -2.28254203   -21937.62760000       -1.37480000               n/a               n/a   -21938.03070000       -1.77790000
+               LJ-14        84.07470000       84.07471695        0.00001695               n/a               n/a       84.07462690       -0.00007310               n/a               n/a
+          Coulomb-14        -9.34370000       -9.34398790       -0.00028790               n/a               n/a       -9.34395546       -0.00025546               n/a               n/a
+                Bond        63.75090000       63.75146140        0.00056140       63.75085200       -0.00004800       63.75074170       -0.00015830       63.75085000       -0.00005000
+       Electrostatic    -24979.86100000   -24982.19129916       -2.33029916   -24981.26900000       -1.40800000               n/a               n/a   -24981.67238000       -1.81138000
+       All dihedrals       124.96220000      124.96213384       -0.00006616      124.96219000       -0.00001000      124.96213600       -0.00006400      124.96118000       -0.00102000
+              Bonded       288.21040000      288.21086337        0.00046337      288.21039800       -0.00000200      288.21049450        0.00009450      288.20897000       -0.00143000
+
+Input amber potential energy:        -21648.04240000
+Difference in potential energy from amber=>gromacs conversion:        -2.28100464
+Difference in potential energy from amber=>lammps conversion:        -1.37760000
+Difference in potential energy from amber=>desmond conversion:        -1.42160000
+Difference in potential energy from amber=>charmm conversion:        -1.77934000
+=======================================================================
+INFO 2016-06-21 14:08:09 Finished!
+INFO 2016-06-21 14:08:10 Beginning InterMol conversion
+INFO 2016-06-21 14:08:11 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G3_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G3_from_amber.gro'.
+INFO 2016-06-21 14:08:11 ...loaded.
+INFO 2016-06-21 14:08:11 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G3/OAH-G3_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G3/OAH-G3_converted.gro'.
+INFO 2016-06-21 14:08:11 ...done.
+INFO 2016-06-21 14:08:11 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G3/OAH-G3_converted.input'
+INFO 2016-06-21 14:08:12 ...done.
+INFO 2016-06-21 14:08:12 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G3/OAH-G3_converted.cms
+WARNING 2016-06-21 14:08:12 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:08:13 ...done
+INFO 2016-06-21 14:08:14 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G3.rst7
+INFO 2016-06-21 14:08:15 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G3/OAH-G3_converted.input
+INFO 2016-06-21 14:08:16 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G3/OAH-G3_converted.cms
+WARNING 2016-06-21 14:08:48 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:08:48 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G3/OAH-G3_converted.inp
+INFO 2016-06-21 14:08:50 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G3/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G3/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G3/OAH-G3_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G3/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       104.46520000      104.46507616       -0.00012384      104.46518000       -0.00002000      104.46500500       -0.00019500      104.46478000       -0.00042000
+           Potential    -21562.18340000   -21564.08154577       -1.89814577   -21563.14600000       -0.96260000   -21563.14060000       -0.95720000   -21563.59369000       -1.41029000
+       van der Waals      2995.60380000     2995.56112381       -0.04267619     2995.55230000       -0.05150000               n/a               n/a     2995.62258000        0.01878000
+           Nonbonded    -21844.11250000   -21846.01042148       -1.89792148   -21845.07170000       -0.95920000               n/a               n/a   -21845.52220000       -1.40970000
+               LJ-14        81.94660000       81.94653163       -0.00006837               n/a               n/a       81.94648180       -0.00011820               n/a               n/a
+          Coulomb-14      -157.43420000     -157.43951451       -0.00531451               n/a               n/a     -157.43947000       -0.00527000               n/a               n/a
+                Bond        47.58450000       47.58434770       -0.00015230       47.58452200        0.00002200       47.58456080        0.00006080       47.58452000        0.00002000
+       Electrostatic    -24839.71630000   -24841.57154528       -1.85524528   -24840.62400000       -0.90770000               n/a               n/a   -24841.14478000       -1.42848000
+       All dihedrals       129.87940000      129.87932056       -0.00007944      129.87943000        0.00003000      129.87954900        0.00014900      129.87921000       -0.00019000
+              Bonded       281.92910000      281.92874442       -0.00035558      281.92913200        0.00003200      281.92911480        0.00001480      281.92851000       -0.00059000
+
+Input amber potential energy:        -21562.18340000
+Difference in potential energy from amber=>gromacs conversion:        -1.89814577
+Difference in potential energy from amber=>lammps conversion:        -0.96260000
+Difference in potential energy from amber=>desmond conversion:        -0.95720000
+Difference in potential energy from amber=>charmm conversion:        -1.41029000
+=======================================================================
+INFO 2016-06-21 14:08:50 Finished!
+INFO 2016-06-21 14:08:51 Beginning InterMol conversion
+INFO 2016-06-21 14:08:52 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G1_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G1_from_amber.gro'.
+INFO 2016-06-21 14:08:52 ...loaded.
+INFO 2016-06-21 14:08:52 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G1/OAH-G1_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G1/OAH-G1_converted.gro'.
+INFO 2016-06-21 14:08:52 ...done.
+INFO 2016-06-21 14:08:52 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G1/OAH-G1_converted.input'
+INFO 2016-06-21 14:08:53 ...done.
+INFO 2016-06-21 14:08:53 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G1/OAH-G1_converted.cms
+WARNING 2016-06-21 14:08:53 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:08:54 ...done
+INFO 2016-06-21 14:08:55 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G1.rst7
+INFO 2016-06-21 14:08:56 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G1/OAH-G1_converted.input
+INFO 2016-06-21 14:08:57 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G1/OAH-G1_converted.cms
+WARNING 2016-06-21 14:09:29 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:09:29 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G1/OAH-G1_converted.inp
+INFO 2016-06-21 14:09:32 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G1/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G1/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G1/OAH-G1_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G1/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       101.59660000      101.59651134       -0.00008866      101.59663000        0.00003000      101.59598600       -0.00061400      101.59619000       -0.00041000
+           Potential    -21744.20600000   -21744.81843033       -0.61243033   -21743.86500000        0.34100000   -21744.08700000        0.11900000   -21744.41184000       -0.20584000
+       van der Waals      2961.11460000     2961.04241512       -0.07218488     2961.03290000       -0.08170000               n/a               n/a     2961.12661000        0.01201000
+           Nonbonded    -22026.64390000   -22027.25611043       -0.61221043   -22026.30410000        0.33980000               n/a               n/a   -22026.84826000       -0.20436000
+               LJ-14        81.99250000       81.99248305       -0.00001695               n/a               n/a       81.99243190       -0.00006810               n/a               n/a
+          Coulomb-14       -72.63030000      -72.63277685       -0.00247685               n/a               n/a      -72.63276290       -0.00246290               n/a               n/a
+                Bond        57.01160000       57.01176660        0.00016660       57.01157100       -0.00002900       57.01152580       -0.00007420       57.01157000       -0.00003000
+       Electrostatic    -24987.75850000   -24988.29852555       -0.54002555   -24987.33700000        0.42150000               n/a               n/a   -24987.97487000       -0.21637000
+       All dihedrals       123.82970000      123.82974725        0.00004725      123.82972000        0.00002000      123.82974400        0.00004400      123.82866000       -0.00104000
+              Bonded       282.43790000      282.43802519        0.00012519      282.43792100        0.00002100      282.43725580       -0.00064420      282.43642000       -0.00148000
+
+Input amber potential energy:        -21744.20600000
+Difference in potential energy from amber=>gromacs conversion:        -0.61243033
+Difference in potential energy from amber=>lammps conversion:         0.34100000
+Difference in potential energy from amber=>desmond conversion:         0.11900000
+Difference in potential energy from amber=>charmm conversion:        -0.20584000
+=======================================================================
+INFO 2016-06-21 14:09:32 Finished!
+INFO 2016-06-21 14:09:32 Beginning InterMol conversion
+INFO 2016-06-21 14:09:33 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G6_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G6_from_amber.gro'.
+INFO 2016-06-21 14:09:33 ...loaded.
+INFO 2016-06-21 14:09:33 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G6/OAMe-G6_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G6/OAMe-G6_converted.gro'.
+INFO 2016-06-21 14:09:33 ...done.
+INFO 2016-06-21 14:09:33 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G6/OAMe-G6_converted.input'
+INFO 2016-06-21 14:09:34 ...done.
+INFO 2016-06-21 14:09:34 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G6/OAMe-G6_converted.cms
+WARNING 2016-06-21 14:09:34 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:09:35 ...done
+INFO 2016-06-21 14:09:36 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G6.rst7
+INFO 2016-06-21 14:09:37 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G6/OAMe-G6_converted.input
+INFO 2016-06-21 14:09:38 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G6/OAMe-G6_converted.cms
+WARNING 2016-06-21 14:10:10 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:10:10 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G6/OAMe-G6_converted.inp
+INFO 2016-06-21 14:10:13 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G6/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G6/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G6/OAMe-G6_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G6/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       106.27920000      106.27904130       -0.00015870      106.27919000       -0.00001000      106.27915200       -0.00004800      106.27877000       -0.00043000
+           Potential    -21589.39000000   -21591.54479864       -2.15479864   -21590.68200000       -1.29200000   -21590.71960000       -1.32960000   -21591.10809000       -1.71809000
+       van der Waals      3047.72630000     3047.59901021       -0.12728979     3047.58700000       -0.13930000               n/a               n/a     3047.75787000        0.03157000
+           Nonbonded    -21873.74500000   -21875.89923465       -2.15423465   -21875.04100000       -1.29600000               n/a               n/a   -21875.46191000       -1.71691000
+               LJ-14        93.30970000       93.30966140       -0.00003860               n/a               n/a       93.30940150       -0.00029850               n/a               n/a
+          Coulomb-14       428.47590000      428.49054574        0.01464574               n/a               n/a      428.49055000        0.01465000               n/a               n/a
+                Bond        54.62420000       54.62367494       -0.00052506       54.62423200        0.00003200       54.62470270        0.00050270       54.62423000        0.00003000
+       Electrostatic    -24921.47130000   -24923.49824486       -2.02694486   -24922.62800000       -1.15670000               n/a               n/a   -24923.21978000       -1.74848000
+       All dihedrals       123.45160000      123.45155293       -0.00004707      123.45158000       -0.00002000      123.45154600       -0.00005400      123.45081000       -0.00079000
+              Bonded       284.35500000      284.35426916       -0.00073084      284.35500200        0.00000200      284.35540070        0.00040070      284.35381000       -0.00119000
+
+Input amber potential energy:        -21589.39000000
+Difference in potential energy from amber=>gromacs conversion:        -2.15479864
+Difference in potential energy from amber=>lammps conversion:        -1.29200000
+Difference in potential energy from amber=>desmond conversion:        -1.32960000
+Difference in potential energy from amber=>charmm conversion:        -1.71809000
+=======================================================================
+INFO 2016-06-21 14:10:13 Finished!
+INFO 2016-06-21 14:10:13 Beginning InterMol conversion
+INFO 2016-06-21 14:10:14 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G5_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G5_from_amber.gro'.
+INFO 2016-06-21 14:10:14 ...loaded.
+INFO 2016-06-21 14:10:14 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G5/OAMe-G5_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G5/OAMe-G5_converted.gro'.
+INFO 2016-06-21 14:10:14 ...done.
+INFO 2016-06-21 14:10:14 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G5/OAMe-G5_converted.input'
+INFO 2016-06-21 14:10:16 ...done.
+INFO 2016-06-21 14:10:16 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G5/OAMe-G5_converted.cms
+WARNING 2016-06-21 14:10:16 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:10:16 ...done
+INFO 2016-06-21 14:10:17 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G5.rst7
+INFO 2016-06-21 14:10:18 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G5/OAMe-G5_converted.input
+INFO 2016-06-21 14:10:20 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G5/OAMe-G5_converted.cms
+WARNING 2016-06-21 14:10:51 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:10:51 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G5/OAMe-G5_converted.inp
+INFO 2016-06-21 14:10:59 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G5/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G5/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G5/OAMe-G5_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G5/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       120.68290000      120.68284219       -0.00005781      120.68297000        0.00007000      120.68275100       -0.00014900      120.68255000       -0.00035000
+           Potential    -21331.27070000   -21332.90324749       -1.63254749   -21331.96400000       -0.69330000   -21332.04480000       -0.77410000   -21332.43952000       -1.16882000
+       van der Waals      3078.14370000     3078.09764432       -0.04605568     3078.08690000       -0.05680000               n/a               n/a     3078.14744000        0.00374000
+           Nonbonded    -21627.45560000   -21629.08919865       -1.63359865   -21628.14810000       -0.69250000               n/a               n/a   -21628.62340000       -1.16780000
+               LJ-14        86.80120000       86.80116059       -0.00003941               n/a               n/a       86.80090980       -0.00029020               n/a               n/a
+          Coulomb-14       316.17290000      316.18387430        0.01097430               n/a               n/a      316.18361600        0.01071600               n/a               n/a
+                Bond        58.66200000       58.66184198       -0.00015802       58.66199100       -0.00000900       58.66189160       -0.00010840       58.66199000       -0.00001000
+       Electrostatic    -24705.59930000   -24707.18684297       -1.58754297   -24706.23500000       -0.63570000               n/a               n/a   -24706.77084000       -1.17154000
+       All dihedrals       116.84000000      116.84003820        0.00003820      116.83999000       -0.00001000      116.83997600       -0.00002400      116.83933000       -0.00067000
+              Bonded       296.18490000      296.18472237       -0.00017763      296.18495100        0.00005100      296.18461860       -0.00028140      296.18387000       -0.00103000
+
+Input amber potential energy:        -21331.27070000
+Difference in potential energy from amber=>gromacs conversion:        -1.63254749
+Difference in potential energy from amber=>lammps conversion:        -0.69330000
+Difference in potential energy from amber=>desmond conversion:        -0.77410000
+Difference in potential energy from amber=>charmm conversion:        -1.16882000
+=======================================================================
+INFO 2016-06-21 14:10:59 Finished!
+INFO 2016-06-21 14:10:59 Beginning InterMol conversion
+INFO 2016-06-21 14:11:00 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G2_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G2_from_amber.gro'.
+INFO 2016-06-21 14:11:00 ...loaded.
+INFO 2016-06-21 14:11:00 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G2/OAMe-G2_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G2/OAMe-G2_converted.gro'.
+INFO 2016-06-21 14:11:01 ...done.
+INFO 2016-06-21 14:11:01 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G2/OAMe-G2_converted.input'
+INFO 2016-06-21 14:11:02 ...done.
+INFO 2016-06-21 14:11:02 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G2/OAMe-G2_converted.cms
+WARNING 2016-06-21 14:11:02 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:11:02 ...done
+INFO 2016-06-21 14:11:03 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G2.rst7
+INFO 2016-06-21 14:11:05 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G2/OAMe-G2_converted.input
+INFO 2016-06-21 14:11:06 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G2/OAMe-G2_converted.cms
+WARNING 2016-06-21 14:11:38 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:11:38 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G2/OAMe-G2_converted.inp
+INFO 2016-06-21 14:11:40 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G2/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G2/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G2/OAMe-G2_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G2/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       108.96840000      108.96838099       -0.00001901      108.96842000        0.00002000      108.96832600       -0.00007400      108.96804000       -0.00036000
+           Potential    -21498.34020000   -21500.15311305       -1.81291305   -21499.31100000       -0.97080000   -21499.30520000       -0.96500000   -21499.75685000       -1.41665000
+       van der Waals      3031.20590000     3031.22787767        0.02197767     3031.21770000        0.01180000               n/a               n/a     3031.22973000        0.02383000
+           Nonbonded    -21786.37600000   -21788.18952148       -1.81352148   -21787.34930000       -0.97330000               n/a               n/a   -21787.79157000       -1.41557000
+               LJ-14        85.47920000       85.47920388        0.00000388               n/a               n/a       85.47910130       -0.00009870               n/a               n/a
+          Coulomb-14       402.64490000      402.65867040        0.01377040               n/a               n/a      402.65865600        0.01375600               n/a               n/a
+                Bond        58.08570000       58.08622750        0.00052750       58.08568500       -0.00001500       58.08563240       -0.00006760       58.08568000       -0.00002000
+       Electrostatic    -24817.58190000   -24819.41739916       -1.83549916   -24818.56700000       -0.98510000               n/a               n/a   -24819.02130000       -1.43940000
+       All dihedrals       120.98170000      120.98181293        0.00011293      120.98173000        0.00003000      120.98153300       -0.00016700      120.98101000       -0.00069000
+              Bonded       288.03580000      288.03642143        0.00062143      288.03583500        0.00003500      288.03549140       -0.00030860      288.03473000       -0.00107000
+
+Input amber potential energy:        -21498.34020000
+Difference in potential energy from amber=>gromacs conversion:        -1.81291305
+Difference in potential energy from amber=>lammps conversion:        -0.97080000
+Difference in potential energy from amber=>desmond conversion:        -0.96500000
+Difference in potential energy from amber=>charmm conversion:        -1.41665000
+=======================================================================
+INFO 2016-06-21 14:11:40 Finished!
+INFO 2016-06-21 14:11:40 Beginning InterMol conversion
+INFO 2016-06-21 14:11:41 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G1_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G1_from_amber.gro'.
+INFO 2016-06-21 14:11:42 ...loaded.
+INFO 2016-06-21 14:11:42 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G1/OAMe-G1_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G1/OAMe-G1_converted.gro'.
+INFO 2016-06-21 14:11:42 ...done.
+INFO 2016-06-21 14:11:42 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G1/OAMe-G1_converted.input'
+INFO 2016-06-21 14:11:43 ...done.
+INFO 2016-06-21 14:11:43 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G1/OAMe-G1_converted.cms
+WARNING 2016-06-21 14:11:43 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:11:43 ...done
+INFO 2016-06-21 14:11:45 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G1.rst7
+INFO 2016-06-21 14:11:46 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G1/OAMe-G1_converted.input
+INFO 2016-06-21 14:11:47 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G1/OAMe-G1_converted.cms
+WARNING 2016-06-21 14:12:19 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:12:19 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G1/OAMe-G1_converted.inp
+INFO 2016-06-21 14:12:21 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G1/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G1/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G1/OAMe-G1_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G1/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       108.98340000      108.97094843       -0.01245157      108.97133000       -0.01207000      108.97111100       -0.01228900      108.97088000       -0.01252000
+           Potential    -21612.56990000   -21614.80864603       -2.23874603   -21613.93700000       -1.36710000   -21613.92440000       -1.35450000   -21614.36973000       -1.79983000
+       van der Waals      3015.18070000     3015.15659639       -0.02410361     3015.15340000       -0.02730000               n/a               n/a     3015.19528000        0.01458000
+           Nonbonded    -21899.42050000   -21901.64777015       -2.22727015   -21900.77960000       -1.35910000               n/a               n/a   -21901.20697000       -1.78647000
+               LJ-14        83.14460000       83.14462374        0.00002374               n/a               n/a       83.14447120       -0.00012880               n/a               n/a
+          Coulomb-14       355.90890000      355.92108703        0.01218703               n/a               n/a      355.92106000        0.01216000               n/a               n/a
+                Bond        57.42750000       57.42796976        0.00046976       57.42748400       -0.00001600       57.42751960        0.00001960       57.42748000       -0.00002000
+       Electrostatic    -24914.60120000   -24916.80436654       -2.20316654   -24915.93300000       -1.33180000               n/a               n/a   -24916.40225000       -1.80105000
+       All dihedrals       120.43970000      120.43960920       -0.00009080      120.43968000       -0.00002000      120.43973400        0.00003400      120.43888000       -0.00082000
+              Bonded       286.85060000      286.83852739       -0.01207261      286.83849400       -0.01210600      286.83836460       -0.01223540      286.83724000       -0.01336000
+
+Input amber potential energy:        -21612.56990000
+Difference in potential energy from amber=>gromacs conversion:        -2.23874603
+Difference in potential energy from amber=>lammps conversion:        -1.36710000
+Difference in potential energy from amber=>desmond conversion:        -1.35450000
+Difference in potential energy from amber=>charmm conversion:        -1.79983000
+=======================================================================
+INFO 2016-06-21 14:12:21 Finished!
+INFO 2016-06-21 14:12:22 Beginning InterMol conversion
+INFO 2016-06-21 14:12:22 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G3_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G3_from_amber.gro'.
+INFO 2016-06-21 14:12:23 ...loaded.
+INFO 2016-06-21 14:12:23 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G3/OAMe-G3_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G3/OAMe-G3_converted.gro'.
+INFO 2016-06-21 14:12:23 ...done.
+INFO 2016-06-21 14:12:23 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G3/OAMe-G3_converted.input'
+INFO 2016-06-21 14:12:24 ...done.
+INFO 2016-06-21 14:12:24 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G3/OAMe-G3_converted.cms
+WARNING 2016-06-21 14:12:24 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:12:25 ...done
+INFO 2016-06-21 14:12:26 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G3.rst7
+INFO 2016-06-21 14:12:27 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G3/OAMe-G3_converted.input
+INFO 2016-06-21 14:12:28 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G3/OAMe-G3_converted.cms
+WARNING 2016-06-21 14:13:00 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:13:00 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G3/OAMe-G3_converted.inp
+INFO 2016-06-21 14:13:02 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G3/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G3/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G3/OAMe-G3_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G3/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       164.15380000      164.15376098       -0.00003902      164.15377000       -0.00003000      164.15489600        0.00109600      164.15346000       -0.00034000
+           Potential    -21180.13870000   -21182.46033999       -2.32163999   -21181.60900000       -1.47030000   -21181.64730000       -1.50860000   -21182.01238000       -1.87368000
+       van der Waals      3040.86530000     3040.72980534       -0.13549466     3040.71470000       -0.15060000               n/a               n/a     3040.89024000        0.02494000
+           Nonbonded    -21547.64370000   -21549.96654408       -2.32284408   -21549.11330000       -1.46960000               n/a               n/a   -21549.51664000       -1.87294000
+               LJ-14        81.52690000       81.52694410        0.00004410               n/a               n/a       81.52691440        0.00001440               n/a               n/a
+          Coulomb-14       276.45580000      276.46521720        0.00941720               n/a               n/a      276.46508000        0.00928000               n/a               n/a
+                Bond        61.99710000       61.99758322        0.00048322       61.99714500        0.00004500       61.99738560        0.00028560       61.99715000        0.00005000
+       Electrostatic    -24588.50900000   -24590.69634943       -2.18734943   -24589.82800000       -1.31900000               n/a               n/a   -24590.40688000       -1.89788000
+       All dihedrals       141.35410000      141.35394042       -0.00015958      141.35407000       -0.00003000      141.35397900       -0.00012100      141.35364000       -0.00046000
+              Bonded       367.50500000      367.50528461        0.00028461      367.50498500       -0.00001500      367.50626060        0.00126060      367.50425000       -0.00075000
+
+Input amber potential energy:        -21180.13870000
+Difference in potential energy from amber=>gromacs conversion:        -2.32163999
+Difference in potential energy from amber=>lammps conversion:        -1.47030000
+Difference in potential energy from amber=>desmond conversion:        -1.50860000
+Difference in potential energy from amber=>charmm conversion:        -1.87368000
+=======================================================================
+INFO 2016-06-21 14:13:02 Finished!
+INFO 2016-06-21 14:13:03 Beginning InterMol conversion
+INFO 2016-06-21 14:13:03 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G4_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G4_from_amber.gro'.
+INFO 2016-06-21 14:13:04 ...loaded.
+INFO 2016-06-21 14:13:04 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G4/OAMe-G4_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G4/OAMe-G4_converted.gro'.
+INFO 2016-06-21 14:13:04 ...done.
+INFO 2016-06-21 14:13:04 Writing LAMMPS file '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G4/OAMe-G4_converted.input'
+INFO 2016-06-21 14:13:05 ...done.
+INFO 2016-06-21 14:13:05 Writing DESMOND file /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G4/OAMe-G4_converted.cms
+WARNING 2016-06-21 14:13:05 MacroModel atom type is not defined in other files, is set to 1 for all cases as it must be validly defined for desmond files to run.  However, it does not affect the energies.
+INFO 2016-06-21 14:13:06 ...done
+INFO 2016-06-21 14:13:07 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G4.rst7
+INFO 2016-06-21 14:13:08 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G4/OAMe-G4_converted.input
+INFO 2016-06-21 14:13:09 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G4/OAMe-G4_converted.cms
+WARNING 2016-06-21 14:13:41 CHARMM energy input file not used, information recreated from command line options
+INFO 2016-06-21 14:13:41 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G4/OAMe-G4_converted.inp
+INFO 2016-06-21 14:13:43 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G4/energy.xvg
+lammps output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G4/lammps_stdout.txt
+desmond output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G4/OAMe-G4_converted.enegrp.dat
+charmm output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G4/charmm_stdout.txt
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)   output (lammps)     diff (lammps)  output (desmond)    diff (desmond)   output (charmm)     diff (charmm)
+               Angle       143.96800000      143.96806064        0.00006064      143.96807000        0.00007000      143.96791100       -0.00008900      143.96766000       -0.00034000
+           Potential    -21441.05190000   -21442.64422502       -1.59232502   -21441.78300000       -0.73110000   -21441.80920000       -0.75730000   -21442.24688000       -1.19498000
+       van der Waals      3074.68360000     3074.65826804       -0.02533196     3074.64890000       -0.03470000               n/a               n/a     3074.70220000        0.01860000
+           Nonbonded    -21770.63680000   -21772.23129345       -1.59449345   -21771.37110000       -0.73430000               n/a               n/a   -21771.83062000       -1.19382000
+               LJ-14        97.95840000       97.95827483       -0.00012517               n/a               n/a       97.95811110       -0.00028890               n/a               n/a
+          Coulomb-14       366.56730000      366.57968671        0.01238671               n/a               n/a      366.57983500        0.01253500               n/a               n/a
+                Bond        54.14510000       54.14537900        0.00027900       54.14511300        0.00001300       54.14711830        0.00201830       54.14511000        0.00001000
+       Electrostatic    -24845.32040000   -24846.88956149       -1.56916149   -24846.02000000       -0.69960000               n/a               n/a   -24846.53282000       -1.21242000
+       All dihedrals       131.47180000      131.47188190        0.00008190      131.47180000        0.00000000      131.47175500       -0.00004500      131.47096000       -0.00084000
+              Bonded       329.58490000      329.58532155        0.00042155      329.58498300        0.00008300      329.58678430        0.00188430      329.58373000       -0.00117000
+
+Input amber potential energy:        -21441.05190000
+Difference in potential energy from amber=>gromacs conversion:        -1.59232502
+Difference in potential energy from amber=>lammps conversion:        -0.73110000
+Difference in potential energy from amber=>desmond conversion:        -0.75730000
+Difference in potential energy from amber=>charmm conversion:        -1.19498000
+=======================================================================
+INFO 2016-06-21 14:13:43 Finished!
+Directory CBC-G1 already exists
+Directory CBC-G7 already exists
+Directory CBC-G2 already exists
+Directory CBC-G4 already exists
+Directory CBC-G10 already exists
+Directory CBC-G8 already exists
+Directory CBC-G3 already exists
+Directory CBC-G6 already exists
+Directory CBC-G9 already exists
+Directory CBC-G5 already exists
+Directory OAH-G4 already exists
+Directory OAH-G5 already exists
+Directory OAH-G2 already exists
+Directory OAH-G6 already exists
+Directory OAH-G3 already exists
+Directory OAH-G1 already exists
+Directory OAMe-G6 already exists
+Directory OAMe-G5 already exists
+Directory OAMe-G2 already exists
+Directory OAMe-G1 already exists
+Directory OAMe-G3 already exists
+Directory OAMe-G4 already exists

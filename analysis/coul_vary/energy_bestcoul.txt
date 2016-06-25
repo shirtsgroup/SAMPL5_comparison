@@ -1,0 +1,660 @@
+INFO 2016-06-15 22:46:50 Beginning InterMol conversion
+INFO 2016-06-15 22:46:50 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G1_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G1_from_amber.gro'.
+INFO 2016-06-15 22:46:51 ...loaded.
+INFO 2016-06-15 22:46:51 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G1/CBC-G1_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G1/CBC-G1_converted.gro'.
+INFO 2016-06-15 22:46:51 ...done.
+INFO 2016-06-15 22:46:51 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G1.rst7
+INFO 2016-06-15 22:46:52 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G1/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      2921.53290000     2921.48399821       -0.04890179
+       Electrostatic    -23992.62710000   -23993.53926549       -0.91216549
+               Angle       113.54270000      113.54272128        0.00002128
+           Nonbonded    -21071.09420000   -21072.05526728       -0.96106728
+          Coulomb-14         0.81890000        0.81890398        0.00000398
+           Potential    -20853.28430000   -20854.24546359       -0.96116359
+       All dihedrals        67.74600000       67.74592725       -0.00007275
+               LJ-14        43.84160000       43.84157204       -0.00002796
+              Bonded       217.80990000      217.80980369       -0.00009631
+                Bond        36.52120000       36.52115516       -0.00004484
+
+Input amber potential energy:        -20853.28430000
+Difference in potential energy from amber=>gromacs conversion:        -0.96116359
+=======================================================================
+INFO 2016-06-15 22:46:52 Finished!
+INFO 2016-06-15 22:46:53 Beginning InterMol conversion
+INFO 2016-06-15 22:46:53 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G7_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G7_from_amber.gro'.
+INFO 2016-06-15 22:46:54 ...loaded.
+INFO 2016-06-15 22:46:54 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G7/CBC-G7_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G7/CBC-G7_converted.gro'.
+INFO 2016-06-15 22:46:54 ...done.
+INFO 2016-06-15 22:46:54 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G7.rst7
+INFO 2016-06-15 22:46:55 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G7/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      2920.46270000     2920.43300384       -0.02969616
+       Electrostatic    -24481.09180000   -24481.92171874       -0.82991874
+               Angle       128.56230000      128.56233539        0.00003539
+           Nonbonded    -21560.62910000   -21561.48871490       -0.85961490
+          Coulomb-14       -68.84550000      -68.84781856       -0.00231856
+           Potential    -21303.79440000   -21304.65401950       -0.85961950
+       All dihedrals        87.25130000       87.25124252       -0.00005748
+               LJ-14        59.70560000       59.70551437       -0.00008563
+              Bonded       256.83470000      256.83469541       -0.00000459
+                Bond        41.02110000       41.02111750        0.00001750
+
+Input amber potential energy:        -21303.79440000
+Difference in potential energy from amber=>gromacs conversion:        -0.85961950
+=======================================================================
+INFO 2016-06-15 22:46:55 Finished!
+INFO 2016-06-15 22:46:56 Beginning InterMol conversion
+INFO 2016-06-15 22:46:56 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G2_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G2_from_amber.gro'.
+INFO 2016-06-15 22:46:57 ...loaded.
+INFO 2016-06-15 22:46:57 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G2/CBC-G2_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G2/CBC-G2_converted.gro'.
+INFO 2016-06-15 22:46:57 ...done.
+INFO 2016-06-15 22:46:57 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G2.rst7
+INFO 2016-06-15 22:46:58 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G2/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      3017.09360000     3017.08220851       -0.01139149
+       Electrostatic    -23970.24660000   -23971.06125727       -0.81465727
+               Angle       109.27530000      109.27531881        0.00001881
+           Nonbonded    -20953.15300000   -20953.97904876       -0.82604876
+          Coulomb-14       -19.95630000      -19.95699635       -0.00069635
+           Potential    -20743.68880000   -20744.51488636       -0.82608636
+       All dihedrals        69.60580000       69.60569395       -0.00010605
+               LJ-14        40.19610000       40.19595012       -0.00014988
+              Bonded       209.46420000      209.46416240       -0.00003760
+                Bond        30.58310000       30.58314964        0.00004964
+
+Input amber potential energy:        -20743.68880000
+Difference in potential energy from amber=>gromacs conversion:        -0.82608636
+=======================================================================
+INFO 2016-06-15 22:46:58 Finished!
+INFO 2016-06-15 22:46:59 Beginning InterMol conversion
+INFO 2016-06-15 22:46:59 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G4_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G4_from_amber.gro'.
+INFO 2016-06-15 22:47:00 ...loaded.
+INFO 2016-06-15 22:47:00 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G4/CBC-G4_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G4/CBC-G4_converted.gro'.
+INFO 2016-06-15 22:47:00 ...done.
+INFO 2016-06-15 22:47:00 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G4.rst7
+INFO 2016-06-15 22:47:01 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G4/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      3056.62830000     3056.50734779       -0.12095221
+       Electrostatic    -24136.17990000   -24137.00859271       -0.82869271
+               Angle       111.37900000      111.37897642       -0.00002358
+           Nonbonded    -21079.55160000   -21080.50124492       -0.94964492
+          Coulomb-14      -192.66300000     -192.66961496       -0.00661496
+           Potential    -20854.21100000   -20855.16072702       -0.94972702
+       All dihedrals        72.73770000       72.73762664       -0.00007336
+               LJ-14        50.66640000       50.66627794       -0.00012206
+              Bonded       225.34060000      225.34051790       -0.00008210
+                Bond        41.22390000       41.22391485        0.00001485
+
+Input amber potential energy:        -20854.21100000
+Difference in potential energy from amber=>gromacs conversion:        -0.94972702
+=======================================================================
+INFO 2016-06-15 22:47:01 Finished!
+INFO 2016-06-15 22:47:02 Beginning InterMol conversion
+INFO 2016-06-15 22:47:02 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G10_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G10_from_amber.gro'.
+INFO 2016-06-15 22:47:03 ...loaded.
+INFO 2016-06-15 22:47:03 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G10/CBC-G10_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G10/CBC-G10_converted.gro'.
+INFO 2016-06-15 22:47:03 ...done.
+INFO 2016-06-15 22:47:03 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G10.rst7
+INFO 2016-06-15 22:47:04 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G10/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      2986.81060000     2986.70915510       -0.10144490
+       Electrostatic    -24027.73860000   -24027.95706211       -0.21846211
+               Angle       132.08800000      132.08804022        0.00004022
+           Nonbonded    -21040.92800000   -21041.24790701       -0.31990701
+          Coulomb-14       -26.63240000      -26.63331767       -0.00091767
+           Potential    -20788.10590000   -20788.42578567       -0.31988567
+       All dihedrals        78.11540000       78.11534026       -0.00005974
+               LJ-14        48.20480000       48.20467259       -0.00012741
+              Bonded       252.82210000      252.82212134        0.00002134
+                Bond        42.61870000       42.61874086        0.00004086
+
+Input amber potential energy:        -20788.10590000
+Difference in potential energy from amber=>gromacs conversion:        -0.31988567
+=======================================================================
+INFO 2016-06-15 22:47:04 Finished!
+INFO 2016-06-15 22:47:05 Beginning InterMol conversion
+INFO 2016-06-15 22:47:05 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G8_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G8_from_amber.gro'.
+INFO 2016-06-15 22:47:06 ...loaded.
+INFO 2016-06-15 22:47:06 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G8/CBC-G8_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G8/CBC-G8_converted.gro'.
+INFO 2016-06-15 22:47:06 ...done.
+INFO 2016-06-15 22:47:06 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G8.rst7
+INFO 2016-06-15 22:47:07 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G8/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      3020.20920000     3020.06911622       -0.14008378
+       Electrostatic    -23965.39760000   -23966.08267838       -0.68507838
+               Angle       142.00350000      142.00348044       -0.00001956
+           Nonbonded    -20945.18840000   -20946.01356216       -0.82516216
+          Coulomb-14        -3.22290000       -3.22300955       -0.00010955
+           Potential    -20666.08600000   -20666.91117769       -0.82517769
+       All dihedrals        87.99980000       87.99975894       -0.00004106
+               LJ-14        57.22730000       57.22726568       -0.00003432
+              Bonded       279.10240000      279.10238447       -0.00001553
+                Bond        49.09910000       49.09914509        0.00004509
+
+Input amber potential energy:        -20666.08600000
+Difference in potential energy from amber=>gromacs conversion:        -0.82517769
+=======================================================================
+INFO 2016-06-15 22:47:07 Finished!
+INFO 2016-06-15 22:47:08 Beginning InterMol conversion
+INFO 2016-06-15 22:47:08 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G3_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G3_from_amber.gro'.
+INFO 2016-06-15 22:47:09 ...loaded.
+INFO 2016-06-15 22:47:09 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G3/CBC-G3_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G3/CBC-G3_converted.gro'.
+INFO 2016-06-15 22:47:09 ...done.
+INFO 2016-06-15 22:47:09 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G3.rst7
+INFO 2016-06-15 22:47:10 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G3/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      2936.32240000     2936.23552326       -0.08687674
+       Electrostatic    -23665.14970000   -23666.11626743       -0.96656743
+               Angle       131.41690000      131.41692815        0.00002815
+           Nonbonded    -20728.82730000   -20729.88074417       -1.05344417
+          Coulomb-14        43.26440000       43.26591763        0.00151763
+           Potential    -20497.67840000   -20498.73184669       -1.05344669
+       All dihedrals        72.55690000       72.55682571       -0.00007429
+               LJ-14        39.70930000       39.70918795       -0.00011205
+              Bonded       231.14890000      231.14889748       -0.00000252
+                Bond        27.17510000       27.17514362        0.00004362
+
+Input amber potential energy:        -20497.67840000
+Difference in potential energy from amber=>gromacs conversion:        -1.05344669
+=======================================================================
+INFO 2016-06-15 22:47:10 Finished!
+INFO 2016-06-15 22:47:11 Beginning InterMol conversion
+INFO 2016-06-15 22:47:11 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G6_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G6_from_amber.gro'.
+INFO 2016-06-15 22:47:12 ...loaded.
+INFO 2016-06-15 22:47:12 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G6/CBC-G6_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G6/CBC-G6_converted.gro'.
+INFO 2016-06-15 22:47:12 ...done.
+INFO 2016-06-15 22:47:12 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G6.rst7
+INFO 2016-06-15 22:47:13 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G6/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      3063.61910000     3063.51872110       -0.10037890
+       Electrostatic    -24024.20470000   -24024.89796920       -0.69326920
+               Angle       119.91280000      119.91283641        0.00003641
+           Nonbonded    -20960.58560000   -20961.37924810       -0.79364810
+          Coulomb-14       -35.10570000      -35.10685537       -0.00115537
+           Potential    -20722.43100000   -20723.22468662       -0.79368662
+       All dihedrals        80.02680000       80.02671713       -0.00008287
+               LJ-14        62.55860000       62.55855517       -0.00004483
+              Bonded       238.15460000      238.15456148       -0.00003852
+                Bond        38.21500000       38.21500795        0.00000795
+
+Input amber potential energy:        -20722.43100000
+Difference in potential energy from amber=>gromacs conversion:        -0.79368662
+=======================================================================
+INFO 2016-06-15 22:47:13 Finished!
+INFO 2016-06-15 22:47:14 Beginning InterMol conversion
+INFO 2016-06-15 22:47:14 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G9_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G9_from_amber.gro'.
+INFO 2016-06-15 22:47:15 ...loaded.
+INFO 2016-06-15 22:47:15 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G9/CBC-G9_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G9/CBC-G9_converted.gro'.
+INFO 2016-06-15 22:47:15 ...done.
+INFO 2016-06-15 22:47:15 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G9.rst7
+INFO 2016-06-15 22:47:16 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G9/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      2998.87190000     2998.73532919       -0.13657081
+       Electrostatic    -24038.90660000   -24039.59568932       -0.68908932
+               Angle       134.08380000      134.08376541       -0.00003459
+           Nonbonded    -21040.03470000   -21040.86036013       -0.82566013
+          Coulomb-14        11.36000000       11.36038173        0.00038173
+           Potential    -20794.91280000   -20795.73853282       -0.82573282
+       All dihedrals        72.52550000       72.52543233       -0.00006767
+               LJ-14        50.67890000       50.67882791       -0.00007209
+              Bonded       245.12190000      245.12182731       -0.00007269
+                Bond        38.51260000       38.51262957        0.00002957
+
+Input amber potential energy:        -20794.91280000
+Difference in potential energy from amber=>gromacs conversion:        -0.82573282
+=======================================================================
+INFO 2016-06-15 22:47:16 Finished!
+INFO 2016-06-15 22:47:17 Beginning InterMol conversion
+INFO 2016-06-15 22:47:17 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G5_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G5_from_amber.gro'.
+INFO 2016-06-15 22:47:18 ...loaded.
+INFO 2016-06-15 22:47:18 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G5/CBC-G5_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G5/CBC-G5_converted.gro'.
+INFO 2016-06-15 22:47:18 ...done.
+INFO 2016-06-15 22:47:18 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/CBC-G5.rst7
+INFO 2016-06-15 22:47:19 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/CBC-G5/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      2988.43190000     2988.33131346       -0.10058654
+       Electrostatic    -23969.33610000   -23969.86438052       -0.52828052
+               Angle       120.67850000      120.67855117        0.00005117
+           Nonbonded    -20980.90420000   -20981.53306706       -0.62886706
+          Coulomb-14       -60.96760000      -60.96964569       -0.00204569
+           Potential    -20751.29530000   -20751.92419642       -0.62889642
+       All dihedrals        73.57830000       73.57819776       -0.00010224
+               LJ-14        54.28040000       54.28030025       -0.00009975
+              Bonded       229.60890000      229.60887063       -0.00002937
+                Bond        35.35210000       35.35212171        0.00002171
+
+Input amber potential energy:        -20751.29530000
+Difference in potential energy from amber=>gromacs conversion:        -0.62889642
+=======================================================================
+INFO 2016-06-15 22:47:19 Finished!
+INFO 2016-06-15 22:47:20 Beginning InterMol conversion
+INFO 2016-06-15 22:47:20 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G4_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G4_from_amber.gro'.
+INFO 2016-06-15 22:47:21 ...loaded.
+INFO 2016-06-15 22:47:21 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G4/OAH-G4_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G4/OAH-G4_converted.gro'.
+INFO 2016-06-15 22:47:21 ...done.
+INFO 2016-06-15 22:47:21 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G4.rst7
+INFO 2016-06-15 22:47:22 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G4/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      3160.91670000     3160.85645797       -0.06024203
+       Electrostatic    -25187.75470000   -25188.26565448       -0.51095448
+               Angle       110.04100000      110.04104675        0.00004675
+           Nonbonded    -22026.83800000   -22027.40919651       -0.57119651
+          Coulomb-14       -69.84340000      -69.84577332       -0.00237332
+           Potential    -21732.99730000   -21733.56845545       -0.57115545
+       All dihedrals       133.97180000      133.97177330       -0.00002670
+               LJ-14        91.65210000       91.65201442       -0.00008558
+              Bonded       293.84070000      293.84074106        0.00004106
+                Bond        49.82790000       49.82792101        0.00002101
+
+Input amber potential energy:        -21732.99730000
+Difference in potential energy from amber=>gromacs conversion:        -0.57115545
+=======================================================================
+INFO 2016-06-15 22:47:22 Finished!
+INFO 2016-06-15 22:47:23 Beginning InterMol conversion
+INFO 2016-06-15 22:47:24 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G5_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G5_from_amber.gro'.
+INFO 2016-06-15 22:47:24 ...loaded.
+INFO 2016-06-15 22:47:24 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G5/OAH-G5_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G5/OAH-G5_converted.gro'.
+INFO 2016-06-15 22:47:24 ...done.
+INFO 2016-06-15 22:47:24 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G5.rst7
+INFO 2016-06-15 22:47:25 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G5/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      3103.09630000     3103.02473421       -0.07156579
+       Electrostatic    -24923.43620000   -24924.61643767       -1.18023767
+               Angle       101.89780000      101.89785128        0.00005128
+           Nonbonded    -21820.33990000   -21821.59170345       -1.25180345
+          Coulomb-14      -112.85830000     -112.86214288       -0.00384288
+           Potential    -21540.89100000   -21542.14273055       -1.25173055
+       All dihedrals       125.72880000      125.72879617       -0.00000383
+               LJ-14        86.15440000       86.15432705       -0.00007295
+              Bonded       279.44890000      279.44897291        0.00007291
+                Bond        51.82230000       51.82232546        0.00002546
+
+Input amber potential energy:        -21540.89100000
+Difference in potential energy from amber=>gromacs conversion:        -1.25173055
+=======================================================================
+INFO 2016-06-15 22:47:25 Finished!
+INFO 2016-06-15 22:47:26 Beginning InterMol conversion
+INFO 2016-06-15 22:47:27 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G2_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G2_from_amber.gro'.
+INFO 2016-06-15 22:47:27 ...loaded.
+INFO 2016-06-15 22:47:27 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G2/OAH-G2_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G2/OAH-G2_converted.gro'.
+INFO 2016-06-15 22:47:27 ...done.
+INFO 2016-06-15 22:47:27 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G2.rst7
+INFO 2016-06-15 22:47:28 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G2/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      3062.80820000     3062.83222519        0.02402519
+       Electrostatic    -24987.57610000   -24989.18698871       -1.61088871
+               Angle       113.55020000      113.55025005        0.00005005
+           Nonbonded    -21924.76790000   -21926.35476352       -1.58686352
+          Coulomb-14       -30.35580000      -30.35686635       -0.00106635
+           Potential    -21627.45180000   -21629.03853243       -1.58673243
+       All dihedrals       120.83080000      120.83083146        0.00003146
+               LJ-14        87.35100000       87.35087479       -0.00012521
+              Bonded       297.31610000      297.31623109        0.00013109
+                Bond        62.93510000       62.93514958        0.00004958
+
+Input amber potential energy:        -21627.45180000
+Difference in potential energy from amber=>gromacs conversion:        -1.58673243
+=======================================================================
+INFO 2016-06-15 22:47:28 Finished!
+INFO 2016-06-15 22:47:29 Beginning InterMol conversion
+INFO 2016-06-15 22:47:30 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G6_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G6_from_amber.gro'.
+INFO 2016-06-15 22:47:30 ...loaded.
+INFO 2016-06-15 22:47:30 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G6/OAH-G6_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G6/OAH-G6_converted.gro'.
+INFO 2016-06-15 22:47:30 ...done.
+INFO 2016-06-15 22:47:30 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G6.rst7
+INFO 2016-06-15 22:47:31 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G6/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      3043.60820000     3043.64682556        0.03862556
+       Electrostatic    -24979.86100000   -24981.17916829       -1.31816829
+               Angle        99.49730000       99.49735634        0.00005634
+           Nonbonded    -21936.25280000   -21937.53234273       -1.27954273
+          Coulomb-14        -9.34370000       -9.34397015       -0.00027015
+           Potential    -21648.04240000   -21649.32195153       -1.27955153
+       All dihedrals       124.96220000      124.96218279       -0.00001721
+               LJ-14        84.07470000       84.07462212       -0.00007788
+              Bonded       288.21040000      288.21039120       -0.00000880
+                Bond        63.75090000       63.75085208       -0.00004792
+
+Input amber potential energy:        -21648.04240000
+Difference in potential energy from amber=>gromacs conversion:        -1.27955153
+=======================================================================
+INFO 2016-06-15 22:47:31 Finished!
+INFO 2016-06-15 22:47:32 Beginning InterMol conversion
+INFO 2016-06-15 22:47:33 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G3_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G3_from_amber.gro'.
+INFO 2016-06-15 22:47:33 ...loaded.
+INFO 2016-06-15 22:47:33 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G3/OAH-G3_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G3/OAH-G3_converted.gro'.
+INFO 2016-06-15 22:47:33 ...done.
+INFO 2016-06-15 22:47:33 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G3.rst7
+INFO 2016-06-15 22:47:34 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G3/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      2995.60380000     2995.55759806       -0.04620194
+       Electrostatic    -24839.71630000   -24840.56414180       -0.84784180
+               Angle       104.46520000      104.46518381       -0.00001619
+           Nonbonded    -21844.11250000   -21845.00654374       -0.89404374
+          Coulomb-14      -157.43420000     -157.43955057       -0.00535057
+           Potential    -21562.18340000   -21563.07741935       -0.89401935
+       All dihedrals       129.87940000      129.87941892        0.00001892
+               LJ-14        81.94660000       81.94647251       -0.00012749
+              Bonded       281.92910000      281.92912439        0.00002439
+                Bond        47.58450000       47.58452166        0.00002166
+
+Input amber potential energy:        -21562.18340000
+Difference in potential energy from amber=>gromacs conversion:        -0.89401935
+=======================================================================
+INFO 2016-06-15 22:47:34 Finished!
+INFO 2016-06-15 22:47:35 Beginning InterMol conversion
+INFO 2016-06-15 22:47:36 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G1_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G1_from_amber.gro'.
+INFO 2016-06-15 22:47:36 ...loaded.
+INFO 2016-06-15 22:47:36 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G1/OAH-G1_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G1/OAH-G1_converted.gro'.
+INFO 2016-06-15 22:47:36 ...done.
+INFO 2016-06-15 22:47:36 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/OAH-G1.rst7
+INFO 2016-06-15 22:47:37 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAH-G1/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      2961.11460000     2961.03814706       -0.07645294
+       Electrostatic    -24987.75850000   -24987.35925369        0.39924631
+               Angle       101.59660000      101.59663074        0.00003074
+           Nonbonded    -22026.64390000   -22026.32110663        0.32279337
+          Coulomb-14       -72.63030000      -72.63278056       -0.00248056
+           Potential    -21744.20600000   -21743.88319108        0.32280892
+       All dihedrals       123.82970000      123.82971405        0.00001405
+               LJ-14        81.99250000       81.99241720       -0.00008280
+              Bonded       282.43790000      282.43791555        0.00001555
+                Bond        57.01160000       57.01157075       -0.00002925
+
+Input amber potential energy:        -21744.20600000
+Difference in potential energy from amber=>gromacs conversion:         0.32280892
+=======================================================================
+INFO 2016-06-15 22:47:37 Finished!
+INFO 2016-06-15 22:47:38 Beginning InterMol conversion
+INFO 2016-06-15 22:47:39 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G6_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G6_from_amber.gro'.
+INFO 2016-06-15 22:47:39 ...loaded.
+INFO 2016-06-15 22:47:39 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G6/OAMe-G6_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G6/OAMe-G6_converted.gro'.
+INFO 2016-06-15 22:47:39 ...done.
+INFO 2016-06-15 22:47:39 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G6.rst7
+INFO 2016-06-15 22:47:40 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G6/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      3047.72630000     3047.59268661       -0.13361339
+       Electrostatic    -24921.47130000   -24922.54511741       -1.07381741
+               Angle       106.27920000      106.27919072       -0.00000928
+           Nonbonded    -21873.74500000   -21874.95243080       -1.20743080
+          Coulomb-14       428.47590000      428.49057184        0.01467184
+           Potential    -21589.39000000   -21590.59743267       -1.20743267
+       All dihedrals       123.45160000      123.45157542       -0.00002458
+               LJ-14        93.30970000       93.30955154       -0.00014846
+              Bonded       284.35500000      284.35499813       -0.00000187
+                Bond        54.62420000       54.62423199        0.00003199
+
+Input amber potential energy:        -21589.39000000
+Difference in potential energy from amber=>gromacs conversion:        -1.20743267
+=======================================================================
+INFO 2016-06-15 22:47:40 Finished!
+INFO 2016-06-15 22:47:41 Beginning InterMol conversion
+INFO 2016-06-15 22:47:42 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G5_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G5_from_amber.gro'.
+INFO 2016-06-15 22:47:42 ...loaded.
+INFO 2016-06-15 22:47:42 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G5/OAMe-G5_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G5/OAMe-G5_converted.gro'.
+INFO 2016-06-15 22:47:42 ...done.
+INFO 2016-06-15 22:47:42 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G5.rst7
+INFO 2016-06-15 22:47:44 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G5/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      3078.14370000     3078.09257531       -0.05112469
+       Electrostatic    -24705.59930000   -24706.18926336       -0.58996336
+               Angle       120.68290000      120.68297124        0.00007124
+           Nonbonded    -21627.45560000   -21628.09668805       -0.64108805
+          Coulomb-14       316.17290000      316.18369376        0.01079376
+           Potential    -21331.27070000   -21331.91172863       -0.64102863
+       All dihedrals       116.84000000      116.83999731       -0.00000269
+               LJ-14        86.80120000       86.80107177       -0.00012823
+              Bonded       296.18490000      296.18495942        0.00005942
+                Bond        58.66200000       58.66199087       -0.00000913
+
+Input amber potential energy:        -21331.27070000
+Difference in potential energy from amber=>gromacs conversion:        -0.64102863
+=======================================================================
+INFO 2016-06-15 22:47:44 Finished!
+INFO 2016-06-15 22:47:44 Beginning InterMol conversion
+INFO 2016-06-15 22:47:45 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G2_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G2_from_amber.gro'.
+INFO 2016-06-15 22:47:45 ...loaded.
+INFO 2016-06-15 22:47:45 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G2/OAMe-G2_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G2/OAMe-G2_converted.gro'.
+INFO 2016-06-15 22:47:45 ...done.
+INFO 2016-06-15 22:47:45 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G2.rst7
+INFO 2016-06-15 22:47:47 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G2/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      3031.20590000     3031.22338203        0.01748203
+       Electrostatic    -24817.58190000   -24818.50337728       -0.92147728
+               Angle       108.96840000      108.96841988        0.00001988
+           Nonbonded    -21786.37600000   -21787.27999524       -0.90399524
+          Coulomb-14       402.64490000      402.65863892        0.01373892
+           Potential    -21498.34020000   -21499.24415991       -0.90395991
+       All dihedrals       120.98170000      120.98173073        0.00003073
+               LJ-14        85.47920000       85.47910973       -0.00009027
+              Bonded       288.03580000      288.03583534        0.00003534
+                Bond        58.08570000       58.08568474       -0.00001526
+
+Input amber potential energy:        -21498.34020000
+Difference in potential energy from amber=>gromacs conversion:        -0.90395991
+=======================================================================
+INFO 2016-06-15 22:47:47 Finished!
+INFO 2016-06-15 22:47:47 Beginning InterMol conversion
+INFO 2016-06-15 22:47:48 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G1_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G1_from_amber.gro'.
+INFO 2016-06-15 22:47:48 ...loaded.
+INFO 2016-06-15 22:47:48 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G1/OAMe-G1_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G1/OAMe-G1_converted.gro'.
+INFO 2016-06-15 22:47:48 ...done.
+INFO 2016-06-15 22:47:48 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G1.rst7
+INFO 2016-06-15 22:47:50 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G1/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      3015.18070000     3015.15892410       -0.02177590
+       Electrostatic    -24914.60120000   -24915.84452000       -1.24332000
+               Angle       108.98340000      108.97132502       -0.01207498
+           Nonbonded    -21899.42050000   -21900.68559590       -1.26509590
+          Coulomb-14       355.90890000      355.92109936        0.01219936
+           Potential    -21612.56990000   -21613.84709539       -1.27719539
+       All dihedrals       120.43970000      120.43969195       -0.00000805
+               LJ-14        83.14460000       83.14449691       -0.00010309
+              Bonded       286.85060000      286.83850051       -0.01209949
+                Bond        57.42750000       57.42748354       -0.00001646
+
+Input amber potential energy:        -21612.56990000
+Difference in potential energy from amber=>gromacs conversion:        -1.27719539
+=======================================================================
+INFO 2016-06-15 22:47:50 Finished!
+INFO 2016-06-15 22:47:50 Beginning InterMol conversion
+INFO 2016-06-15 22:47:51 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G3_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G3_from_amber.gro'.
+INFO 2016-06-15 22:47:51 ...loaded.
+INFO 2016-06-15 22:47:51 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G3/OAMe-G3_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G3/OAMe-G3_converted.gro'.
+INFO 2016-06-15 22:47:51 ...done.
+INFO 2016-06-15 22:47:51 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G3.rst7
+INFO 2016-06-15 22:47:53 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G3/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      3040.86530000     3040.72029760       -0.14500240
+       Electrostatic    -24588.50900000   -24589.72958485       -1.22058485
+               Angle       164.15380000      164.15377361       -0.00002639
+           Nonbonded    -21547.64370000   -21549.00928726       -1.36558726
+          Coulomb-14       276.45580000      276.46522695        0.00942695
+           Potential    -21180.13870000   -21181.50429811       -1.36559811
+       All dihedrals       141.35410000      141.35407004       -0.00002996
+               LJ-14        81.52690000       81.52680577       -0.00009423
+              Bonded       367.50500000      367.50498915       -0.00001085
+                Bond        61.99710000       61.99714549        0.00004549
+
+Input amber potential energy:        -21180.13870000
+Difference in potential energy from amber=>gromacs conversion:        -1.36559811
+=======================================================================
+INFO 2016-06-15 22:47:53 Finished!
+INFO 2016-06-15 22:47:53 Beginning InterMol conversion
+INFO 2016-06-15 22:47:54 Reading Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G4_from_amber.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G4_from_amber.gro'.
+INFO 2016-06-15 22:47:54 ...loaded.
+INFO 2016-06-15 22:47:54 Writing Gromacs files '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G4/OAMe-G4_converted.top', '/home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G4/OAMe-G4_converted.gro'.
+INFO 2016-06-15 22:47:55 ...done.
+INFO 2016-06-15 22:47:55 Evaluating energy of /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/OAMe-G4.rst7
+INFO 2016-06-15 22:47:56 InterMol Conversion Energy Comparison Results
+
+amber input energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe/amber.out
+gromacs output energy file: /home/mish4610/conversions/SAMPL5/redo_hostguest/OAMe-G4/energy.xvg
+
+Energy group summary
+=======================================================================
+                type       input(amber)  output (gromacs)    diff (gromacs)
+       van der Waals      3074.68360000     3074.65514824       -0.02845176
+       Electrostatic    -24845.32040000   -24845.97008401       -0.64968401
+               Angle       143.96800000      143.96806590        0.00006590
+           Nonbonded    -21770.63680000   -21771.31493577       -0.67813577
+          Coulomb-14       366.56730000      366.57981732        0.01251732
+           Potential    -21441.05190000   -21441.72995294       -0.67805294
+       All dihedrals       131.47180000      131.47180351        0.00000351
+               LJ-14        97.95840000       97.95825219       -0.00014781
+              Bonded       329.58490000      329.58498283        0.00008283
+                Bond        54.14510000       54.14511342        0.00001342
+
+Input amber potential energy:        -21441.05190000
+Difference in potential energy from amber=>gromacs conversion:        -0.67805294
+=======================================================================
+INFO 2016-06-15 22:47:56 Finished!
+Directory CBC-G1 already exists
+Directory CBC-G7 already exists
+Directory CBC-G2 already exists
+Directory CBC-G4 already exists
+Directory CBC-G10 already exists
+Directory CBC-G8 already exists
+Directory CBC-G3 already exists
+Directory CBC-G6 already exists
+Directory CBC-G9 already exists
+Directory CBC-G5 already exists
+Directory OAH-G4 already exists
+Directory OAH-G5 already exists
+Directory OAH-G2 already exists
+Directory OAH-G6 already exists
+Directory OAH-G3 already exists
+Directory OAH-G1 already exists
+Directory OAMe-G6 already exists
+Directory OAMe-G5 already exists
+Directory OAMe-G2 already exists
+Directory OAMe-G1 already exists
+Directory OAMe-G3 already exists
+Directory OAMe-G4 already exists
