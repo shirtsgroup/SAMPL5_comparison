@@ -805,6 +805,7 @@ compare the entire potential energy, including these terms. [NOTE: at
   this point, we need to think about how important it is to answer
   this question, and whether this document can answer it sufficiently]
 %DLM: No comments here from me at this point - not sure. Seems fine without more on this to me.
+%CTK: Also fine without
 
 One complication is that different programs both calculate and print
 out the different components of nonbonded interactions differently,
@@ -840,7 +841,10 @@ the differences in the CHARMM potential energy are of opposite sign from AMBER, 
 electrostatic energy is calculated relative to the other programs.  [NOTE:
   this is the one place I'm a little worried about whether I am
   running a simulation correctly, and will follow up with CHARMM
-  people] For AMBER, about 70\% of this deviation is due to the
+  people] 
+%CTK: The opposite sign also seems peculiar to me. Would be good to pin
+%down.
+For AMBER, about 70\% of this deviation is due to the
 Coulomb constant choice, leaving significantly less of the deviation
 from other programs due to other choices in nonbonded simulation
 parameters. An adjustment in CHARMM's Coulomb's constant would
