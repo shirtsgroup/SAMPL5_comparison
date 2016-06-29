@@ -54,6 +54,7 @@
 %\usepackage{latexsym}
 %\usepackage{amsmath}
 %\usepackage{amsthm}
+\usepackage{array}
 \usepackage{color}
 \usepackage{caption}
 \usepackage{float}
@@ -119,7 +120,7 @@ the host-guest and distribution coefficient molecules in the SAMPL5
 blind prediction challenge for the GROMACS, AMBER, LAMMPS, DESMOND and
 CHARMM molecular simulation programs. All conversions were fully
 automated from the originally prepared AMBER input files using a
-combination of the ParmEd and InterMol conversion programs. 
+combination of the ParmEd and InterMol conversion programs.
 We find that all programs agree to a large extent when reasonable
 choices are made for different cutoff parameters, though some
 surprising sources of statistically significant differences occur. For
@@ -189,7 +190,7 @@ energies is to better deconvolute the different tasks that molecular
 simulation engines perform.
 
 The first task that a molecular simulation engine has is to take an
-molecular configuration and a model (i. e. a specification of all
+molecular configuration and a model (i.e. a specification of all
 force field parameters) and from these ingredients generate the energy
 of the model in that configuration and, in molecular dynamics
 approaches, also the forces acting on each particle.  Next, given the
@@ -216,7 +217,11 @@ different recommended integration schemes. Addressing the multitude of
 possible ways that simulations could differ using different
 integration schemes is beyond the scope of this study.
 
-
+% CTK: In keep with Mobley's comments, I would end the justification
+% for single point energies at the above paragraph, perhaps with a few
+% added comments taken from below about the challenges hampering such comparisons.
+% Maybe lump all the below citations into an all encompassing statement about
+% simulation parameters that effect results post initial state.
 Additionally, a difference between the output of programs with
 theoretically the same model occurs when the energy and forces are
 approximated in order to increase the number of molecular dynamics or
@@ -254,7 +259,7 @@ kJ/mol.  For a given amount of simulation time, if the relative error
 in $\langle O \rangle$ is 0.0001\% or about 10 kJ/mol, then error in
 $\langle O\rangle_1 - \langle O \rangle_2$ will be of order 14
 kJ/mol. Clearly, it would be important to know if a change in a
-simulation parameter changed the an enthalpy difference by anywhere
+simulation parameter changed the enthalpy difference by anywhere
 near 14 kJ/mol. To take that uncertainty down to, say, a 95\%
 confidence interval of 1 kJ/mol would take approximately $(2\times
 14)^2 \approx 800$ times as much simulation as determining $\langle O
@@ -306,6 +311,7 @@ AMBER, {\tt amber2lmp}, a script converting between LAMMPS and AMBER
 files. [NOTE: what am I missing?] There are other resources which do not convert directly, but
 will build the same system in multiple programs, such as
 CHARMM-GUI.~\citep{lee_charmm-gui_2016}
+% CTK: TopoGromacs is another new one: 10.1021/acs.jcim.6b00103
 
 In this study, we will therefore focus on the automated conversion of
 molecular simulation input files using to the extent possible
@@ -320,7 +326,7 @@ simulation programs.
 
 \section*{Methods}
 \begin{sloppypar}
-The molecular intercoversion software programs InterMol
+The molecular interconversion software programs InterMol
 (https://github.com/shirtsgroup/InterMol) and ParmEd
 (http://github.com/parmed/parmed) were used to perform comparisons
 between five different simulation input parameter files and engines.
@@ -374,6 +380,12 @@ hosts.
 
 %DLM: Also, all of this pertains only to the host-guest systems; if you're looking at log D stuff here as well then you either (a) need a bunch of parallel stuff on how we generated those files (which we already have in our overview paper!) or (b) you need to cut the host-guest stuff. I suppose a third option is (c) to just say it is covered in the overview paper.
 
+%CTK: +1 @ DLM. Precisely which chemistries were converted doesn't matter
+%too much beyond the applicable functional forms used from the forcefields.
+%I think the pertinent info for this paper is:
+%1) *brief* mention of which molecules were used, 2) forcefields used, 3)
+%how FF was applied (e.g.  antechamber + RESP) and 4) link to paper giving
+%the more detailed overview of system set up for anyone interested.
 Partial charges were generated with the restrained electrostatic
 potential (RESP) fitting procedure, with electrostatic potentials at
 the HF/6-31G* level, as implemented in Antechamber.  Bonded and van
@@ -405,6 +417,7 @@ programs use different default units. [QUESTION TO ALL: what do people
   kJ/kcal and nm/\AA. And if I pick one set of units, SI would be the
   'right' one]
   %DLM: You pick. No strong preference. 
+  %CTK: Agree on sticking to one. Slight preference for SI
 
 The five programs were:
 \begin{itemize} 
@@ -424,6 +437,7 @@ The five programs were:
   2014 build in the SAMPL5 release, and the Feb 16, 2016 release in
   the current study. Only the additional modules to run atomistic
   simulations were installed.
+  %CTK: Which ones specifically? Just RIGID for constraints, correct?
 \item {\bf CHARMM}: Energies were only generated for this study, with
   developmental version 40b2 of the charmm-lite free package.
   %DLM: Lowercase charmm there? Seems odd.
@@ -479,7 +493,7 @@ bilayer or a liquid/vapor interface~\cite{veld_application_2007}.
   van der Waals energy due to the Lennard-Jones interactions are
   essentially independent of cutoff, with a total change of 0.001\% in
   the total van der Waals energy for the analytic long range
-  correction in GROMACS (and similar to other programs) and and
+  correction in GROMACS (and similar to other programs) and
   0.00008\% with the isotropic periodic sum in CHARMM, over a change
   of 0.3 nm cutoffs.}
 \begin{tabulary}{\textwidth}{|C|CC|}
@@ -494,6 +508,8 @@ Potential Energy (kcal/mol) & CHARMM Potential Energy (kcal/mol)\\
 \hline
 \end{tabulary}
 \end{table}
+%CTK: Not critical to the point being made but might want to mention which
+%system the above data come from.
 
 We also ran the test with an attempt to be as close to default
 parameters as possible. For AMBER, we use a 0.9 nm cutoff, with the
@@ -524,6 +540,8 @@ precision of the input files the same, we truncated the precision of
 the converted files by a varying number of digits of precision in order
 to examine how the energy components are affected.
 %DLM: "truncated by a varying number" is odd phrasing. "truncated to a varying number" more conventional? 
+%CTK: Could we just list the various precisions investigated to make it
+%more clear?
  Note that lower
 precision files will not have an effect on ensemble averages if such
 files are only used as starting points for simulation. But it will
@@ -555,18 +573,25 @@ and in single precision.
 % was lammps 10^7?
 \begin{table}
 {\tiny
-\begin{tabulary}{\textwidth}{C|CCCCCCCCCC}
+\begin{tabulary}{\textwidth}{>{\centering}m{1cm}|CCCCCCCCCC}
 \hline
  & \multicolumn{2}{c}{AMBER} & \multicolumn{2}{c}{GROMACS} &\multicolumn{2}{c}{LAMMPS}& \multicolumn{2}{c}{DESMOND}&\multicolumn{2}{c}{CHARMM}\\
 \hline
   & default settings & ideal settings  & default settings & ideal settings  & default settings & ideal settings  & default settings & ideal settings  & default settings & ideal settings  \\
 van der Waals cutoff & 1.5 nm, abrupt & 0.9 nm, abrupt & 1.5 nm, abrupt & 0.9 nm, abrupt & 1.5 nm, abrupt & 0.9 nm, abrupt & 1.5 nm, abrupt & 0.9 nm, abrupt & 1.5 nm, abrupt & 0.9 nm, abrupt \\
 Coulombic cutoff & 1.5 nm real space & 0.9 nm real space & 1.5 nm real space & 0.9 nm real space & 1.5 nm real space & 0.9 nm real space & 1.5 nm real space & 0.9 nm real space & 1.5 nm real space & 0.9 nm real space \\
-Long-range electrostatics & Ewald, Fourier points 48$\times$48$\times$48, order 4, real space error 10${-5}$ & Ewald, Fourier points 48$\times$48$\times$48, real space error 10${-5}$ & Ewald, Fourier points 48$\times$48$\times$48 & Ewald, Fourier spacing 0.1 nm & PPPM, 10$^{-8}$ tolerance & PPPM, 10$^{-8}$ tolerance & Ewald, 10$^{-10}$ relative tolerance & Ewald, 10$^{-10}$ relative tolerance &Ewald,  Fourier points 48$\times$48$\times$48 & Ewald, Fourier points 48$\times$48$\times$48 \\
+Long-range electrostatics & Ewald, Fourier points 48$^3$, order 4, real
+space error 10${-5}$ & Ewald, Fourier points 48$^3$, real space error
+10${-5}$ & Ewald, Fourier points 48$^3$ & Ewald, Fourier spacing 0.1 nm &
+PPPM, 10$^{-8}$ tolerance & PPPM, 10$^{-8}$ tolerance & Ewald, 10$^{-10}$
+relative tolerance & Ewald, 10$^{-10}$ relative tolerance &Ewald,  Fourier
+points 48$^3$ & Ewald, Fourier points 48$^3$ \\
 Long-range van der Waals & Isotropic correction & Isotropic correction & Isotropic correction & Isotropic correction & Isotropic correction & Isotropic correction & Isotropic correction & Isotropic correction & Isotropic periodic sum & Isotropic periodic sum \\ 
 \end{tabulary}}
 \caption{Key nonbonded term setting for both default and ideal energy validation tests[NOTE: I'm not sure this table is the best way to summarize things.  Formatting is not ideal, obviously.]}
 \end{table}
+%CTK: I took a whack at improving the formatting. Replacing 48x48x48 with
+%48^3 might be somewhat contentious though...
 
 \section*{Results}
 We first compare ten different energy terms between the five different
@@ -770,7 +795,7 @@ Percent difference explained & 98.8\%   & 69.5\%        & 74.2\% \\
 
 The longer range nonbonded interactions are significantly harder to
 get in good agreement between programs.  Validating the van der Waals
-and Coulombic 1-4 interactions demonstrates that the the Lennard-Jones
+and Coulombic 1-4 interactions demonstrates that the Lennard-Jones
 parameters and Coulombic charges are correctly created in the other
 file formats.  In that sense, validating the conversion of file
 formats can be done without comparing the long-range
@@ -851,6 +876,7 @@ nonbonded also must agree relatively well.
   factor of 2 larger than using the 'ideal' parameters.
 \label{fig:defaultfig}}
 \end{figure}
+%CTK: This figure is never cited within the text as far as I can tell...
 
 We also are interested in the deviations of energies as a function of
 the number of coordinates used in the output file. The results of the
@@ -922,6 +948,9 @@ are functions only of the distance) are also relatively accurate, and
 it is the Ewald summation part that changes upon changes in binary precision.
 %DLM: I must not be able to read the graph, as this sounds like you're saying almost the opposite of what I'd conclude from reading the graph. To me, I'm looking for where the -log( relative deviation) falls off fastest, so it looks to me like vdW, nonbonded, potential, and angle (i.e. I'm looking for where the "4 decimal places" bars are lowest relative to the "8 decimal places" bars...). But here it sounds like you're saying that the biggest changes come from Coulomb-14 is the worst offender, and I don't get that at all... How am I supposed to see that from the graph?
 %DLM: I'm putting this here not so that you explain it to me, but so that you understand why I'm confused and revamp the discussion of this in the text and the figure caption to make more clear what I'm supposed to see and how I'm supposed to understand it. :) 
+%CTK: @ DLM, not sure if this is the point of confusion but the above
+%paragraph is talking about the table comparing single vs. double prec,
+% not the figure comparing coordinate precisions.
 
 
 \begin{table}
