@@ -76,8 +76,9 @@
 %
 \begin{document}
 
-\title{Considerations when comparing molecular dynamics simulation engines: lessons learned in the automated conversion of input files for SAMPL5}
+\title{Lesson learned from comparison of molecular dynamics engines on the SAMPL5 dataset}
 %DLM: Such a long title. What about "Lessons on molecular dynamics engine comparison from SAMPL5"?
+%MRS: maybe this?  I'm not so phobic about long descriptive titles, since usually that's all a person sees in a search engine.
 %\thanks{Grants or other notes
 %about the article that should go on the front page should be
 %placed here. General acknowledgments should be placed at the end of the article.}
@@ -128,8 +129,9 @@ example, differing choices of Coulomb's constant between programs are
 one of the largest sources of discrepancies in energies. We discuss the measures required to get good agreement in
 the energies for equivalent starting configurations between the
 simulation programs, and the energy differences that occur when
-simulations are run at their program-specific default values. 
-%DLM: What does it mean "run at their program-specific default values"? 
+simulations are run with program-specific default simulation parameter values. 
+%DLM: What does it mean "run at their program-specific default values"?
+%MRS: better? 
 Finally,
 we discuss was was required to automate this conversion and
 comparison.
@@ -239,9 +241,11 @@ certainly differ from program to program to some degree.
 
 Understanding what the effect of the choice of such a wide range of
 approximations for even simple quantities such as enthalpy or density
-is extremely time-consuming, and has only been done partially
-systematically. 
+is extremely time-consuming, and has 
 %DLM: What is "partially systematically"? Oxymoron?
+%MRS: changed below 
+%only been done partially systematically.
+rarely be done systematically
 Simulation observables are ensemble averages, and are
 thus statistical quantities with associated statistical error. Since
 the uncertainty scales as (simulation time)$^{-1/2}$, increasing the
@@ -277,9 +281,13 @@ simulations, such as free energy calculations to obtain solvation free
 energies or binding affinities~\cite{???}.  The expense of such
 approaches requires the development of significant new methodologies
 in order to obtain reasonably efficient results for parameter
-sensitivity tests of free energies~\cite{naden_rapid_2016}. These more
-complex observables are calculated using a large number of different
-methodologies, all of which have new parameters, with different
+sensitivity tests of free energies~\cite{naden_rapid_2016}. 
+%MRS: shortened to respond to Mobley's comment.
+The differences between all these methodologies further complicates
+to any attempt to compare them.
+%These more
+%complex observables are calculated using a large number of different
+%methodologies, all of which have new parameters, with different
 statistical accuracies and inherent biases. The number of different
 approaches with different domains of applicability can significantly
 confound the ability to truly understand the effect of underlying
@@ -300,18 +308,21 @@ simulations is the fact that unless the underlying energy functions
 are the same between different programs, then it is very difficult to
 compare the results obtained for sensitivity of a given setting
 obtained with one program with that obtained by a separate program.
-It is always challenging to obtain comparable results for the same inputs in two different simulation engines, because the input
+It is always challenging to obtain comparable results for the same
+inputs in two different simulation engines, because the input
 configurations and model must be converted, which either is done using
 painstaking manual copy-and-pasting, one-off scripts, or occasionally
 existing scripts that can convert from one specific program to
 another.  Some examples include ACPYPE, a converter from AMBER to
 GROMACS~\citep{sousa_da_silva_acpype_2012},
 CHAMBER~\citep{crowley_chamber:_2009} a converter from CHARMM to
-AMBER, {\tt amber2lmp}, a script converting between LAMMPS and AMBER
-files. [NOTE: what am I missing?] There are other resources which do not convert directly, but
-will build the same system in multiple programs, such as
-CHARMM-GUI.~\citep{lee_charmm-gui_2016}
+AMBER, TopoGromacs, a converted from CHARMM to
+GROmacs~\citep{topogromacs}, and {\tt amber2lmp}, a script converting
+between LAMMPS and AMBER files. There are other resources which do not
+convert directly, but will build the same system in multiple programs,
+such as CHARMM-GUI.~\citep{lee_charmm-gui_2016}
 % CTK: TopoGromacs is another new one: 10.1021/acs.jcim.6b00103
+%MRS: added.
 
 In this study, we will therefore focus on the automated conversion of
 molecular simulation input files using to the extent possible
@@ -362,22 +373,26 @@ CHARMM or AMBER formats.
 We use the 22 host-guest molecules distributed as part of the SAMPL5
 blind challenge, with 10 ligands bound to the CBClip, 6 ligands with
 the octa-acid OAH host, and 6 ligands with the octa-acid OAMe
-host.~\cite{mainSAMPL5paper} An idealized model of the 3D structure
-of host CBClip was provided by Prof. Lyle Isaacs. The starting 3D
-structures of hosts OAH and OAMe were built manually with MOE and
-partly energy minimized. The initial structures of free guest
-molecules were found via the conformational search feature in MOE. For
-CBClip, the experimental studies were done at pH 7.4, so the host'€™s
-four sulfonic acid acids were treated as fully ionized, for a net host
-charge of -4.  For the octa-acids, OAH and OAMe, the experimental
-studies were done at pH 11.5, so all eight carboxylic acids were
-treated as fully ionized, for a net charge of -8. The protonation
-states of all guest molecules were also assigned based on their
-expected pKas and the experimental pH values, as shown in the figures
-above, and were assumed to remain the same on binding their respective
-hosts.
-%DLM: Wait, isn't all of this "how the systems were set up" stuff going to be in the overview papers? Didn't you (we) just convert the files which were set up by Gilson/Mobley/etc groups into other formats? If so, it seems like all of this (paragraph above, paragraph below) doesn't belong here...
+host. Specific details of the topology construction and configuration
+generation is described in the SAMPL5 overview.
+paper.~\cite{mainSAMPL5paper}
 
+%An idealized model of the 3D structure of host CBClip was provided by
+%Prof. Lyle Isaacs. The starting 3D structures of hosts OAH and OAMe
+%were built manually with MOE and
+%partly energy minimized. The initial structures of free guest
+%molecules were found via the conformational search feature in MOE. For
+%CBClip, the experimental studies were done at pH 7.4, so the host'€™s
+%four sulfonic acid acids were treated as fully ionized, for a net host
+%charge of -4.  For the octa-acids, OAH and OAMe, the experimental
+%studies were done at pH 11.5, so all eight carboxylic acids were
+%treated as fully ionized, for a net charge of -8. The protonation
+%states of all guest molecules were also assigned based on their
+%expected pKas and the experimental pH values, as shown in the figures
+%above, and were assumed to remain the same on binding their respective
+%hosts.
+%DLM: Wait, isn't all of this "how the systems were set up" stuff going to be in the overview papers? Didn't you (we) just convert the files which were set up by Gilson/Mobley/etc groups into other formats? If so, it seems like all of this (paragraph above, paragraph below) doesn't belong here...
+%MRS: sure I was trying to make it self-standing, but perhaps that was a mistake.  Commented out.
 %DLM: Also, all of this pertains only to the host-guest systems; if you're looking at log D stuff here as well then you either (a) need a bunch of parallel stuff on how we generated those files (which we already have in our overview paper!) or (b) you need to cut the host-guest stuff. I suppose a third option is (c) to just say it is covered in the overview paper.
 
 %CTK: +1 @ DLM. Precisely which chemistries were converted doesn't matter
@@ -386,26 +401,26 @@ hosts.
 %1) *brief* mention of which molecules were used, 2) forcefields used, 3)
 %how FF was applied (e.g.  antechamber + RESP) and 4) link to paper giving
 %the more detailed overview of system set up for anyone interested.
-Partial charges were generated with the restrained electrostatic
-potential (RESP) fitting procedure, with electrostatic potentials at
-the HF/6-31G* level, as implemented in Antechamber.  Bonded and van
-der Waals parameters were assigned by GAFF~\citep{wang_development_2004} in Antechamber. For the
-octa-acids, which have a well-defined hydrophobic cavity, the bound
-conformations were set up with the guests' ionized groups at the
-opening and their hydrophobic parts in the cavity. For the CBClip
-host, the positions of the guests in the binding site were constructed
-by manual docking in MOE.  Each bound complex was placed in a cubic
-simulation box with edge length of about 4 nm, and containing 2100
-TIP3P (non-modified) water molecules. Sodium ions were added to
-neutralize all systems. Given the low concentration of the buffer used
-in experiments, no extra ions were added to mimic the buffer. The
-sodium ions were modeled with the TIP3P-specific sodium parameters
-of~\citep{Joung2008}. Each system was then subjected to a short equilibration
-phase (first NVT, then NPT) to heat the system and change the volume
-so the pressure would be about 1 atm. [MRS: how short? What was done
-  precisely?] The solutes were restrained during the entire process,
-so only the environment was relaxed. Note that the AMBER .rst7 files
-contain velocities consistent with a temperature of 298.15 K.
+%Partial charges were generated with the restrained electrostatic
+%potential (RESP) fitting procedure, with electrostatic potentials at
+%the HF/6-31G* level, as implemented in Antechamber.  Bonded and van
+%der Waals parameters were assigned by GAFF~\citep{wang_development_2004} in Antechamber. For the
+%octa-acids, which have a well-defined hydrophobic cavity, the bound
+%conformations were set up with the guests' ionized groups at the
+%opening and their hydrophobic parts in the cavity. For the CBClip
+%host, the positions of the guests in the binding site were constructed
+%by manual docking in MOE.  Each bound complex was placed in a cubic
+%simulation box with edge length of about 4 nm, and containing 2100
+%TIP3P (non-modified) water molecules. Sodium ions were added to
+%neutralize all systems. Given the low concentration of the buffer used
+%in experiments, no extra ions were added to mimic the buffer. The
+%sodium ions were modeled with the TIP3P-specific sodium parameters
+%of~\citep{Joung2008}. Each system was then subjected to a short equilibration
+%phase (first NVT, then NPT) to heat the system and change the volume
+%so the pressure would be about 1 atm. [MRS: how short? What was done
+%  precisely?] The solutes were restrained during the entire process,
+%so only the environment was relaxed. Note that the AMBER .rst7 files
+%contain velocities consistent with a temperature of 298.15 K.
 
 For this study, the most up-to-date releases of all molecular dynamics
 simulation programs were used. In most cases, this resulted in very
