@@ -120,18 +120,21 @@ the host-guest and distribution coefficient molecules in the SAMPL5
 blind prediction challenge for the GROMACS, AMBER, LAMMPS, DESMOND and
 CHARMM molecular simulation programs. All conversions were fully
 automated from the originally prepared AMBER input files using a
-combination of the ParmEd and InterMol conversion programs.
+combination of the ParmEd and InterMol conversion programs. 
+
 We find that all programs agree to a large extent when reasonable
 choices are made for different cutoff parameters, though some
 surprising sources of statistically significant differences occur. For
 example, differing choices of Coulomb's constant between programs are
-one of the largest sources of discrepancies in energies. We discuss the measures required to get good agreement in
-the energies for equivalent starting configurations between the
-simulation programs, and the energy differences that occur when
-simulations are run at their program-specific default values. 
+one of the largest sources of discrepancies in energies. We discuss the measures
+required to get good agreement in the energies for equivalent starting
+configurations between the simulation programs, and the energy differences that
+occur when simulations are run at their program-specific default values.
 %DLM: What does it mean "run at their program-specific default values"? 
-Finally,
-we discuss was was required to automate this conversion and
+%JMS: I read this as the default values suggested by those programs (e.g.,
+%     CHARMM with fswitch/12A cutoff, Amber with dispersion correction and 8 A
+%     cutoff, etc)
+Finally, we discuss what was required to automate this conversion and
 comparison.
 
 \keywords{molecular dynamics, simulation validation, molecular simulation}
@@ -150,36 +153,36 @@ properties, such as hydration free energies, partition coefficients,
 and binding free energies, for a range of both model and more realistic
 situations. Such blind prediction challenges can be very useful in
 identifying unexpected reasons for differences between methods that
-should, in theory, yield the same result. For example, even when the
-same program is used with what is listed as the same force field,
-significant differences can be obtained. In the SAMPL4 blind test, two
+should, in theory, yield the same result. For example, the same program used
+with what is listed as the same force field can sometimes still yield
+significantly different results. In the SAMPL4 blind test, two
 different sets of simulations performed with GROMACS, TIP3P water, and
 GAFF/AM1-BCC parameters had differences of $0.5 \pm 0.1$
 kcal/mol that were ultimately tracked down to whether the large host
 molecule had AM1/BCC partial charges determined fragment-wise or for
-the entire molecule at the same time, a level of detail that often
-does not make it into publication.~\cite{Monroe2014}
+the entire molecule at the same time. This level of detail often
+does not make it into publication,~\cite{Monroe2014} which can severely hamper
+efforts of reproducing results.
 
 One particular question that can be difficult to address is to what
 extent methods that are supposed to be identical will give different
 results with different simulation programs.  Therefore, one of the
 tasks carried out in preparation for SAMPL5 was to prepare starting
 simulations in several of the most common molecular simulation
-packages (AMBER~\citep{???}, GROMACS~\citep{hess_gromacs_2008},
-LAMMPS~\citep{plimpton_fast_1995},
+packages (AMBER~\citep{Amber14}, GROMACS~\citep{hess_gromacs_2008},
+LAMMPS~\citep{plimpton_fast_1995}, and
 DESMOND~\citep{bowers_scalable_2006}). To ensure that the simulations
 were translated correctly, it was also necessary to compare the
 evaluated energies of the initial configurations in the native
 simulation programs for each file format to ensure that the
-translation had been done correctly.  This also involved an analysis
-of which different simulation conditions and parameter choices were
-necessary for these simulation programs to give the same, or
-substantially the same, energy.  In order to make this task feasible,
-this process was necessarily highly automated. We present here the
-results of this comparison. One important change from the initial work
-carried out for SAMPL5 and this one is adding the generation of
-CHARMM-format starting files as well as the initial energies generated
-with the CHARMM simulation program.
+translation had been done correctly.  This also involved determining
+the necessary simulation conditions and parameter choices for each program to
+give the same, or substantially the same, energy.  In order to make this task
+feasible, this process was necessarily highly automated. We present here the
+results of this comparison. One important change from the initial work carried
+out for SAMPL5 and this one is adding the generation of CHARMM-format starting
+files as well as the initial energies generated with the CHARMM simulation
+program.
 
 In this study, we have chosen to compare only the energies of initial
 structures and not the values of thermodynamic observables such as
@@ -187,9 +190,9 @@ average energy, nor more complicated physical observables such as
 hydration free energies which require multiple simulations.  The
 reason for limiting this study to the evaluation of single point
 energies is to better deconvolute the different tasks that molecular
-simulation engines perform.
+simulation engines perform that can impact computed quantities.
 
-The first task that a molecular simulation engine has is to take an
+The first task that a molecular simulation engine has is to take a
 molecular configuration and a model (i.e. a specification of all
 force field parameters) and from these ingredients generate the energy
 of the model in that configuration and, in molecular dynamics
@@ -197,7 +200,7 @@ approaches, also the forces acting on each particle.  Next, given the
 assignment of energies and forces to a configuration, a molecular
 simulation engine then also generates a sequence of configurations
 that belong to a desired ensemble of that model, such as the
-microcanonical (NVE), canonical (NVT), or isobaric-isothermal (NPT)
+microcanonical (NVE), canonical (NVT), or isobaric-isothermal (NpT)
 ensemble, with their corresponding probability distribution for each
 configuration.
 
@@ -222,6 +225,8 @@ integration schemes is beyond the scope of this study.
 % added comments taken from below about the challenges hampering such comparisons.
 % Maybe lump all the below citations into an all encompassing statement about
 % simulation parameters that effect results post initial state.
+% JMS: I agree that the preceding discussion suffices for using single point
+% energies.
 Additionally, a difference between the output of programs with
 theoretically the same model occurs when the energy and forces are
 approximated in order to increase the number of molecular dynamics or
@@ -272,7 +277,7 @@ additional reason, enumerating all the possible ways that simulation
 parameters affect ensemble observables is beyond the scope of this
 study.
 
-Such comparisons are even harder for simulations requiring multiple
+Such comparisons are even harder for protocols requiring multiple
 simulations, such as free energy calculations to obtain solvation free
 energies or binding affinities~\cite{???}.  The expense of such
 approaches requires the development of significant new methodologies
@@ -285,6 +290,10 @@ approaches with different domains of applicability can significantly
 confound the ability to truly understand the effect of underlying
 assumptions.
 %DLM: I don't totally get what the latter part of this paragraph is saying, at least not aside from what's already said in the first sentence. Just that it's hard and a research problem is what I take away, but that's a lot of words to say that...
+% JMS: I think it's justified -- it's just saying that two protocols that differ
+% that *should* in theory give the same result may do so differently and that
+% makes comparisons even harder.  For instance, comparing FEs calculated via FEP
+% or TI...
 
 This lack of systematic study of the effect of many of these
 approximations is partly due to the fact that most choices actually do
@@ -300,7 +309,8 @@ simulations is the fact that unless the underlying energy functions
 are the same between different programs, then it is very difficult to
 compare the results obtained for sensitivity of a given setting
 obtained with one program with that obtained by a separate program.
-It is always challenging to obtain comparable results for the same inputs in two different simulation engines, because the input
+It is always challenging to obtain comparable results for the same inputs in two
+different simulation engines, because the input
 configurations and model must be converted, which either is done using
 painstaking manual copy-and-pasting, one-off scripts, or occasionally
 existing scripts that can convert from one specific program to
@@ -312,9 +322,12 @@ files. [NOTE: what am I missing?] There are other resources which do not convert
 will build the same system in multiple programs, such as
 CHARMM-GUI.~\citep{lee_charmm-gui_2016}
 % CTK: TopoGromacs is another new one: 10.1021/acs.jcim.6b00103
+% JMS: CHARMM-GUI *does* convert.  They have their own CHARMM->GROMACS converter
+% and use ParmEd under the hood for Amber files.  So I would kind of call it a
+% conversion engine.
 
 In this study, we will therefore focus on the automated conversion of
-molecular simulation input files using to the extent possible
+molecular simulation input files using (to the extent possible)
 automated all-to-all conversion tools, and the comparison and
 validation of the energies of single configurations among these
 programs.  This validation serves as a necessary building block for
@@ -328,14 +341,16 @@ simulation programs.
 \begin{sloppypar}
 The molecular interconversion software programs InterMol
 (https://github.com/shirtsgroup/InterMol) and ParmEd
-(http://github.com/parmed/parmed) were used to perform comparisons
+(http://github.com/ParmEd/ParmEd) were used to perform comparisons
 between five different simulation input parameter files and engines.
 InterMol is designed as a generalizable all-to-all converter between
 molecular simulation file formats; however, it currently only has full
 support for GROMACS, LAMMPS, and DESMOND file formats.  ParmEd is
-[Jason: fill in more here] a molecular topology editor that also
-provides conversion functionality between GROMACS, AMBER, and CHARMM
-force field formats.
+a library for defining and manipulating atomic-level molecular topologies with
+force field descriptions. It provides a program-agnostic representation of a
+molecular topology and its force field that supports editing molecular
+topologies as well as providing the infrastructure to convert files between the
+native formats for the GROMACS, AMBER, CHARMM, and OpenMM programs.
 \end{sloppypar}
 
 We took advantage of this overlap in conversion functionality to
@@ -367,7 +382,7 @@ of host CBClip was provided by Prof. Lyle Isaacs. The starting 3D
 structures of hosts OAH and OAMe were built manually with MOE and
 partly energy minimized. The initial structures of free guest
 molecules were found via the conformational search feature in MOE. For
-CBClip, the experimental studies were done at pH 7.4, so the host'€™s
+CBClip, the experimental studies were done at pH 7.4, so the host's
 four sulfonic acid acids were treated as fully ionized, for a net host
 charge of -4.  For the octa-acids, OAH and OAMe, the experimental
 studies were done at pH 11.5, so all eight carboxylic acids were
@@ -386,6 +401,7 @@ hosts.
 %1) *brief* mention of which molecules were used, 2) forcefields used, 3)
 %how FF was applied (e.g.  antechamber + RESP) and 4) link to paper giving
 %the more detailed overview of system set up for anyone interested.
+%JMS: +1 as well
 Partial charges were generated with the restrained electrostatic
 potential (RESP) fitting procedure, with electrostatic potentials at
 the HF/6-31G* level, as implemented in Antechamber.  Bonded and van
