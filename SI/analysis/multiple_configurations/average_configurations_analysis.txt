@@ -1,0 +1,1238 @@
+
+****************
+OAH-G1
+****************
+                      AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+          Bond     46.4715000     46.4715159     46.4715160     46.4713949     46.4715200
+         Angle    101.6231000    101.6231336    101.6231300    101.6236490    101.6226800
+ All dihedrals    128.1357000    128.1356977    128.1356800    128.1360850    128.1348400
+        Bonded    276.2303000    276.2303472    276.2303260    276.2311289    276.2290400
+         LJ-14     85.8758000     85.8757146            n/a     85.8759113            n/a
+    Coulomb-14    -74.6200000    -74.6225448            n/a    -74.6224791            n/a
+ van der Waals   3017.8596000   3017.7828535   3017.7776000            n/a   3017.8718000
+ Electrostatic -25113.9331000 -25113.9530763 -25113.9530000            n/a -25114.5712700
+     Nonbonded -22096.0735000 -22096.1702228 -22096.1754000            n/a -22096.6994700
+     Potential -21819.8432000 -21819.9398756 -21819.9500000 -21820.1334000 -21820.4704200
+
+Bond energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000159   -0.0000160    0.0001051   -0.0000200
+ GROMACS    0.0000159    0.0000000   -0.0000001    0.0001210   -0.0000041
+  LAMMPS    0.0000160    0.0000001    0.0000000    0.0001211   -0.0000040
+ DESMOND   -0.0001051   -0.0001210   -0.0001211    0.0000000   -0.0001251
+  CHARMM    0.0000200    0.0000041    0.0000040    0.0001251    0.0000000
+
+Angle energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000336   -0.0000300   -0.0005490    0.0004200
+ GROMACS    0.0000336    0.0000000    0.0000036   -0.0005154    0.0004536
+  LAMMPS    0.0000300   -0.0000036    0.0000000   -0.0005190    0.0004500
+ DESMOND    0.0005490    0.0005154    0.0005190    0.0000000    0.0009690
+  CHARMM   -0.0004200   -0.0004536   -0.0004500   -0.0009690    0.0000000
+
+All dihedrals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000023    0.0000200   -0.0003850    0.0008600
+ GROMACS   -0.0000023    0.0000000    0.0000177   -0.0003873    0.0008577
+  LAMMPS   -0.0000200   -0.0000177    0.0000000   -0.0004050    0.0008400
+ DESMOND    0.0003850    0.0003873    0.0004050    0.0000000    0.0012450
+  CHARMM   -0.0008600   -0.0008577   -0.0008400   -0.0012450    0.0000000
+
+Bonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000472   -0.0000260   -0.0008289    0.0012600
+ GROMACS    0.0000472    0.0000000    0.0000212   -0.0007817    0.0013072
+  LAMMPS    0.0000260   -0.0000212    0.0000000   -0.0008029    0.0012860
+ DESMOND    0.0008289    0.0007817    0.0008029    0.0000000    0.0020889
+  CHARMM   -0.0012600   -0.0013072   -0.0012860   -0.0020889    0.0000000
+
+LJ-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000854          n/a   -0.0001113          n/a
+ GROMACS   -0.0000854    0.0000000          n/a   -0.0001967          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND    0.0001113    0.0001967          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+Coulomb-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0025448          n/a    0.0024791          n/a
+ GROMACS   -0.0025448    0.0000000          n/a   -0.0000657          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0024791    0.0000657          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+van der Waals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0767465    0.0820000          n/a   -0.0122000
+ GROMACS   -0.0767465    0.0000000    0.0052535          n/a   -0.0889465
+  LAMMPS   -0.0820000   -0.0052535    0.0000000          n/a   -0.0942000
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM    0.0122000    0.0889465    0.0942000          n/a    0.0000000
+
+Electrostatic energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0199763    0.0199000          n/a    0.6381700
+ GROMACS   -0.0199763    0.0000000   -0.0000763          n/a    0.6181937
+  LAMMPS   -0.0199000    0.0000763    0.0000000          n/a    0.6182700
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -0.6381700   -0.6181937   -0.6182700          n/a    0.0000000
+
+Nonbonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0967228    0.1019000          n/a    0.6259700
+ GROMACS   -0.0967228    0.0000000    0.0051772          n/a    0.5292472
+  LAMMPS   -0.1019000   -0.0051772    0.0000000          n/a    0.5240700
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -0.6259700   -0.5292472   -0.5240700          n/a    0.0000000
+
+Potential energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0966756    0.1068000    0.2902000    0.6272200
+ GROMACS   -0.0966756    0.0000000    0.0101244    0.1935244    0.5305444
+  LAMMPS   -0.1068000   -0.0101244    0.0000000    0.1834000    0.5204200
+ DESMOND   -0.2902000   -0.1935244   -0.1834000    0.0000000    0.3370200
+  CHARMM   -0.6272200   -0.5305444   -0.5204200   -0.3370200    0.0000000
+
+****************
+OAH-G2
+****************
+                      AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+          Bond     58.1826000     58.1825618     58.1825620     58.1834607     58.1825600
+         Angle    110.2366000    110.2365907    110.2365900    110.2358390    110.2361600
+ All dihedrals    127.6586000    127.6586417    127.6586700    127.6586790    127.6577000
+        Bonded    296.0778000    296.0777943    296.0778220    296.0779787    296.0764200
+         LJ-14     85.4763000     85.4762156            n/a     85.4761381            n/a
+    Coulomb-14    -32.8686000    -32.8697532            n/a    -32.8696834            n/a
+ van der Waals   3066.0413000   3066.0731745   3066.0678000            n/a   3066.0617900
+ Electrostatic -25159.0257000 -25160.0776801 -25160.1520000            n/a -25160.5816900
+     Nonbonded -22092.9844000 -22094.0045056 -22094.0842000            n/a -22094.5199000
+     Potential -21796.9066000 -21797.9267112 -21798.0090000 -21798.1451000 -21798.4434600
+
+Bond energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000382    0.0000380   -0.0008607    0.0000400
+ GROMACS   -0.0000382    0.0000000   -0.0000002   -0.0008989    0.0000018
+  LAMMPS   -0.0000380    0.0000002    0.0000000   -0.0008987    0.0000020
+ DESMOND    0.0008607    0.0008989    0.0008987    0.0000000    0.0009007
+  CHARMM   -0.0000400   -0.0000018   -0.0000020   -0.0009007    0.0000000
+
+Angle energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000093    0.0000100    0.0007610    0.0004400
+ GROMACS   -0.0000093    0.0000000    0.0000007    0.0007517    0.0004307
+  LAMMPS   -0.0000100   -0.0000007    0.0000000    0.0007510    0.0004300
+ DESMOND   -0.0007610   -0.0007517   -0.0007510    0.0000000   -0.0003210
+  CHARMM   -0.0004400   -0.0004307   -0.0004300    0.0003210    0.0000000
+
+All dihedrals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000417   -0.0000700   -0.0000790    0.0009000
+ GROMACS    0.0000417    0.0000000   -0.0000283   -0.0000373    0.0009417
+  LAMMPS    0.0000700    0.0000283    0.0000000   -0.0000090    0.0009700
+ DESMOND    0.0000790    0.0000373    0.0000090    0.0000000    0.0009790
+  CHARMM   -0.0009000   -0.0009417   -0.0009700   -0.0009790    0.0000000
+
+Bonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000057   -0.0000220   -0.0001787    0.0013800
+ GROMACS   -0.0000057    0.0000000   -0.0000277   -0.0001844    0.0013743
+  LAMMPS    0.0000220    0.0000277    0.0000000   -0.0001567    0.0014020
+ DESMOND    0.0001787    0.0001844    0.0001567    0.0000000    0.0015587
+  CHARMM   -0.0013800   -0.0013743   -0.0014020   -0.0015587    0.0000000
+
+LJ-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000844          n/a    0.0001619          n/a
+ GROMACS   -0.0000844    0.0000000          n/a    0.0000775          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0001619   -0.0000775          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+Coulomb-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0011532          n/a    0.0010834          n/a
+ GROMACS   -0.0011532    0.0000000          n/a   -0.0000698          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0010834    0.0000698          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+van der Waals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0318745   -0.0265000          n/a   -0.0204900
+ GROMACS    0.0318745    0.0000000    0.0053745          n/a    0.0113845
+  LAMMPS    0.0265000   -0.0053745    0.0000000          n/a    0.0060100
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM    0.0204900   -0.0113845   -0.0060100          n/a    0.0000000
+
+Electrostatic energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.0519801    1.1263000          n/a    1.5559900
+ GROMACS   -1.0519801    0.0000000    0.0743199          n/a    0.5040099
+  LAMMPS   -1.1263000   -0.0743199    0.0000000          n/a    0.4296900
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.5559900   -0.5040099   -0.4296900          n/a    0.0000000
+
+Nonbonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.0201056    1.0998000          n/a    1.5355000
+ GROMACS   -1.0201056    0.0000000    0.0796944          n/a    0.5153944
+  LAMMPS   -1.0998000   -0.0796944    0.0000000          n/a    0.4357000
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.5355000   -0.5153944   -0.4357000          n/a    0.0000000
+
+Potential energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.0201112    1.1024000    1.2385000    1.5368600
+ GROMACS   -1.0201112    0.0000000    0.0822888    0.2183888    0.5167488
+  LAMMPS   -1.1024000   -0.0822888    0.0000000    0.1361000    0.4344600
+ DESMOND   -1.2385000   -0.2183888   -0.1361000    0.0000000    0.2983600
+  CHARMM   -1.5368600   -0.5167488   -0.4344600   -0.2983600    0.0000000
+
+****************
+OAH-G3
+****************
+                      AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+          Bond     42.5626000     42.5626315     42.5626320     42.5624766     42.5626300
+         Angle    115.4657000    115.4657664    115.4657700    115.4654970    115.4654000
+ All dihedrals    135.5935000    135.5935837    135.5935600    135.5933840    135.5925900
+        Bonded    293.6218000    293.6219816    293.6219620    293.6213576    293.6206200
+         LJ-14     79.4720000     79.4719340            n/a     79.4717599            n/a
+    Coulomb-14   -155.7583000   -155.7636476            n/a   -155.7636790            n/a
+ van der Waals   2968.8597000   2968.8142868   2968.8090000            n/a   2968.8825500
+ Electrostatic -24701.6983000 -24702.4174198 -24702.4720000            n/a -24702.9940100
+     Nonbonded -21732.8386000 -21733.6031331 -21733.6630000            n/a -21734.1114600
+     Potential -21439.2168000 -21439.9811515 -21440.0450000 -21440.1134000 -21440.4908300
+
+Bond energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000315   -0.0000320    0.0001234   -0.0000300
+ GROMACS    0.0000315    0.0000000   -0.0000005    0.0001549    0.0000015
+  LAMMPS    0.0000320    0.0000005    0.0000000    0.0001554    0.0000020
+ DESMOND   -0.0001234   -0.0001549   -0.0001554    0.0000000   -0.0001534
+  CHARMM    0.0000300   -0.0000015   -0.0000020    0.0001534    0.0000000
+
+Angle energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000664   -0.0000700    0.0002030    0.0003000
+ GROMACS    0.0000664    0.0000000   -0.0000036    0.0002694    0.0003664
+  LAMMPS    0.0000700    0.0000036    0.0000000    0.0002730    0.0003700
+ DESMOND   -0.0002030   -0.0002694   -0.0002730    0.0000000    0.0000970
+  CHARMM   -0.0003000   -0.0003664   -0.0003700   -0.0000970    0.0000000
+
+All dihedrals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000837   -0.0000600    0.0001160    0.0009100
+ GROMACS    0.0000837    0.0000000    0.0000237    0.0001997    0.0009937
+  LAMMPS    0.0000600   -0.0000237    0.0000000    0.0001760    0.0009700
+ DESMOND   -0.0001160   -0.0001997   -0.0001760    0.0000000    0.0007940
+  CHARMM   -0.0009100   -0.0009937   -0.0009700   -0.0007940    0.0000000
+
+Bonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0001816   -0.0001620    0.0004424    0.0011800
+ GROMACS    0.0001816    0.0000000    0.0000196    0.0006240    0.0013616
+  LAMMPS    0.0001620   -0.0000196    0.0000000    0.0006044    0.0013420
+ DESMOND   -0.0004424   -0.0006240   -0.0006044    0.0000000    0.0007376
+  CHARMM   -0.0011800   -0.0013616   -0.0013420   -0.0007376    0.0000000
+
+LJ-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000660          n/a    0.0002401          n/a
+ GROMACS   -0.0000660    0.0000000          n/a    0.0001741          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0002401   -0.0001741          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+Coulomb-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0053476          n/a    0.0053790          n/a
+ GROMACS   -0.0053476    0.0000000          n/a    0.0000314          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0053790   -0.0000314          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+van der Waals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0454132    0.0507000          n/a   -0.0228500
+ GROMACS   -0.0454132    0.0000000    0.0052867          n/a   -0.0682632
+  LAMMPS   -0.0507000   -0.0052867    0.0000000          n/a   -0.0735500
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM    0.0228500    0.0682632    0.0735500          n/a    0.0000000
+
+Electrostatic energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.7191198    0.7737000          n/a    1.2957100
+ GROMACS   -0.7191198    0.0000000    0.0545802          n/a    0.5765902
+  LAMMPS   -0.7737000   -0.0545802    0.0000000          n/a    0.5220100
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.2957100   -0.5765902   -0.5220100          n/a    0.0000000
+
+Nonbonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.7645331    0.8244000          n/a    1.2728600
+ GROMACS   -0.7645331    0.0000000    0.0598669          n/a    0.5083269
+  LAMMPS   -0.8244000   -0.0598669    0.0000000          n/a    0.4484600
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.2728600   -0.5083269   -0.4484600          n/a    0.0000000
+
+Potential energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.7643515    0.8282000    0.8966000    1.2740300
+ GROMACS   -0.7643515    0.0000000    0.0638485    0.1322485    0.5096785
+  LAMMPS   -0.8282000   -0.0638485    0.0000000    0.0684000    0.4458300
+ DESMOND   -0.8966000   -0.1322485   -0.0684000    0.0000000    0.3774300
+  CHARMM   -1.2740300   -0.5096785   -0.4458300   -0.3774300    0.0000000
+
+****************
+OAH-G4
+****************
+                      AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+          Bond     46.6863000     46.6862669     46.6862670     46.6860970     46.6862700
+         Angle    122.4331000    122.4330934    122.4330900    122.4334880    122.4326100
+ All dihedrals    144.8870000    144.8869878    144.8870000    144.8870200    144.8863900
+        Bonded    314.0064000    314.0063481    314.0063570    314.0066050    314.0052700
+         LJ-14     98.5126000     98.5124716            n/a     98.5124115            n/a
+    Coulomb-14    -67.1997000    -67.2020017            n/a    -67.2021896            n/a
+ van der Waals   3130.1652000   3130.1055120   3130.0996000            n/a   3130.1852900
+ Electrostatic -25124.1431000 -25125.3544574 -25125.4420000            n/a -25125.9550000
+     Nonbonded -21993.9779000 -21995.2489454 -21995.3424000            n/a -21995.7697100
+     Potential -21679.9715000 -21681.2425973 -21681.3380000 -21681.3423000 -21681.7644500
+
+Bond energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000331    0.0000330    0.0002030    0.0000300
+ GROMACS   -0.0000331    0.0000000   -0.0000001    0.0001699   -0.0000031
+  LAMMPS   -0.0000330    0.0000001    0.0000000    0.0001700   -0.0000030
+ DESMOND   -0.0002030   -0.0001699   -0.0001700    0.0000000   -0.0001730
+  CHARMM   -0.0000300    0.0000031    0.0000030    0.0001730    0.0000000
+
+Angle energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000066    0.0000100   -0.0003880    0.0004900
+ GROMACS   -0.0000066    0.0000000    0.0000034   -0.0003946    0.0004834
+  LAMMPS   -0.0000100   -0.0000034    0.0000000   -0.0003980    0.0004800
+ DESMOND    0.0003880    0.0003946    0.0003980    0.0000000    0.0008780
+  CHARMM   -0.0004900   -0.0004834   -0.0004800   -0.0008780    0.0000000
+
+All dihedrals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000122    0.0000000   -0.0000200    0.0006100
+ GROMACS   -0.0000122    0.0000000   -0.0000122   -0.0000323    0.0005977
+  LAMMPS    0.0000000    0.0000122    0.0000000   -0.0000200    0.0006100
+ DESMOND    0.0000200    0.0000323    0.0000200    0.0000000    0.0006300
+  CHARMM   -0.0006100   -0.0005977   -0.0006100   -0.0006300    0.0000000
+
+Bonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000519    0.0000430   -0.0002050    0.0011300
+ GROMACS   -0.0000519    0.0000000   -0.0000089   -0.0002569    0.0010781
+  LAMMPS   -0.0000430    0.0000089    0.0000000   -0.0002480    0.0010870
+ DESMOND    0.0002050    0.0002569    0.0002480    0.0000000    0.0013350
+  CHARMM   -0.0011300   -0.0010781   -0.0010870   -0.0013350    0.0000000
+
+LJ-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0001284          n/a    0.0001885          n/a
+ GROMACS   -0.0001284    0.0000000          n/a    0.0000601          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0001885   -0.0000601          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+Coulomb-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0023017          n/a    0.0024896          n/a
+ GROMACS   -0.0023017    0.0000000          n/a    0.0001879          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0024896   -0.0001879          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+van der Waals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0596880    0.0656000          n/a   -0.0200900
+ GROMACS   -0.0596880    0.0000000    0.0059120          n/a   -0.0797780
+  LAMMPS   -0.0656000   -0.0059120    0.0000000          n/a   -0.0856900
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM    0.0200900    0.0797780    0.0856900          n/a    0.0000000
+
+Electrostatic energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.2113574    1.2989000          n/a    1.8119000
+ GROMACS   -1.2113574    0.0000000    0.0875426          n/a    0.6005426
+  LAMMPS   -1.2989000   -0.0875426    0.0000000          n/a    0.5130000
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.8119000   -0.6005426   -0.5130000          n/a    0.0000000
+
+Nonbonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.2710454    1.3645000          n/a    1.7918100
+ GROMACS   -1.2710454    0.0000000    0.0934546          n/a    0.5207646
+  LAMMPS   -1.3645000   -0.0934546    0.0000000          n/a    0.4273100
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.7918100   -0.5207646   -0.4273100          n/a    0.0000000
+
+Potential energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.2710973    1.3665000    1.3708000    1.7929500
+ GROMACS   -1.2710973    0.0000000    0.0954027    0.0997027    0.5218527
+  LAMMPS   -1.3665000   -0.0954027    0.0000000    0.0043000    0.4264500
+ DESMOND   -1.3708000   -0.0997027   -0.0043000    0.0000000    0.4221500
+  CHARMM   -1.7929500   -0.5218527   -0.4264500   -0.4221500    0.0000000
+
+****************
+OAH-G5
+****************
+                      AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+          Bond     60.1538000     60.1538284     60.1538280     60.1532365     60.1538300
+         Angle    117.4542000    117.4542185    117.4542200    117.4544010    117.4538400
+ All dihedrals    133.3191000    133.3190662    133.3190600    133.3188810    133.3187300
+        Bonded    310.9271000    310.9271131    310.9271080    310.9265185    310.9264000
+         LJ-14     83.9351000     83.9349891            n/a     83.9350698            n/a
+    Coulomb-14   -118.9001000   -118.9042108            n/a   -118.9042200            n/a
+ van der Waals   3052.4093000   3052.3380053   3052.3326000            n/a   3052.4315700
+ Electrostatic -24782.1774000 -24783.1952613 -24783.2780000            n/a -24783.8001500
+     Nonbonded -21729.7681000 -21730.8572560 -21730.9454000            n/a -21731.3685800
+     Potential -21418.8410000 -21419.9301429 -21420.0160000 -21420.1064000 -21420.4421800
+
+Bond energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000284   -0.0000280    0.0005635   -0.0000300
+ GROMACS    0.0000284    0.0000000    0.0000004    0.0005919   -0.0000016
+  LAMMPS    0.0000280   -0.0000004    0.0000000    0.0005915   -0.0000020
+ DESMOND   -0.0005635   -0.0005919   -0.0005915    0.0000000   -0.0005935
+  CHARMM    0.0000300    0.0000016    0.0000020    0.0005935    0.0000000
+
+Angle energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000185   -0.0000200   -0.0002010    0.0003600
+ GROMACS    0.0000185    0.0000000   -0.0000015   -0.0001825    0.0003785
+  LAMMPS    0.0000200    0.0000015    0.0000000   -0.0001810    0.0003800
+ DESMOND    0.0002010    0.0001825    0.0001810    0.0000000    0.0005610
+  CHARMM   -0.0003600   -0.0003785   -0.0003800   -0.0005610    0.0000000
+
+All dihedrals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000338    0.0000400    0.0002190    0.0003700
+ GROMACS   -0.0000338    0.0000000    0.0000062    0.0001852    0.0003362
+  LAMMPS   -0.0000400   -0.0000062    0.0000000    0.0001790    0.0003300
+ DESMOND   -0.0002190   -0.0001852   -0.0001790    0.0000000    0.0001510
+  CHARMM   -0.0003700   -0.0003362   -0.0003300   -0.0001510    0.0000000
+
+Bonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000131   -0.0000080    0.0005815    0.0007000
+ GROMACS    0.0000131    0.0000000    0.0000051    0.0005946    0.0007131
+  LAMMPS    0.0000080   -0.0000051    0.0000000    0.0005895    0.0007080
+ DESMOND   -0.0005815   -0.0005946   -0.0005895    0.0000000    0.0001185
+  CHARMM   -0.0007000   -0.0007131   -0.0007080   -0.0001185    0.0000000
+
+LJ-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0001109          n/a    0.0000302          n/a
+ GROMACS   -0.0001109    0.0000000          n/a   -0.0000807          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0000302    0.0000807          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+Coulomb-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0041108          n/a    0.0041200          n/a
+ GROMACS   -0.0041108    0.0000000          n/a    0.0000092          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0041200   -0.0000092          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+van der Waals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0712947    0.0767000          n/a   -0.0222700
+ GROMACS   -0.0712947    0.0000000    0.0054052          n/a   -0.0935648
+  LAMMPS   -0.0767000   -0.0054052    0.0000000          n/a   -0.0989700
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM    0.0222700    0.0935648    0.0989700          n/a    0.0000000
+
+Electrostatic energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.0178613    1.1006000          n/a    1.6227500
+ GROMACS   -1.0178613    0.0000000    0.0827387          n/a    0.6048887
+  LAMMPS   -1.1006000   -0.0827387    0.0000000          n/a    0.5221500
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.6227500   -0.6048887   -0.5221500          n/a    0.0000000
+
+Nonbonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.0891560    1.1773000          n/a    1.6004800
+ GROMACS   -1.0891560    0.0000000    0.0881440          n/a    0.5113240
+  LAMMPS   -1.1773000   -0.0881440    0.0000000          n/a    0.4231800
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.6004800   -0.5113240   -0.4231800          n/a    0.0000000
+
+Potential energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.0891429    1.1750000    1.2654000    1.6011800
+ GROMACS   -1.0891429    0.0000000    0.0858571    0.1762571    0.5120371
+  LAMMPS   -1.1750000   -0.0858571    0.0000000    0.0904000    0.4261800
+ DESMOND   -1.2654000   -0.1762571   -0.0904000    0.0000000    0.3357800
+  CHARMM   -1.6011800   -0.5120371   -0.4261800   -0.3357800    0.0000000
+
+****************
+OAH-G6
+****************
+                      AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+          Bond     61.8225000     61.8225159     61.8225160     61.8230594     61.8225200
+         Angle    112.4936000    112.4936200    112.4936200    112.4931110    112.4931700
+ All dihedrals    137.8730000    137.8730380    137.8730300    137.8732180    137.8721700
+        Bonded    312.1891000    312.1891738    312.1891660    312.1893884    312.1878600
+         LJ-14     82.3892000     82.3890608            n/a     82.3888592            n/a
+    Coulomb-14     -9.7175000     -9.7178227            n/a     -9.7177952            n/a
+ van der Waals   3062.5334000   3062.5829038   3062.5775000            n/a   3062.5534100
+ Electrostatic -25132.7900000 -25133.1957394 -25133.2210000            n/a -25133.6850500
+     Nonbonded -22070.2566000 -22070.6128356 -22070.6435000            n/a -22071.1316400
+     Potential -21758.0675000 -21758.4236617 -21758.4540000 -21758.5967000 -21758.9437800
+
+Bond energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000159   -0.0000160   -0.0005594   -0.0000200
+ GROMACS    0.0000159    0.0000000   -0.0000001   -0.0005435   -0.0000041
+  LAMMPS    0.0000160    0.0000001    0.0000000   -0.0005434   -0.0000040
+ DESMOND    0.0005594    0.0005435    0.0005434    0.0000000    0.0005394
+  CHARMM    0.0000200    0.0000041    0.0000040   -0.0005394    0.0000000
+
+Angle energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000200   -0.0000200    0.0004890    0.0004300
+ GROMACS    0.0000200    0.0000000   -0.0000000    0.0005090    0.0004500
+  LAMMPS    0.0000200    0.0000000    0.0000000    0.0005090    0.0004500
+ DESMOND   -0.0004890   -0.0005090   -0.0005090    0.0000000   -0.0000590
+  CHARMM   -0.0004300   -0.0004500   -0.0004500    0.0000590    0.0000000
+
+All dihedrals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000380   -0.0000300   -0.0002180    0.0008300
+ GROMACS    0.0000380    0.0000000    0.0000080   -0.0001800    0.0008680
+  LAMMPS    0.0000300   -0.0000080    0.0000000   -0.0001880    0.0008600
+ DESMOND    0.0002180    0.0001800    0.0001880    0.0000000    0.0010480
+  CHARMM   -0.0008300   -0.0008680   -0.0008600   -0.0010480    0.0000000
+
+Bonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000738   -0.0000660   -0.0002884    0.0012400
+ GROMACS    0.0000738    0.0000000    0.0000078   -0.0002146    0.0013138
+  LAMMPS    0.0000660   -0.0000078    0.0000000   -0.0002224    0.0013060
+ DESMOND    0.0002884    0.0002146    0.0002224    0.0000000    0.0015284
+  CHARMM   -0.0012400   -0.0013138   -0.0013060   -0.0015284    0.0000000
+
+LJ-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0001392          n/a    0.0003408          n/a
+ GROMACS   -0.0001392    0.0000000          n/a    0.0002016          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0003408   -0.0002016          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+Coulomb-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0003227          n/a    0.0002952          n/a
+ GROMACS   -0.0003227    0.0000000          n/a   -0.0000275          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0002952    0.0000275          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+van der Waals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0495038   -0.0441000          n/a   -0.0200100
+ GROMACS    0.0495038    0.0000000    0.0054038          n/a    0.0294938
+  LAMMPS    0.0441000   -0.0054038    0.0000000          n/a    0.0240900
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM    0.0200100   -0.0294938   -0.0240900          n/a    0.0000000
+
+Electrostatic energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.4057394    0.4310000          n/a    0.8950500
+ GROMACS   -0.4057394    0.0000000    0.0252606          n/a    0.4893106
+  LAMMPS   -0.4310000   -0.0252606    0.0000000          n/a    0.4640500
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -0.8950500   -0.4893106   -0.4640500          n/a    0.0000000
+
+Nonbonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.3562356    0.3869000          n/a    0.8750400
+ GROMACS   -0.3562356    0.0000000    0.0306644          n/a    0.5188044
+  LAMMPS   -0.3869000   -0.0306644    0.0000000          n/a    0.4881400
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -0.8750400   -0.5188044   -0.4881400          n/a    0.0000000
+
+Potential energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.3561617    0.3865000    0.5292000    0.8762800
+ GROMACS   -0.3561617    0.0000000    0.0303383    0.1730383    0.5201183
+  LAMMPS   -0.3865000   -0.0303383    0.0000000    0.1427000    0.4897800
+ DESMOND   -0.5292000   -0.1730383   -0.1427000    0.0000000    0.3470800
+  CHARMM   -0.8762800   -0.5201183   -0.4897800   -0.3470800    0.0000000
+
+****************
+OAMe-G1
+****************
+                      AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+          Bond     56.5499000     56.5498566     56.5498570     56.5499757     56.5498600
+         Angle    113.1055000    113.1055420    113.1055400    113.1063530    113.1051400
+ All dihedrals    135.8990000    135.8990644    135.8990600    135.8986340    135.8980000
+        Bonded    305.5544000    305.5544630    305.5544570    305.5549627    305.5530000
+         LJ-14     78.3144000     78.3142706            n/a     78.3141109            n/a
+    Coulomb-14    359.3896000    359.4018684            n/a    359.4018150            n/a
+ van der Waals   3054.4512000   3054.4260665   3054.4205000            n/a   3054.4702500
+ Electrostatic -24902.4978000 -24903.6536496 -24903.7260000            n/a -24904.2108900
+     Nonbonded -21848.0466000 -21849.2275830 -21849.3055000            n/a -21849.7406400
+     Potential -21542.4922000 -21543.6731201 -21543.7560000 -21543.7569000 -21544.1876600
+
+Bond energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000434    0.0000430   -0.0000757    0.0000400
+ GROMACS   -0.0000434    0.0000000   -0.0000004   -0.0001191   -0.0000034
+  LAMMPS   -0.0000430    0.0000004    0.0000000   -0.0001187   -0.0000030
+ DESMOND    0.0000757    0.0001191    0.0001187    0.0000000    0.0001157
+  CHARMM   -0.0000400    0.0000034    0.0000030   -0.0001157    0.0000000
+
+Angle energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000420   -0.0000400   -0.0008530    0.0003600
+ GROMACS    0.0000420    0.0000000    0.0000020   -0.0008110    0.0004020
+  LAMMPS    0.0000400   -0.0000020    0.0000000   -0.0008130    0.0004000
+ DESMOND    0.0008530    0.0008110    0.0008130    0.0000000    0.0012130
+  CHARMM   -0.0003600   -0.0004020   -0.0004000   -0.0012130    0.0000000
+
+All dihedrals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000644   -0.0000600    0.0003660    0.0010000
+ GROMACS    0.0000644    0.0000000    0.0000044    0.0004304    0.0010644
+  LAMMPS    0.0000600   -0.0000044    0.0000000    0.0004260    0.0010600
+ DESMOND   -0.0003660   -0.0004304   -0.0004260    0.0000000    0.0006340
+  CHARMM   -0.0010000   -0.0010644   -0.0010600   -0.0006340    0.0000000
+
+Bonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000630   -0.0000570   -0.0005627    0.0014000
+ GROMACS    0.0000630    0.0000000    0.0000060   -0.0004997    0.0014630
+  LAMMPS    0.0000570   -0.0000060    0.0000000   -0.0005057    0.0014570
+ DESMOND    0.0005627    0.0004997    0.0005057    0.0000000    0.0019627
+  CHARMM   -0.0014000   -0.0014630   -0.0014570   -0.0019627    0.0000000
+
+LJ-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0001294          n/a    0.0002891          n/a
+ GROMACS   -0.0001294    0.0000000          n/a    0.0001597          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0002891   -0.0001597          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+Coulomb-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0122684          n/a   -0.0122150          n/a
+ GROMACS    0.0122684    0.0000000          n/a    0.0000534          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND    0.0122150   -0.0000534          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+van der Waals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0251335    0.0307000          n/a   -0.0190500
+ GROMACS   -0.0251335    0.0000000    0.0055665          n/a   -0.0441835
+  LAMMPS   -0.0307000   -0.0055665    0.0000000          n/a   -0.0497500
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM    0.0190500    0.0441835    0.0497500          n/a    0.0000000
+
+Electrostatic energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.1558495    1.2282000          n/a    1.7130900
+ GROMACS   -1.1558495    0.0000000    0.0723504          n/a    0.5572404
+  LAMMPS   -1.2282000   -0.0723504    0.0000000          n/a    0.4848900
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.7130900   -0.5572404   -0.4848900          n/a    0.0000000
+
+Nonbonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.1809830    1.2589000          n/a    1.6940400
+ GROMACS   -1.1809830    0.0000000    0.0779170          n/a    0.5130570
+  LAMMPS   -1.2589000   -0.0779170    0.0000000          n/a    0.4351400
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.6940400   -0.5130570   -0.4351400          n/a    0.0000000
+
+Potential energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.1809201    1.2638000    1.2647000    1.6954600
+ GROMACS   -1.1809201    0.0000000    0.0828799    0.0837799    0.5145399
+  LAMMPS   -1.2638000   -0.0828799    0.0000000    0.0009000    0.4316600
+ DESMOND   -1.2647000   -0.0837799   -0.0009000    0.0000000    0.4307600
+  CHARMM   -1.6954600   -0.5145399   -0.4316600   -0.4307600    0.0000000
+
+****************
+OAMe-G2
+****************
+                      AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+          Bond     49.0225000     49.0224963     49.0224960     49.0228907     49.0225000
+         Angle    113.8326000    113.8326017    113.8326000    113.8328070    113.8321500
+ All dihedrals    138.1703000    138.1702651    138.1702700    138.1705220    138.1693500
+        Bonded    301.0254000    301.0253631    301.0253660    301.0262197    301.0240000
+         LJ-14     90.3964000     90.3963258            n/a     90.3962171            n/a
+    Coulomb-14    407.7945000    407.8084382            n/a    407.8085410            n/a
+ van der Waals   3065.1094000   3065.1224190   3065.1167000            n/a   3065.1347000
+ Electrostatic -24931.6245000 -24933.0518631 -24933.1500000            n/a -24933.5722300
+     Nonbonded -21866.5151000 -21867.9294441 -21868.0333000            n/a -21868.4375300
+     Potential -21565.4897000 -21566.9040810 -21567.0100000 -21567.1158000 -21567.4135400
+
+Bond energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000037    0.0000040   -0.0003907    0.0000000
+ GROMACS   -0.0000037    0.0000000    0.0000003   -0.0003944   -0.0000037
+  LAMMPS   -0.0000040   -0.0000003    0.0000000   -0.0003947   -0.0000040
+ DESMOND    0.0003907    0.0003944    0.0003947    0.0000000    0.0003907
+  CHARMM    0.0000000    0.0000037    0.0000040   -0.0003907    0.0000000
+
+Angle energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000017    0.0000000   -0.0002070    0.0004500
+ GROMACS    0.0000017    0.0000000    0.0000017   -0.0002053    0.0004517
+  LAMMPS    0.0000000   -0.0000017    0.0000000   -0.0002070    0.0004500
+ DESMOND    0.0002070    0.0002053    0.0002070    0.0000000    0.0006570
+  CHARMM   -0.0004500   -0.0004517   -0.0004500   -0.0006570    0.0000000
+
+All dihedrals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000349    0.0000300   -0.0002220    0.0009500
+ GROMACS   -0.0000349    0.0000000   -0.0000049   -0.0002569    0.0009151
+  LAMMPS   -0.0000300    0.0000049    0.0000000   -0.0002520    0.0009200
+ DESMOND    0.0002220    0.0002569    0.0002520    0.0000000    0.0011720
+  CHARMM   -0.0009500   -0.0009151   -0.0009200   -0.0011720    0.0000000
+
+Bonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000369    0.0000340   -0.0008197    0.0014000
+ GROMACS   -0.0000369    0.0000000   -0.0000029   -0.0008566    0.0013631
+  LAMMPS   -0.0000340    0.0000029    0.0000000   -0.0008537    0.0013660
+ DESMOND    0.0008197    0.0008566    0.0008537    0.0000000    0.0022197
+  CHARMM   -0.0014000   -0.0013631   -0.0013660   -0.0022197    0.0000000
+
+LJ-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000742          n/a    0.0001829          n/a
+ GROMACS   -0.0000742    0.0000000          n/a    0.0001087          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0001829   -0.0001087          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+Coulomb-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0139382          n/a   -0.0140410          n/a
+ GROMACS    0.0139382    0.0000000          n/a   -0.0001028          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND    0.0140410    0.0001028          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+van der Waals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0130190   -0.0073000          n/a   -0.0253000
+ GROMACS    0.0130190    0.0000000    0.0057190          n/a   -0.0122810
+  LAMMPS    0.0073000   -0.0057190    0.0000000          n/a   -0.0180000
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM    0.0253000    0.0122810    0.0180000          n/a    0.0000000
+
+Electrostatic energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.4273631    1.5255000          n/a    1.9477300
+ GROMACS   -1.4273631    0.0000000    0.0981369          n/a    0.5203669
+  LAMMPS   -1.5255000   -0.0981369    0.0000000          n/a    0.4222300
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.9477300   -0.5203669   -0.4222300          n/a    0.0000000
+
+Nonbonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.4143441    1.5182000          n/a    1.9224300
+ GROMACS   -1.4143441    0.0000000    0.1038559          n/a    0.5080859
+  LAMMPS   -1.5182000   -0.1038559    0.0000000          n/a    0.4042300
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.9224300   -0.5080859   -0.4042300          n/a    0.0000000
+
+Potential energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.4143810    1.5203000    1.6261000    1.9238400
+ GROMACS   -1.4143810    0.0000000    0.1059190    0.2117190    0.5094590
+  LAMMPS   -1.5203000   -0.1059190    0.0000000    0.1058000    0.4035400
+ DESMOND   -1.6261000   -0.2117190   -0.1058000    0.0000000    0.2977400
+  CHARMM   -1.9238400   -0.5094590   -0.4035400   -0.2977400    0.0000000
+
+****************
+OAMe-G3
+****************
+                      AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+          Bond     54.8271000     54.8270615     54.8270620     54.8274217     54.8270600
+         Angle    131.7226000    131.7226250    131.7226200    131.7224760    131.7222400
+ All dihedrals    117.8038000    117.8037770    117.8037800    117.8038100    117.8033400
+        Bonded    304.3535000    304.3534635    304.3534620    304.3537077    304.3526400
+         LJ-14     85.0418000     85.0416817            n/a     85.0415359            n/a
+    Coulomb-14    274.4809000    274.4903423            n/a    274.4902270            n/a
+ van der Waals   2925.1071000   2924.9751093   2924.9695000            n/a   2925.1152700
+ Electrostatic -24438.0090000 -24438.4237458 -24438.4640000            n/a -24439.0847000
+     Nonbonded -21512.9019000 -21513.4486365 -21513.4945000            n/a -21513.9694300
+     Potential -21208.5484000 -21209.0951730 -21209.1390000 -21209.2908000 -21209.6167700
+
+Bond energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000385    0.0000380   -0.0003217    0.0000400
+ GROMACS   -0.0000385    0.0000000   -0.0000005   -0.0003602    0.0000015
+  LAMMPS   -0.0000380    0.0000005    0.0000000   -0.0003597    0.0000020
+ DESMOND    0.0003217    0.0003602    0.0003597    0.0000000    0.0003617
+  CHARMM   -0.0000400   -0.0000015   -0.0000020   -0.0003617    0.0000000
+
+Angle energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000250   -0.0000200    0.0001240    0.0003600
+ GROMACS    0.0000250    0.0000000    0.0000050    0.0001490    0.0003850
+  LAMMPS    0.0000200   -0.0000050    0.0000000    0.0001440    0.0003800
+ DESMOND   -0.0001240   -0.0001490   -0.0001440    0.0000000    0.0002360
+  CHARMM   -0.0003600   -0.0003850   -0.0003800   -0.0002360    0.0000000
+
+All dihedrals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000230    0.0000200   -0.0000100    0.0004600
+ GROMACS   -0.0000230    0.0000000   -0.0000030   -0.0000330    0.0004370
+  LAMMPS   -0.0000200    0.0000030    0.0000000   -0.0000300    0.0004400
+ DESMOND    0.0000100    0.0000330    0.0000300    0.0000000    0.0004700
+  CHARMM   -0.0004600   -0.0004370   -0.0004400   -0.0004700    0.0000000
+
+Bonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000365    0.0000380   -0.0002077    0.0008600
+ GROMACS   -0.0000365    0.0000000    0.0000015   -0.0002442    0.0008235
+  LAMMPS   -0.0000380   -0.0000015    0.0000000   -0.0002457    0.0008220
+ DESMOND    0.0002077    0.0002442    0.0002457    0.0000000    0.0010677
+  CHARMM   -0.0008600   -0.0008235   -0.0008220   -0.0010677    0.0000000
+
+LJ-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0001183          n/a    0.0002641          n/a
+ GROMACS   -0.0001183    0.0000000          n/a    0.0001458          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0002641   -0.0001458          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+Coulomb-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0094423          n/a   -0.0093270          n/a
+ GROMACS    0.0094423    0.0000000          n/a    0.0001153          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND    0.0093270   -0.0001153          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+van der Waals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.1319907    0.1376000          n/a   -0.0081700
+ GROMACS   -0.1319907    0.0000000    0.0056093          n/a   -0.1401607
+  LAMMPS   -0.1376000   -0.0056093    0.0000000          n/a   -0.1457700
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM    0.0081700    0.1401607    0.1457700          n/a    0.0000000
+
+Electrostatic energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.4147458    0.4550000          n/a    1.0757000
+ GROMACS   -0.4147458    0.0000000    0.0402542          n/a    0.6609542
+  LAMMPS   -0.4550000   -0.0402542    0.0000000          n/a    0.6207000
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.0757000   -0.6609542   -0.6207000          n/a    0.0000000
+
+Nonbonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.5467365    0.5926000          n/a    1.0675300
+ GROMACS   -0.5467365    0.0000000    0.0458635          n/a    0.5207936
+  LAMMPS   -0.5926000   -0.0458635    0.0000000          n/a    0.4749300
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.0675300   -0.5207936   -0.4749300          n/a    0.0000000
+
+Potential energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.5467730    0.5906000    0.7424000    1.0683700
+ GROMACS   -0.5467730    0.0000000    0.0438270    0.1956270    0.5215970
+  LAMMPS   -0.5906000   -0.0438270    0.0000000    0.1518000    0.4777700
+ DESMOND   -0.7424000   -0.1956270   -0.1518000    0.0000000    0.3259700
+  CHARMM   -1.0683700   -0.5215970   -0.4777700   -0.3259700    0.0000000
+
+****************
+OAMe-G4
+****************
+                      AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+          Bond     59.9034000     59.9034344     59.9034340     59.9046585     59.9034300
+         Angle    137.0325000    137.0325380    137.0325400    137.0331090    137.0320900
+ All dihedrals    141.4527000    141.4527371    141.4527400    141.4527910    141.4517900
+        Bonded    338.3886000    338.3887095    338.3887140    338.3905585    338.3873100
+         LJ-14     93.0532000     93.0530776            n/a     93.0530763            n/a
+    Coulomb-14    365.5407000    365.5531963            n/a    365.5531570            n/a
+ van der Waals   3119.2552000   3119.2266308   3119.2204000            n/a   3119.2719500
+ Electrostatic -24978.3715000 -24979.0045990 -24979.0560000            n/a -24979.5704900
+     Nonbonded -21859.1163000 -21859.7779682 -21859.8356000            n/a -21860.2985400
+     Potential -21520.7277000 -21521.3892587 -21521.4440000 -21521.6434000 -21521.9112200
+
+Bond energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000344   -0.0000340   -0.0012585   -0.0000300
+ GROMACS    0.0000344    0.0000000    0.0000004   -0.0012241    0.0000044
+  LAMMPS    0.0000340   -0.0000004    0.0000000   -0.0012245    0.0000040
+ DESMOND    0.0012585    0.0012241    0.0012245    0.0000000    0.0012285
+  CHARMM    0.0000300   -0.0000044   -0.0000040   -0.0012285    0.0000000
+
+Angle energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000380   -0.0000400   -0.0006090    0.0004100
+ GROMACS    0.0000380    0.0000000   -0.0000020   -0.0005710    0.0004480
+  LAMMPS    0.0000400    0.0000020    0.0000000   -0.0005690    0.0004500
+ DESMOND    0.0006090    0.0005710    0.0005690    0.0000000    0.0010190
+  CHARMM   -0.0004100   -0.0004480   -0.0004500   -0.0010190    0.0000000
+
+All dihedrals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000371   -0.0000400   -0.0000910    0.0009100
+ GROMACS    0.0000371    0.0000000   -0.0000029   -0.0000539    0.0009471
+  LAMMPS    0.0000400    0.0000029    0.0000000   -0.0000510    0.0009500
+ DESMOND    0.0000910    0.0000539    0.0000510    0.0000000    0.0010010
+  CHARMM   -0.0009100   -0.0009471   -0.0009500   -0.0010010    0.0000000
+
+Bonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0001095   -0.0001140   -0.0019585    0.0012900
+ GROMACS    0.0001095    0.0000000   -0.0000045   -0.0018490    0.0013995
+  LAMMPS    0.0001140    0.0000045    0.0000000   -0.0018445    0.0014040
+ DESMOND    0.0019585    0.0018490    0.0018445    0.0000000    0.0032485
+  CHARMM   -0.0012900   -0.0013995   -0.0014040   -0.0032485    0.0000000
+
+LJ-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0001224          n/a    0.0001237          n/a
+ GROMACS   -0.0001224    0.0000000          n/a    0.0000013          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0001237   -0.0000013          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+Coulomb-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0124963          n/a   -0.0124570          n/a
+ GROMACS    0.0124963    0.0000000          n/a    0.0000393          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND    0.0124570   -0.0000393          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+van der Waals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0285692    0.0348000          n/a   -0.0167500
+ GROMACS   -0.0285692    0.0000000    0.0062308          n/a   -0.0453192
+  LAMMPS   -0.0348000   -0.0062308    0.0000000          n/a   -0.0515500
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM    0.0167500    0.0453192    0.0515500          n/a    0.0000000
+
+Electrostatic energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.6330990    0.6845000          n/a    1.1989900
+ GROMACS   -0.6330990    0.0000000    0.0514010          n/a    0.5658910
+  LAMMPS   -0.6845000   -0.0514010    0.0000000          n/a    0.5144900
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.1989900   -0.5658910   -0.5144900          n/a    0.0000000
+
+Nonbonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.6616682    0.7193000          n/a    1.1822400
+ GROMACS   -0.6616682    0.0000000    0.0576318          n/a    0.5205718
+  LAMMPS   -0.7193000   -0.0576318    0.0000000          n/a    0.4629400
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.1822400   -0.5205718   -0.4629400          n/a    0.0000000
+
+Potential energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.6615587    0.7163000    0.9157000    1.1835200
+ GROMACS   -0.6615587    0.0000000    0.0547413    0.2541414    0.5219614
+  LAMMPS   -0.7163000   -0.0547413    0.0000000    0.1994000    0.4672200
+ DESMOND   -0.9157000   -0.2541414   -0.1994000    0.0000000    0.2678200
+  CHARMM   -1.1835200   -0.5219614   -0.4672200   -0.2678200    0.0000000
+
+****************
+OAMe-G5
+****************
+                      AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+          Bond     51.3091000     51.3091256     51.3091260     51.3091313     51.3091300
+         Angle    107.0674000    107.0674241    107.0674200    107.0676560    107.0670400
+ All dihedrals    130.2012000    130.2012724    130.2012600    130.2013820    130.2004400
+        Bonded    288.5777000    288.5778222    288.5778060    288.5781693    288.5766100
+         LJ-14     91.5761000     91.5760116            n/a     91.5759321            n/a
+    Coulomb-14    320.4021000    320.4131069            n/a    320.4130820            n/a
+ van der Waals   3084.0853000   3084.0347141   3084.0291000            n/a   3084.1051600
+ Electrostatic -24653.5802000 -24654.5368636 -24654.6080000            n/a -24655.1168200
+     Nonbonded -21569.4949000 -21570.5021496 -21570.5789000            n/a -21571.0116600
+     Potential -21280.9172000 -21281.9243274 -21281.9980000 -21282.1079000 -21282.4350500
+
+Bond energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000256   -0.0000260   -0.0000313   -0.0000300
+ GROMACS    0.0000256    0.0000000   -0.0000004   -0.0000057   -0.0000044
+  LAMMPS    0.0000260    0.0000004    0.0000000   -0.0000053   -0.0000040
+ DESMOND    0.0000313    0.0000057    0.0000053    0.0000000    0.0000013
+  CHARMM    0.0000300    0.0000044    0.0000040   -0.0000013    0.0000000
+
+Angle energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000241   -0.0000200   -0.0002560    0.0003600
+ GROMACS    0.0000241    0.0000000    0.0000041   -0.0002319    0.0003841
+  LAMMPS    0.0000200   -0.0000041    0.0000000   -0.0002360    0.0003800
+ DESMOND    0.0002560    0.0002319    0.0002360    0.0000000    0.0006160
+  CHARMM   -0.0003600   -0.0003841   -0.0003800   -0.0006160    0.0000000
+
+All dihedrals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000724   -0.0000600   -0.0001820    0.0007600
+ GROMACS    0.0000724    0.0000000    0.0000124   -0.0001096    0.0008324
+  LAMMPS    0.0000600   -0.0000124    0.0000000   -0.0001220    0.0008200
+ DESMOND    0.0001820    0.0001096    0.0001220    0.0000000    0.0009420
+  CHARMM   -0.0007600   -0.0008324   -0.0008200   -0.0009420    0.0000000
+
+Bonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0001222   -0.0001060   -0.0004693    0.0010900
+ GROMACS    0.0001222    0.0000000    0.0000162   -0.0003471    0.0012122
+  LAMMPS    0.0001060   -0.0000162    0.0000000   -0.0003633    0.0011960
+ DESMOND    0.0004693    0.0003471    0.0003633    0.0000000    0.0015593
+  CHARMM   -0.0010900   -0.0012122   -0.0011960   -0.0015593    0.0000000
+
+LJ-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000884          n/a    0.0001679          n/a
+ GROMACS   -0.0000884    0.0000000          n/a    0.0000795          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0001679   -0.0000795          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+Coulomb-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0110069          n/a   -0.0109820          n/a
+ GROMACS    0.0110069    0.0000000          n/a    0.0000249          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND    0.0109820   -0.0000249          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+van der Waals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0505859    0.0562000          n/a   -0.0198600
+ GROMACS   -0.0505859    0.0000000    0.0056141          n/a   -0.0704459
+  LAMMPS   -0.0562000   -0.0056141    0.0000000          n/a   -0.0760600
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM    0.0198600    0.0704459    0.0760600          n/a    0.0000000
+
+Electrostatic energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.9566636    1.0278000          n/a    1.5366200
+ GROMACS   -0.9566636    0.0000000    0.0711364          n/a    0.5799564
+  LAMMPS   -1.0278000   -0.0711364    0.0000000          n/a    0.5088200
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.5366200   -0.5799564   -0.5088200          n/a    0.0000000
+
+Nonbonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.0072496    1.0840000          n/a    1.5167600
+ GROMACS   -1.0072496    0.0000000    0.0767504          n/a    0.5095104
+  LAMMPS   -1.0840000   -0.0767504    0.0000000          n/a    0.4327600
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -1.5167600   -0.5095104   -0.4327600          n/a    0.0000000
+
+Potential energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    1.0071274    1.0808000    1.1907000    1.5178500
+ GROMACS   -1.0071274    0.0000000    0.0736726    0.1835726    0.5107226
+  LAMMPS   -1.0808000   -0.0736726    0.0000000    0.1099000    0.4370500
+ DESMOND   -1.1907000   -0.1835726   -0.1099000    0.0000000    0.3271500
+  CHARMM   -1.5178500   -0.5107226   -0.4370500   -0.3271500    0.0000000
+
+****************
+OAMe-G6
+****************
+                      AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+          Bond     51.5616000     51.5615768     51.5615770     51.5613604     51.5615800
+         Angle    116.1087000    116.1087660    116.1087700    116.1090400    116.1083000
+ All dihedrals    128.1736000    128.1736473    128.1736500    128.1736620    128.1725900
+        Bonded    295.8439000    295.8439901    295.8439970    295.8440624    295.8424700
+         LJ-14     89.7376000     89.7374944            n/a     89.7375244            n/a
+    Coulomb-14    424.0375000    424.0520257            n/a    424.0519990            n/a
+ van der Waals   2935.2622000   2935.1271400   2935.1215000            n/a   2935.2702400
+ Electrostatic -24623.0369000 -24623.2151433 -24623.2340000            n/a -24623.8848600
+     Nonbonded -21687.7747000 -21688.0880034 -21688.1125000            n/a -21688.6146200
+     Potential -21391.9308000 -21392.2440133 -21392.2740000 -21392.3156000 -21392.7721600
+
+Bond energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0000232    0.0000230    0.0002396    0.0000200
+ GROMACS   -0.0000232    0.0000000   -0.0000002    0.0002164   -0.0000032
+  LAMMPS   -0.0000230    0.0000002    0.0000000    0.0002166   -0.0000030
+ DESMOND   -0.0002396   -0.0002164   -0.0002166    0.0000000   -0.0002196
+  CHARMM   -0.0000200    0.0000032    0.0000030    0.0002196    0.0000000
+
+Angle energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000660   -0.0000700   -0.0003400    0.0004000
+ GROMACS    0.0000660    0.0000000   -0.0000040   -0.0002740    0.0004660
+  LAMMPS    0.0000700    0.0000040    0.0000000   -0.0002700    0.0004700
+ DESMOND    0.0003400    0.0002740    0.0002700    0.0000000    0.0007400
+  CHARMM   -0.0004000   -0.0004660   -0.0004700   -0.0007400    0.0000000
+
+All dihedrals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000473   -0.0000500   -0.0000620    0.0010100
+ GROMACS    0.0000473    0.0000000   -0.0000027   -0.0000147    0.0010573
+  LAMMPS    0.0000500    0.0000027    0.0000000   -0.0000120    0.0010600
+ DESMOND    0.0000620    0.0000147    0.0000120    0.0000000    0.0010720
+  CHARMM   -0.0010100   -0.0010573   -0.0010600   -0.0010720    0.0000000
+
+Bonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0000901   -0.0000970   -0.0001624    0.0014300
+ GROMACS    0.0000901    0.0000000   -0.0000069   -0.0000723    0.0015201
+  LAMMPS    0.0000970    0.0000069    0.0000000   -0.0000654    0.0015270
+ DESMOND    0.0001624    0.0000723    0.0000654    0.0000000    0.0015924
+  CHARMM   -0.0014300   -0.0015201   -0.0015270   -0.0015924    0.0000000
+
+LJ-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.0001056          n/a    0.0000756          n/a
+ GROMACS   -0.0001056    0.0000000          n/a   -0.0000299          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND   -0.0000756    0.0000299          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+Coulomb-14 energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000   -0.0145257          n/a   -0.0144990          n/a
+ GROMACS    0.0145257    0.0000000          n/a    0.0000267          n/a
+  LAMMPS          n/a          n/a          n/a          n/a          n/a
+ DESMOND    0.0144990   -0.0000267          n/a    0.0000000          n/a
+  CHARMM          n/a          n/a          n/a          n/a          n/a
+
+van der Waals energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.1350600    0.1407000          n/a   -0.0080400
+ GROMACS   -0.1350600    0.0000000    0.0056399          n/a   -0.1431000
+  LAMMPS   -0.1407000   -0.0056399    0.0000000          n/a   -0.1487400
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM    0.0080400    0.1431000    0.1487400          n/a    0.0000000
+
+Electrostatic energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.1782433    0.1971000          n/a    0.8479600
+ GROMACS   -0.1782433    0.0000000    0.0188567          n/a    0.6697167
+  LAMMPS   -0.1971000   -0.0188567    0.0000000          n/a    0.6508600
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -0.8479600   -0.6697167   -0.6508600          n/a    0.0000000
+
+Nonbonded energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.3133034    0.3378000          n/a    0.8399200
+ GROMACS   -0.3133034    0.0000000    0.0244966          n/a    0.5266166
+  LAMMPS   -0.3378000   -0.0244966    0.0000000          n/a    0.5021200
+ DESMOND          n/a          n/a          n/a          n/a          n/a
+  CHARMM   -0.8399200   -0.5266166   -0.5021200          n/a    0.0000000
+
+Potential energy differences
+                AMBER      GROMACS       LAMMPS      DESMOND       CHARMM
+   AMBER    0.0000000    0.3132133    0.3432000    0.3848000    0.8413600
+ GROMACS   -0.3132133    0.0000000    0.0299867    0.0715867    0.5281467
+  LAMMPS   -0.3432000   -0.0299867    0.0000000    0.0416000    0.4981600
+ DESMOND   -0.3848000   -0.0715867   -0.0416000    0.0000000    0.4565600
+  CHARMM   -0.8413600   -0.5281467   -0.4981600   -0.4565600    0.0000000
+
+Average
+                                    AMBER              GROMACS               LAMMPS              DESMOND               CHARMM 
+
+                Bond          -0.00002881          -0.00003233          -0.00003232           0.00012570          -0.00003223 
+               Angle           0.00192088          -0.00037445          -0.00037456          -0.00036434          -0.00080753 
+       All dihedrals           0.00013871           0.00015958           0.00015658           0.00014413          -0.00059900 
+              Bonded           0.00203078          -0.00024720          -0.00025030          -0.00009451          -0.00143876 
+               LJ-14           0.00008288          -0.00002433                  n/a          -0.00005856                  n/a 
+          Coulomb-14          -0.00320624           0.00160559                  n/a           0.00160066                  n/a 
+       van der Waals           0.02022800          -0.02544516          -0.03103158                  n/a           0.03624875 
+       Electrostatic           0.79859107          -0.04972529          -0.11854226                  n/a          -0.63032351 
+           Nonbonded           0.81881907          -0.07517046          -0.14957385                  n/a          -0.59407476 
+           Potential           0.86473967          -0.03152784          -0.10593617          -0.17565033          -0.55162533 
+
+Average Absolute
+                                    AMBER              GROMACS               LAMMPS              DESMOND               CHARMM 
+
+                Bond           0.00011084           0.00011119           0.00011120           0.00044207           0.00011111 
+               Angle           0.00194768           0.00055165           0.00055138           0.00075569           0.00080753 
+       All dihedrals           0.00014073           0.00016232           0.00015938           0.00018422           0.00060456 
+              Bonded           0.00206380           0.00067239           0.00066986           0.00099432           0.00143876 
+               LJ-14           0.00008347           0.00003484                  n/a           0.00007361                  n/a 
+          Coulomb-14           0.00495284           0.00247729                  n/a           0.00247581                  n/a 
+       van der Waals           0.02855407           0.03090664           0.03422524                  n/a           0.03781720 
+       Electrostatic           0.80835691           0.10818231           0.20234839                  n/a           0.64624919 
+           Nonbonded           0.82843446           0.11780567           0.22123794                  n/a           0.61016731 
+           Potential           0.87019667           0.08427254           0.18842152           0.19294403           0.56379980 
+
+Average RMSD
+                                    AMBER              GROMACS               LAMMPS              DESMOND               CHARMM 
+
+                Bond           0.00013675           0.00013670           0.00013670           0.00054440           0.00013659 
+               Angle           0.00814810           0.00203604           0.00203575           0.00207694           0.00203794 
+       All dihedrals           0.00006547           0.00006961           0.00006916           0.00017480           0.00020808 
+              Bonded           0.00814818           0.00204482           0.00204300           0.00211206           0.00209116 
+               LJ-14           0.00004022           0.00003534                  n/a           0.00006848                  n/a 
+          Coulomb-14           0.00508276           0.00254255                  n/a           0.00254066                  n/a 
+       van der Waals           0.02780958           0.02726719           0.02730623                  n/a           0.02759182 
+       Electrostatic           0.39436318           0.24269741           0.70264825                  n/a           0.24108622 
+           Nonbonded           0.38846575           0.24069223           0.70068820                  n/a           0.23923109 
+           Potential           0.37549206           0.19368869           0.74312784           0.20043324           0.19221557 
+
+Average Relative Absolute
+                                    AMBER              GROMACS               LAMMPS              DESMOND               CHARMM 
+
+                Bond           0.00000389           0.00000391           0.00000391           0.00001555           0.00000391 
+               Angle           0.00005275           0.00001487           0.00001486           0.00002017           0.00002156 
+       All dihedrals           0.00000427           0.00000493           0.00000484           0.00000560           0.00001836 
+              Bonded           0.00003464           0.00001123           0.00001118           0.00001652           0.00002389 
+               LJ-14           0.00000889           0.00000372                  n/a           0.00000786                  n/a 
+          Coulomb-14           0.00023597           0.00011846                  n/a           0.00011783                  n/a 
+       van der Waals           0.00008226           0.00008903           0.00009858                  n/a           0.00010889 
+       Electrostatic           0.00031667           0.00004237           0.00007927                  n/a           0.00025324 
+           Nonbonded           0.00040767           0.00005797           0.00010889                  n/a           0.00030029 
+           Potential           0.00038779           0.00003755           0.00008399           0.00008597           0.00025129 
+
+AverageRMSDifference
+                                    AMBER              GROMACS               LAMMPS              DESMOND               CHARMM 
+
+                Bond           0.00013063           0.00013132           0.00013132           0.00052227           0.00013124 
+               Angle           0.00349284           0.00091628           0.00091596           0.00112673           0.00092008 
+       All dihedrals           0.00005293           0.00005629           0.00005516           0.00016446           0.00014038 
+              Bonded           0.00354646           0.00098171           0.00098087           0.00134774           0.00101687 
+               LJ-14           0.00003667           0.00003233                  n/a           0.00006270                  n/a 
+          Coulomb-14           0.00006493           0.00003339                  n/a           0.00005537                  n/a 
+       van der Waals           0.00271718           0.00268907           0.00268979                  n/a           0.00696780 
+       Electrostatic           0.34999988           0.16320772           0.37393172                  n/a           0.16333124 
+           Nonbonded           0.34910618           0.16416237           0.37487795                  n/a           0.16082654 
+           Potential           0.34741331           0.13506325           0.38205596           0.14275407           0.13187799 
+
+AverageRMSValue
+                                    AMBER              GROMACS               LAMMPS              DESMOND               CHARMM 
+
+                Bond           6.24426358           6.24426361           6.24426360           6.24436493           6.24426367 
+               Angle           7.52459833           7.52479617           7.52479600           7.52482852           7.52479797 
+       All dihedrals           4.80961779           4.80961784           4.80961703           4.80960479           4.80963523 
+              Bonded          10.56265923          10.56347614          10.56347669          10.56349919          10.56349143 
+               LJ-14           2.91365772           2.91365679                  n/a           2.91365548                  n/a 
+          Coulomb-14           2.28326521           2.28334801                  n/a           2.28335749                  n/a 
+       van der Waals          69.98424470          69.98365128          69.98365526                  n/a          69.98311151 
+       Electrostatic         103.85833201         103.86796275         103.94746340                  n/a         103.87030772 
+           Nonbonded          62.17488077          62.18395915          62.27496696                  n/a          62.18616410 
+           Potential          63.30643616          63.31774062          63.42268077          63.32289536          63.31983287 
+
+Fraction of variance from conformational variability
+               AMBER              GROMACS               LAMMPS              DESMOND               CHARMM 
+
+                Bond           0.08753333           0.07721668           0.07726236           0.07963904           0.07673350 
+               Angle           0.81624301           0.79747486           0.79755613           0.70570171           0.79617139 
+       All dihedrals           0.34649776           0.34595681           0.36380465           0.11485126           0.54488787 
+              Bonded           0.81056152           0.76950958           0.76949210           0.59280546           0.76353993 
+               LJ-14           0.16863526           0.16341924                  n/a           0.16165262                  n/a 
+          Coulomb-14           0.99983682           0.99982759                  n/a           0.99952509                  n/a 
+       van der Waals           0.99045340           0.99027426           0.99029681                  n/a           0.93622796 
+       Electrostatic           0.21233227           0.54777858           0.71678994                  n/a           0.54102004 
+           Nonbonded           0.19237524           0.53481781           0.71376009                  n/a           0.54806063 
+           Potential           0.14396523           0.51374297           0.73568190           0.49273194           0.52927475 

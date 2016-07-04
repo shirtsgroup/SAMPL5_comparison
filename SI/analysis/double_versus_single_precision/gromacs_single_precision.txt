@@ -1,0 +1,440 @@
+****************
+CBC-G1
+****************
+                      AMBER      GROMACS
+          Bond     36.5212000     36.5210947
+         Angle    113.5427000    113.5424364
+ All dihedrals     67.7460000     67.7458572
+        Bonded    217.8099000    217.8093883
+         LJ-14     43.8416000     43.8416264
+    Coulomb-14      0.8189000      0.8189026
+ van der Waals   2921.5329000   2921.4894184
+ Electrostatic -23992.6271000 -23994.4385133
+     Nonbonded -21071.0942000 -21072.9490949
+     Potential -20853.2843000 -20855.1401171
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    1.8558171
+ GROMACS   -1.8558171    0.0000000
+****************
+CBC-G10
+****************
+                      AMBER      GROMACS
+          Bond     42.6187000     42.6188664
+         Angle    132.0880000    132.0880868
+ All dihedrals     78.1154000     78.1152827
+        Bonded    252.8221000    252.8222359
+         LJ-14     48.2048000     48.2046262
+    Coulomb-14    -26.6324000    -26.6333885
+ van der Waals   2986.8106000   2986.7227966
+ Electrostatic -24027.7386000 -24028.8728382
+     Nonbonded -21040.9280000 -21042.1500416
+     Potential -20788.1059000 -20789.3257798
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    1.2198798
+ GROMACS   -1.2198798    0.0000000
+****************
+CBC-G2
+****************
+                      AMBER      GROMACS
+          Bond     30.5831000     30.5830115
+         Angle    109.2753000    109.2751250
+ All dihedrals     69.6058000     69.6056578
+        Bonded    209.4642000    209.4637942
+         LJ-14     40.1961000     40.1960012
+    Coulomb-14    -19.9563000    -19.9570045
+ van der Waals   3017.0936000   3017.0920228
+ Electrostatic -23970.2466000 -23972.0559385
+     Nonbonded -20953.1530000 -20954.9639157
+     Potential -20743.6888000 -20745.4999701
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    1.8111701
+ GROMACS   -1.8111701    0.0000000
+****************
+CBC-G3
+****************
+                      AMBER      GROMACS
+          Bond     27.1751000     27.1750809
+         Angle    131.4169000    131.4169043
+ All dihedrals     72.5569000     72.5568027
+        Bonded    231.1489000    231.1487879
+         LJ-14     39.7093000     39.7092480
+    Coulomb-14     43.2644000     43.2658989
+ van der Waals   2936.3224000   2936.2410952
+ Electrostatic -23665.1497000 -23667.0180698
+     Nonbonded -20728.8273000 -20730.7769746
+     Potential -20497.6784000 -20499.6284208
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    1.9500208
+ GROMACS   -1.9500208    0.0000000
+****************
+CBC-G4
+****************
+                      AMBER      GROMACS
+          Bond     41.2239000     41.2239673
+         Angle    111.3790000    111.3788466
+ All dihedrals     72.7377000     72.7375415
+        Bonded    225.3406000    225.3403554
+         LJ-14     50.6664000     50.6663022
+    Coulomb-14   -192.6630000   -192.6696515
+ van der Waals   3056.6283000   3056.5089505
+ Electrostatic -24136.1799000 -24137.8931479
+     Nonbonded -21079.5516000 -21081.3841975
+     Potential -20854.2110000 -20856.0438576
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    1.8328576
+ GROMACS   -1.8328576    0.0000000
+****************
+CBC-G5
+****************
+                      AMBER      GROMACS
+          Bond     35.3521000     35.3523969
+         Angle    120.6785000    120.6785023
+ All dihedrals     73.5783000     73.5781295
+        Bonded    229.6089000    229.6090288
+         LJ-14     54.2804000     54.2802938
+    Coulomb-14    -60.9676000    -60.9696062
+ van der Waals   2988.4319000   2988.3418566
+ Electrostatic -23969.3361000 -23970.7647437
+     Nonbonded -20980.9042000 -20982.4228870
+     Potential -20751.2953000 -20752.8139191
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    1.5186191
+ GROMACS   -1.5186191    0.0000000
+****************
+CBC-G6
+****************
+                      AMBER      GROMACS
+          Bond     38.2150000     38.2148094
+         Angle    119.9128000    119.9130611
+ All dihedrals     80.0268000     80.0266252
+        Bonded    238.1546000    238.1544957
+         LJ-14     62.5586000     62.5585698
+    Coulomb-14    -35.1057000    -35.1068632
+ van der Waals   3063.6191000   3063.5189436
+ Electrostatic -24024.2047000 -24025.7949866
+     Nonbonded -20960.5856000 -20962.2760430
+     Potential -20722.4310000 -20724.1201601
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    1.6891601
+ GROMACS   -1.6891601    0.0000000
+****************
+CBC-G7
+****************
+                      AMBER      GROMACS
+          Bond     41.0211000     41.0213215
+         Angle    128.5623000    128.5619790
+ All dihedrals     87.2513000     87.2512588
+        Bonded    256.8347000    256.8345594
+         LJ-14     59.7056000     59.7055483
+    Coulomb-14    -68.8455000    -68.8478386
+ van der Waals   2920.4627000   2920.4418135
+ Electrostatic -24481.0918000 -24482.8350840
+     Nonbonded -21560.6291000 -21562.3932705
+     Potential -21303.7944000 -21305.5576303
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    1.7632303
+ GROMACS   -1.7632303    0.0000000
+****************
+CBC-G8
+****************
+                      AMBER      GROMACS
+          Bond     49.0991000     49.0996468
+         Angle    142.0035000    142.0035280
+ All dihedrals     87.9998000     87.9996703
+        Bonded    279.1024000    279.1028451
+         LJ-14     57.2273000     57.2273335
+    Coulomb-14     -3.2229000     -3.2230155
+ van der Waals   3020.2092000   3020.0764362
+ Electrostatic -23965.3976000 -23966.9990150
+     Nonbonded -20945.1884000 -20946.9225787
+     Potential -20666.0860000 -20667.8193714
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    1.7333714
+ GROMACS   -1.7333714    0.0000000
+****************
+CBC-G9
+****************
+                      AMBER      GROMACS
+          Bond     38.5126000     38.5129137
+         Angle    134.0838000    134.0837497
+ All dihedrals     72.5255000     72.5253679
+        Bonded    245.1219000    245.1220313
+         LJ-14     50.6789000     50.6788659
+    Coulomb-14     11.3600000     11.3603636
+ van der Waals   2998.8719000   2998.7408399
+ Electrostatic -24038.9066000 -24040.5222946
+     Nonbonded -21040.0347000 -21041.7814547
+     Potential -20794.9128000 -20796.6602683
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    1.7474683
+ GROMACS   -1.7474683    0.0000000
+****************
+OAH-G1
+****************
+                      AMBER      GROMACS
+          Bond     57.0116000     57.0117666
+         Angle    101.5966000    101.5965113
+ All dihedrals    123.8297000    123.8297472
+        Bonded    282.4379000    282.4380252
+         LJ-14     81.9925000     81.9924831
+    Coulomb-14    -72.6303000    -72.6327768
+ van der Waals   2961.1146000   2961.0424151
+ Electrostatic -24987.7585000 -24988.2985255
+     Nonbonded -22026.6439000 -22027.2561104
+     Potential -21744.2060000 -21744.8184303
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    0.6124303
+ GROMACS   -0.6124303    0.0000000
+****************
+OAH-G2
+****************
+                      AMBER      GROMACS
+          Bond     62.9351000     62.9352110
+         Angle    113.5502000    113.5500366
+ All dihedrals    120.8308000    120.8309318
+        Bonded    297.3161000    297.3161794
+         LJ-14     87.3510000     87.3509292
+    Coulomb-14    -30.3558000    -30.3568466
+ van der Waals   3062.8082000   3062.8399329
+ Electrostatic -24987.5761000 -24990.1148685
+     Nonbonded -21924.7679000 -21927.2749356
+     Potential -21627.4518000 -21629.9575018
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    2.5057018
+ GROMACS   -2.5057018    0.0000000
+****************
+OAH-G3
+****************
+                      AMBER      GROMACS
+          Bond     47.5845000     47.5843477
+         Angle    104.4652000    104.4650762
+ All dihedrals    129.8794000    129.8793206
+        Bonded    281.9291000    281.9287444
+         LJ-14     81.9466000     81.9465316
+    Coulomb-14   -157.4342000   -157.4395145
+ van der Waals   2995.6038000   2995.5611238
+ Electrostatic -24839.7163000 -24841.5715453
+     Nonbonded -21844.1125000 -21846.0104215
+     Potential -21562.1834000 -21564.0815458
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    1.8981458
+ GROMACS   -1.8981458    0.0000000
+****************
+OAH-G4
+****************
+                      AMBER      GROMACS
+          Bond     49.8279000     49.8279367
+         Angle    110.0410000    110.0409236
+ All dihedrals    133.9718000    133.9718537
+        Bonded    293.8407000    293.8407140
+         LJ-14     91.6521000     91.6522010
+    Coulomb-14    -69.8434000    -69.8457357
+ van der Waals   3160.9167000   3160.8601401
+ Electrostatic -25187.7547000 -25189.2428644
+     Nonbonded -22026.8380000 -22028.3827244
+     Potential -21732.9973000 -21734.5411837
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    1.5438837
+ GROMACS   -1.5438837    0.0000000
+****************
+OAH-G5
+****************
+                      AMBER      GROMACS
+          Bond     51.8223000     51.8226952
+         Angle    101.8978000    101.8978870
+ All dihedrals    125.7288000    125.7288109
+        Bonded    279.4489000    279.4493931
+         LJ-14     86.1544000     86.1543105
+    Coulomb-14   -112.8583000   -112.8620564
+ van der Waals   3103.0963000   3103.0374822
+ Electrostatic -24923.4362000 -24925.6158759
+     Nonbonded -21820.3399000 -21822.5783937
+     Potential -21540.8910000 -21543.1293320
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    2.2383320
+ GROMACS   -2.2383320    0.0000000
+****************
+OAH-G6
+****************
+                      AMBER      GROMACS
+          Bond     63.7509000     63.7514614
+         Angle     99.4973000     99.4972681
+ All dihedrals    124.9622000    124.9621338
+        Bonded    288.2104000    288.2108634
+         LJ-14     84.0747000     84.0747169
+    Coulomb-14     -9.3437000     -9.3439879
+ van der Waals   3043.6082000   3043.6559571
+ Electrostatic -24979.8610000 -24982.1912992
+     Nonbonded -21936.2528000 -21938.5353420
+     Potential -21648.0424000 -21650.3234046
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    2.2810046
+ GROMACS   -2.2810046    0.0000000
+****************
+OAMe-G1
+****************
+                      AMBER      GROMACS
+          Bond     57.4275000     57.4279698
+         Angle    108.9834000    108.9709484
+ All dihedrals    120.4397000    120.4396092
+        Bonded    286.8506000    286.8385274
+         LJ-14     83.1446000     83.1446237
+    Coulomb-14    355.9089000    355.9210870
+ van der Waals   3015.1807000   3015.1565964
+ Electrostatic -24914.6012000 -24916.8043665
+     Nonbonded -21899.4205000 -21901.6477702
+     Potential -21612.5699000 -21614.8086460
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    2.2387460
+ GROMACS   -2.2387460    0.0000000
+****************
+OAMe-G2
+****************
+                      AMBER      GROMACS
+          Bond     58.0857000     58.0862275
+         Angle    108.9684000    108.9683810
+ All dihedrals    120.9817000    120.9818129
+        Bonded    288.0358000    288.0364214
+         LJ-14     85.4792000     85.4792039
+    Coulomb-14    402.6449000    402.6586704
+ van der Waals   3031.2059000   3031.2278777
+ Electrostatic -24817.5819000 -24819.4173992
+     Nonbonded -21786.3760000 -21788.1895215
+     Potential -21498.3402000 -21500.1531131
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    1.8129131
+ GROMACS   -1.8129131    0.0000000
+****************
+OAMe-G3
+****************
+                      AMBER      GROMACS
+          Bond     61.9971000     61.9975832
+         Angle    164.1538000    164.1537610
+ All dihedrals    141.3541000    141.3539404
+        Bonded    367.5050000    367.5052846
+         LJ-14     81.5269000     81.5269441
+    Coulomb-14    276.4558000    276.4652172
+ van der Waals   3040.8653000   3040.7298053
+ Electrostatic -24588.5090000 -24590.6963494
+     Nonbonded -21547.6437000 -21549.9665441
+     Potential -21180.1387000 -21182.4603400
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    2.3216400
+ GROMACS   -2.3216400    0.0000000
+****************
+OAMe-G4
+****************
+                      AMBER      GROMACS
+          Bond     54.1451000     54.1453790
+         Angle    143.9680000    143.9680606
+ All dihedrals    131.4718000    131.4718819
+        Bonded    329.5849000    329.5853216
+         LJ-14     97.9584000     97.9582748
+    Coulomb-14    366.5673000    366.5796867
+ van der Waals   3074.6836000   3074.6582680
+ Electrostatic -24845.3204000 -24846.8895615
+     Nonbonded -21770.6368000 -21772.2312935
+     Potential -21441.0519000 -21442.6442250
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    1.5923250
+ GROMACS   -1.5923250    0.0000000
+****************
+OAMe-G5
+****************
+                      AMBER      GROMACS
+          Bond     58.6620000     58.6618420
+         Angle    120.6829000    120.6828422
+ All dihedrals    116.8400000    116.8400382
+        Bonded    296.1849000    296.1847224
+         LJ-14     86.8012000     86.8011606
+    Coulomb-14    316.1729000    316.1838743
+ van der Waals   3078.1437000   3078.0976443
+ Electrostatic -24705.5993000 -24707.1868430
+     Nonbonded -21627.4556000 -21629.0891986
+     Potential -21331.2707000 -21332.9032475
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    1.6325475
+ GROMACS   -1.6325475    0.0000000
+****************
+OAMe-G6
+****************
+                      AMBER      GROMACS
+          Bond     54.6242000     54.6236749
+         Angle    106.2792000    106.2790413
+ All dihedrals    123.4516000    123.4515529
+        Bonded    284.3550000    284.3542692
+         LJ-14     93.3097000     93.3096614
+    Coulomb-14    428.4759000    428.4905457
+ van der Waals   3047.7263000   3047.5990102
+ Electrostatic -24921.4713000 -24923.4982449
+     Nonbonded -21873.7450000 -21875.8992347
+     Potential -21589.3900000 -21591.5447986
+
+
+Potential energy differences
+                AMBER      GROMACS
+   AMBER    0.0000000    2.1547986
+ GROMACS   -2.1547986    0.0000000
