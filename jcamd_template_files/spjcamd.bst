@@ -529,6 +529,7 @@ FUNCTION {format.doi}
     }
   if$
 }
+
 FUNCTION {format.note}
 {
  note empty$

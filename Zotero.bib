@@ -1,35 +1,120 @@
 
-@inproceedings{bowers_scalable_2006,
-	title = {Scalable {Algorithms} for {Molecular} {Dynamics} {Simulations} on {Commodity} {Clusters}},
-	doi = {10.1109/SC.2006.54},
-	abstract = {Although molecular dynamics (MD) simulations of biomolecular systems often run for days to months, many events of great scientific interest and pharmaceutical relevance occur on long time scales that remain beyond reach. We present several new algorithms and implementation techniques that significantly accelerate parallel MD simulations compared with current state-of-the-art codes. These include a novel parallel decomposition method and message-passing techniques that reduce communication requirements, as well as novel communication primitives that further reduce communication time. We have also developed numerical techniques that maintain high accuracy while using single precision computation in order to exploit processor-level vector instructions. These methods are embodied in a newly developed MD code called Desmond that achieves unprecedented simulation throughput and parallel scalability on commodity clusters. Our results suggest that Desmond's parallel performance substantially surpasses that of any previously described code. For example, on a standard benchmark, Desmond's performance on a conventional Opteron cluster with 2K processors slightly exceeded the reported performance of IBM's Blue Gene/L machine with 32K processors running its Blue Matter MD code},
-	booktitle = {Proceedings of the {ACM}/{IEEE} {SC} 2006 {Conference}},
-	author = {Bowers, K. J. and Chow, D. E. and Xu, H. and Dror, R. O. and Eastwood, M. P. and Gregersen, B. A. and Klepeis, J. L. and Kolossvary, I. and Moraes, M. A. and Sacerdoti, F. D. and Salmon, J. K. and Shan, Y. and Shaw, D. E.},
-	month = nov,
-	year = {2006},
-	keywords = {Acceleration, biology computing, biomolecular system, Clustering algorithms, Code standards, commodity cluster, Computational modeling, Computer aided instruction, Discrete event simulation, distributed memory systems, Heuristic algorithms, message passing, message-passing technique, molecular biophysics, molecular dynamics method, Molecular Dynamics Simulation, numerical technique, parallel decomposition method, parallel programming, parallel scalability, Pharmaceuticals, processor-level vector instruction, Scalability, Throughput},
-	pages = {43--43},
-	file = {IEEE Xplore Abstract Record:/Users/mrshirts/zoterodata/storage/M4TUQUB8/abs_all.html:text/html;IEEE Xplore Full Text PDF:/Users/mrshirts/zoterodata/storage/76TVSJJU/Bowers et al. - 2006 - Scalable Algorithms for Molecular Dynamics Simulat.pdf:application/pdf}
+@article{paliwal_benchmark_2011,
+	title = {A {Benchmark} {Test} {Set} for {Alchemical} {Free} {Energy} {Transformations} and {Its} {Use} to {Quantify} {Error} in {Common} {Free} {Energy} {Methods}},
+	volume = {7},
+	issn = {1549-9618},
+	abstract = {There is a significant need for improved tools to validate thermophysical quantities computed via molecular simulation. In this paper we present the initial version of a benchmark set of testing methods for calculating free energies of molecular transformation in solution. This set is based on molecular changes common to many molecular design problems, such as insertion and deletion of atomic sites and changing atomic partial charges. We use this benchmark set to compare the statistical efficiency, reliability, and quality of uncertainty estimates for a number of published free energy methods, including thermodynamic integration, free energy perturbation, the Bennett acceptance ratio (BAR) and its multistate equivalent MBAR. We identify MBAR as the consistently best performing method, though other methods are frequently comparable in reliability and accuracy in many cases. We demonstrate that assumptions of Gaussian distributed errors in free energies are usually valid for most methods studied. We demonstrate that bootstrap error estimation is a robust and useful technique for estimating statistical variance for all free energy methods studied. This benchmark set is provided in a number of different file formats with the hope of becoming a useful and general tool for method comparisons.},
+	number = {12},
+	urldate = {2016-06-20},
+	journal = {J. Chem. Theory Comput.},
+	author = {Paliwal, Himanshu and Shirts, Michael R.},
+	month = dec,
+	year = {2011},
+	pages = {4115--4134}
 }
 
-@article{jakalian_fast_2002,
-	title = {Fast, efficient generation of high-quality atomic charges. {AM}1-{BCC} model: {II}. {Parameterization} and validation},
-	volume = {23},
-	issn = {1096-987X},
-	shorttitle = {Fast, efficient generation of high-quality atomic charges. {AM}1-{BCC} model},
-	url = {http://onlinelibrary.wiley.com/doi/10.1002/jcc.10128/abstract},
-	doi = {10.1002/jcc.10128},
-	abstract = {We present the first global parameterization and validation of a novel charge model, called AM1-BCC, which quickly and efficiently generates high-quality atomic charges for computer simulations of organic molecules in polar media. The goal of the charge model is to produce atomic charges that emulate the HF/6-31G* electrostatic potential (ESP) of a molecule. Underlying electronic structure features, including formal charge and electron delocalization, are first captured by AM1 population charges; simple additive bond charge corrections (BCCs) are then applied to these AM1 atomic charges to produce the AM1-BCC charges. The parameterization of BCCs was carried out by fitting to the HF/6-31G* ESP of a training set of {\textgreater}2700 molecules. Most organic functional groups and their combinations were sampled, as well as an extensive variety of cyclic and fused bicyclic heteroaryl systems. The resulting BCC parameters allow the AM1-BCC charging scheme to handle virtually all types of organic compounds listed in The Merck Index and the NCI Database. Validation of the model was done through comparisons of hydrogen-bonded dimer energies and relative free energies of solvation using AM1-BCC charges in conjunction with the 1994 Cornell et al. forcefield for AMBER.13 Homo- and hetero-dimer hydrogen-bond energies of a diverse set of organic molecules were reproduced to within 0.95 kcal/mol RMS deviation from the ab initio values, and for DNA dimers the energies were within 0.9 kcal/mol RMS deviation from ab initio values. The calculated relative free energies of solvation for a diverse set of monofunctional isosteres were reproduced to within 0.69 kcal/mol of experiment. In all these validation tests, AMBER with the AM1-BCC charge model maintained a correlation coefficient above 0.96. Thus, the parameters presented here for use with the AM1-BCC method present a fast, accurate, and robust alternative to HF/6-31G* ESP-fit charges for general use with the AMBER force field in computer simulations involving organic small molecules. © 2002 Wiley Periodicals, Inc. J Comput Chem 23: 1623–1641, 2002},
-	language = {en},
-	number = {16},
+@article{guthrie_blind_2009,
+	title = {A {Blind} {Challenge} for {Computational} {Solvation} {Free} {Energies}: {Introduction} and {Overview}},
+	volume = {113},
+	issn = {1520-6106},
+	shorttitle = {A {Blind} {Challenge} for {Computational} {Solvation} {Free} {Energies}},
+	abstract = {The accompanying set of papers arose from a recent blind challenge to computational solvation energies. The challenge was based on a set of 63 drug-like molecules for which solvation energies could be extracted from the literature. While the results are encouraging, there is still need for improvement.},
+	number = {14},
+	urldate = {2016-06-19},
+	journal = {J. Phys. Chem. B},
+	author = {Guthrie, J. Peter},
+	month = apr,
+	year = {2009},
+	pages = {4501--4507}
+}
+
+@article{shirts_accurate_2007,
+	title = {Accurate and {Efficient} {Corrections} for {Missing} {Dispersion} {Interactions} in {Molecular} {Simulations}},
+	volume = {111},
+	issn = {1520-6106},
+	abstract = {In simulations, molecular dispersion interactions are frequently neglected beyond a cutoff of around 1 nm. In some cases, analytical corrections appropriate for isotropic systems are applied to the pressure and/or the potential energy. Here, we show that in systems containing macromolecules, either of these approaches introduce statistically significant errors in some observed properties; for example, the choice of cutoff can affect computed free energies of ligand binding to proteins by 1 to 2 kcal/mol. We review current methods for eliminating this cutoff-dependent behavior of the dispersion energy and identify some situations where they fail. We introduce two new formalisms, appropriate for binding free energy calculations, which overcome these failings, requiring minimal computational effort beyond the time required to run the original simulation. When these cutoff approximations are applied, which can be done after all simulations are completed, results are consistent across simulations run with different cutoffs. In many situations, simulations can be run with even shorter cutoffs than typically used, resulting in increased computational efficiency.},
+	number = {45},
 	urldate = {2016-06-20},
-	journal = {J. Comput. Chem.},
-	author = {Jakalian, Araz and Jack, David B. and Bayly, Christopher I.},
-	month = dec,
-	year = {2002},
-	keywords = {AMBER, atomic charges, electrostatic potential fit charges, force-field simulations, organic small molecules},
-	pages = {1623--1641},
-	file = {Full Text PDF:/Users/mrshirts/zoterodata/storage/3NPKTN42/Jakalian et al. - 2002 - Fast, efficient generation of high-quality atomic .pdf:application/pdf;Snapshot:/Users/mrshirts/zoterodata/storage/AWWJG6MG/abstract.html:text/html}
+	journal = {J. Phys. Chem. B},
+	author = {Shirts, Michael R. and Mobley, David L. and Chodera, John D. and Pande, Vijay S.},
+	month = nov,
+	year = {2007},
+	pages = {13052--13063}
+}
+
+@article{sousa_da_silva_acpype_2012,
+	title = {{ACPYPE} - {AnteChamber} {PYthon} {Parser} {interfacE}},
+	volume = {5},
+	issn = {1756-0500},
+	abstract = {ACPYPE (or AnteChamber PYthon Parser interfacE) is a wrapper script around the ANTECHAMBER software that simplifies the generation of small molecule topologies and parameters for a variety of molecular dynamics programmes like GROMACS, CHARMM and CNS. It is written in the Python programming language and was developed as a tool for interfacing with other Python based applications such as the CCPN software suite (for NMR data analysis) and ARIA (for structure calculations from NMR data). ACPYPE is open source code, under GNU GPL v3, and is available as a stand-alone application at                     http://www.ccpn.ac.uk/acpype                                       and as a web portal application at                     http://webapps.ccpn.ac.uk/acpype                                      .},
+	urldate = {2016-06-19},
+	journal = {BMC Research Notes},
+	author = {Sousa da Silva, Alan W. and Vranken, Wim F.},
+	year = {2012},
+	keywords = {AMBER, ANTECHAMBER, CNS, GROMACS, Ligand, MD, NMR, Topology},
+	pages = {367}
+}
+
+@article{zhang_acyclic_2014,
+	title = {Acyclic {Cucurbit}[n]uril-type {Molecular} {Containers}: {Influence} of {Aromatic} {Walls} on their {Function} as {Solubilizing} {Excipients} for {Insoluble} {Drugs}},
+	volume = {57},
+	issn = {0022-2623},
+	shorttitle = {Acyclic {Cucurbit}[n]uril-type {Molecular} {Containers}},
+	abstract = {We studied the influence of the aromatic sidewalls on the ability of acyclic CB[n]-type molecular containers (1a–1e) to act as solubilizing agents for 19 insoluble drugs including the developmental anticancer agent PBS-1086. All five containers exhibit good water solubility and weak self-association (Ks ≤ 624 M–1). We constructed phase solubility diagrams to extract Krel and Ka values for the container·drug complexes. The acyclic CB[n]-type containers generally display significantly higher Ka values than HP-β-CD toward drugs. Containers 1a–1e bind the steroidal ring system and aromatic moieties of insoluble drugs. Compound 1b displays highest affinity toward most of the drugs studied. Containers 1a and 1b are broadly applicable and can be used to formulate a wider variety of insoluble drugs than was previously possible with cyclodextrin technology. For drugs that are solubilized by both HP-β-CD and 1a–1e, lower concentrations of 1a–1e are required to achieve identical [drug].},
+	number = {22},
+	urldate = {2016-07-04},
+	journal = {J. Med. Chem.},
+	author = {Zhang, Ben and Isaacs, Lyle},
+	month = nov,
+	year = {2014},
+	pages = {9554--9563},
+	file = {ACS Full Text PDF w/ Links:/Users/mrshirts/Library/Application Support/Zotero/Profiles/7au660g8.default/zotero/storage/UMWZTRG5/Zhang and Isaacs - 2014 - Acyclic Cucurbit[n]uril-type Molecular Containers.pdf:application/pdf;ACS Full Text Snapshot:/Users/mrshirts/Library/Application Support/Zotero/Profiles/7au660g8.default/zotero/storage/7IF6GMUJ/jm501276u.html:text/html}
+}
+
+@article{veld_application_2007,
+	title = {Application of {Ewald} summations to long-range dispersion forces},
+	volume = {127},
+	issn = {0021-9606, 1089-7690},
+	abstract = {Results illustrating the effects of using explicit summation terms for the r − 6 dispersion term on the interfacial properties of a Lennard-Jones fluid and SPC/E water are presented. For the Lennard-Jones fluid, we find that the use of long-range summations, even with a short “crossover radius,” yields results that are consistent with simulations using large cutoff radii. Simulations of SPC/E water demonstrate that the long-range dispersion forces are of secondary importance to the Coulombic forces. In both cases, we find that the ratio of the box size L ‖ to the crossover radius r c k plays an important role in determining the magnitude of the long-range dispersion correction, although its effect is secondary when Coulombic interactions are also present.},
+	number = {14},
+	urldate = {2016-06-20},
+	journal = {The Journal of Chemical Physics},
+	author = {Veld, Pieter J. in ’t and Ismail, Ahmed E. and Grest, Gary S.},
+	month = oct,
+	year = {2007},
+	keywords = {Critical point phenomena, Disperse systems, Electrostatics, Interfacial properties, Surface tension},
+	pages = {144711}
+}
+
+@article{essmann_smooth_1995,
+	title = {A smooth particle mesh {Ewald} method},
+	volume = {103},
+	issn = {0021-9606, 1089-7690},
+	abstract = {The previously developed particle mesh Ewald method is reformulated in terms of efficient B‐spline interpolation of the structure factors. This reformulation allows a natural extension of the method to potentials of the form 1/r p with p≥1. Furthermore, efficient calculation of the virial tensor follows. Use of B‐splines in place of Lagrange interpolation leads to analytic gradients as well as a significant improvement in the accuracy. We demonstrate that arbitrary accuracy can be achieved, independent of system size N, at a cost that scales as N log(N). For biomolecular systems with many thousands of atoms this method permits the use of Ewald summation at a computational cost comparable to that of a simple truncation method of 10 Å or less.},
+	number = {19},
+	urldate = {2016-06-20},
+	journal = {The Journal of Chemical Physics},
+	author = {Essmann, Ulrich and Perera, Lalith and Berkowitz, Max L. and Darden, Tom and Lee, Hsing and Pedersen, Lee G.},
+	month = nov,
+	year = {1995},
+	keywords = {Biomolecular dynamics, Interpolation, Tensor methods},
+	pages = {8577--8593}
+}
+
+@article{gibb_binding_2013,
+	title = {Binding of cyclic carboxylates to octa-acid deep-cavity cavitand},
+	volume = {28},
+	issn = {0920-654X, 1573-4951},
+	abstract = {As part of the fourth statistical assessment of modeling of proteins and ligands (sampl.eyesopen.com) prediction challenge, the strength of association of nine guests (1–9) binding to octa-acid host was determined by a combination of 1H NMR and isothermal titration calorimetry. Association constants in sodium tetraborate buffered (pH 9.2) aqueous solution ranged from 5.39 × 102 M−1 in the case of benzoate 1, up to 3.82 × 105 M−1 for trans-4-methylcyclohexanoate 7. Overall, the free energy difference between the free energies of complexation of these weakest and strongest binding guests was ΔΔG° = 3.88 kcal mol−1. Based on a multitude of previous studies, the anticipated order of strength of binding was close to that which was actually obtained. However, the binding of guest 3 (4-ethylbenzoate) was considerably stronger than initially estimated.},
+	language = {en},
+	number = {4},
+	urldate = {2016-07-04},
+	journal = {J Comput Aided Mol Des},
+	author = {Gibb, Corinne L. D. and Gibb, Bruce C.},
+	month = nov,
+	year = {2013},
+	pages = {319--325},
+	file = {Full Text PDF:/Users/mrshirts/Library/Application Support/Zotero/Profiles/7au660g8.default/zotero/storage/TABJNWKV/Gibb and Gibb - 2013 - Binding of cyclic carboxylates to octa-acid deep-c.pdf:application/pdf;Snapshot:/Users/mrshirts/Library/Application Support/Zotero/Profiles/7au660g8.default/zotero/storage/4CNKJMB4/10.html:text/html}
 }
 
 @article{crowley_chamber:_2009,
@@ -37,8 +122,6 @@
 	volume = {109},
 	issn = {1097-461X},
 	shorttitle = {{CHAMBER}},
-	url = {http://onlinelibrary.wiley.com/doi/10.1002/qua.22372/abstract},
-	doi = {10.1002/qua.22372},
 	abstract = {The similarity of the AMBER force field's energy functional form with that of the CHARMM force field, gives the potential for direct translation of common bonding and nonbonding terms, along with their parameters, present in CHARMM topology and parameter files, with the intent of evaluation within the AMBER software; specifically the SANDER and PMEMD dynamics engines. To this extent, we have created a tool, CHAMBER, which can take a CHARMM protein structure file (PSF), coordinate file (COR) and associated forcefield files, and convert these to an AMBER topology file (prmtop) and associated coordinate file (inpcrd). CHAMBER opens a conversion route which enables the simulation of CHARMM parameterized models using AMBER's PMEMD engine; thus providing improved serial efficiency as well as parallel efficiency over large numbers of CPUs. Significant effort has been expended in ensuring a true representation of the CHARMM force field in AMBER providing energies and forces that are the same to the limits of machine precision. This software will be released in the upcoming version 1.3 of the free AMBERTools suite.1 © 2009 Wiley Periodicals, Inc. Int J Quantum Chem, 2009},
 	language = {en},
 	number = {15},
@@ -48,187 +131,7 @@
 	month = dec,
 	year = {2009},
 	keywords = {AMBER, CHARMM, converter, PMEMD, PRMTOP, PSF, SANDER},
-	pages = {3767--3772},
-	file = {Full Text PDF:/Users/mrshirts/zoterodata/storage/9ZET74VU/Crowley et al. - 2009 - CHAMBER Comprehensive support for CHARMM force fi.pdf:application/pdf;Snapshot:/Users/mrshirts/zoterodata/storage/FI22XU4T/abstract.html:text/html}
-}
-
-@article{essmann_smooth_1995,
-	title = {A smooth particle mesh {Ewald} method},
-	volume = {103},
-	issn = {0021-9606, 1089-7690},
-	url = {http://scitation.aip.org/content/aip/journal/jcp/103/19/10.1063/1.470117},
-	doi = {10.1063/1.470117},
-	abstract = {The previously developed particle mesh Ewald method is reformulated in terms of efficient B‐spline interpolation of the structure factors. This reformulation allows a natural extension of the method to potentials of the form 1/r p with p≥1. Furthermore, efficient calculation of the virial tensor follows. Use of B‐splines in place of Lagrange interpolation leads to analytic gradients as well as a significant improvement in the accuracy. We demonstrate that arbitrary accuracy can be achieved, independent of system size N, at a cost that scales as N log(N). For biomolecular systems with many thousands of atoms this method permits the use of Ewald summation at a computational cost comparable to that of a simple truncation method of 10 Å or less.},
-	number = {19},
-	urldate = {2016-06-20},
-	journal = {The Journal of Chemical Physics},
-	author = {Essmann, Ulrich and Perera, Lalith and Berkowitz, Max L. and Darden, Tom and Lee, Hsing and Pedersen, Lee G.},
-	month = nov,
-	year = {1995},
-	keywords = {Biomolecular dynamics, Interpolation, Tensor methods},
-	pages = {8577--8593},
-	file = {Full Text PDF:/Users/mrshirts/zoterodata/storage/QVNUB25Z/Essmann et al. - 1995 - A smooth particle mesh Ewald method.pdf:application/pdf;Snapshot:/Users/mrshirts/zoterodata/storage/7NVEHA83/1.html:text/html}
-}
-
-@article{wu_isotropic_2005,
-	title = {Isotropic periodic sum: a method for the calculation of long-range interactions},
-	volume = {122},
-	issn = {0021-9606},
-	shorttitle = {Isotropic periodic sum},
-	doi = {10.1063/1.1836733},
-	abstract = {This work presents an accurate and efficient approach to the calculation of long-range interactions for molecular modeling and simulation. This method defines a local region for each particle and describes the remaining region as images of the local region statistically distributed in an isotropic and periodic way, which we call isotropic periodic images. Different from lattice sum methods that sum over discrete lattice images generated by periodic boundary conditions, this method sums over the isotropic periodic images to calculate long-range interactions, and is referred to as the isotropic periodic sum (IPS) method. The IPS method is not a lattice sum method and eliminates the need for a reciprocal space sum. Several analytic solutions of IPS for commonly used potentials are presented. It is demonstrated that the IPS method produces results very similar to that of Ewald summation, but with three major advantages, (1) it eliminates unwanted symmetry artifacts raised from periodic boundary conditions, (2) it can be applied to potentials of any functional form and to fully and partially homogenous systems as well as finite systems, and (3) it is more computationally efficient and can be easily parallelized for multiprocessor computers. Therefore, this method provides a general approach to an efficient calculation of long-range interactions for various kinds of molecular systems.},
-	language = {eng},
-	number = {4},
-	journal = {J Chem Phys},
-	author = {Wu, Xiongwu and Brooks, Bernard R.},
-	month = jan,
-	year = {2005},
-	pmid = {15740235},
-	pages = {44107}
-}
-
-@article{veld_application_2007,
-	title = {Application of {Ewald} summations to long-range dispersion forces},
-	volume = {127},
-	issn = {0021-9606, 1089-7690},
-	url = {http://scitation.aip.org/content/aip/journal/jcp/127/14/10.1063/1.2770730},
-	doi = {10.1063/1.2770730},
-	abstract = {Results illustrating the effects of using explicit summation terms for the r − 6 dispersion term on the interfacial properties of a Lennard-Jones fluid and SPC/E water are presented. For the Lennard-Jones fluid, we find that the use of long-range summations, even with a short “crossover radius,” yields results that are consistent with simulations using large cutoff radii. Simulations of SPC/E water demonstrate that the long-range dispersion forces are of secondary importance to the Coulombic forces. In both cases, we find that the ratio of the box size L ‖ to the crossover radius r c k plays an important role in determining the magnitude of the long-range dispersion correction, although its effect is secondary when Coulombic interactions are also present.},
-	number = {14},
-	urldate = {2016-06-20},
-	journal = {The Journal of Chemical Physics},
-	author = {Veld, Pieter J. in ’t and Ismail, Ahmed E. and Grest, Gary S.},
-	month = oct,
-	year = {2007},
-	keywords = {Critical point phenomena, Disperse systems, Electrostatics, Interfacial properties, Surface tension},
-	pages = {144711},
-	file = {Full Text PDF:/Users/mrshirts/zoterodata/storage/W6MEAZVW/Veld et al. - 2007 - Application of Ewald summations to long-range disp.pdf:application/pdf;Snapshot:/Users/mrshirts/zoterodata/storage/5IMSRS8C/1.html:text/html}
-}
-
-@article{paliwal_benchmark_2011,
-	title = {A {Benchmark} {Test} {Set} for {Alchemical} {Free} {Energy} {Transformations} and {Its} {Use} to {Quantify} {Error} in {Common} {Free} {Energy} {Methods}},
-	volume = {7},
-	issn = {1549-9618},
-	url = {http://dx.doi.org/10.1021/ct2003995},
-	doi = {10.1021/ct2003995},
-	abstract = {There is a significant need for improved tools to validate thermophysical quantities computed via molecular simulation. In this paper we present the initial version of a benchmark set of testing methods for calculating free energies of molecular transformation in solution. This set is based on molecular changes common to many molecular design problems, such as insertion and deletion of atomic sites and changing atomic partial charges. We use this benchmark set to compare the statistical efficiency, reliability, and quality of uncertainty estimates for a number of published free energy methods, including thermodynamic integration, free energy perturbation, the Bennett acceptance ratio (BAR) and its multistate equivalent MBAR. We identify MBAR as the consistently best performing method, though other methods are frequently comparable in reliability and accuracy in many cases. We demonstrate that assumptions of Gaussian distributed errors in free energies are usually valid for most methods studied. We demonstrate that bootstrap error estimation is a robust and useful technique for estimating statistical variance for all free energy methods studied. This benchmark set is provided in a number of different file formats with the hope of becoming a useful and general tool for method comparisons.},
-	number = {12},
-	urldate = {2016-06-20},
-	journal = {J. Chem. Theory Comput.},
-	author = {Paliwal, Himanshu and Shirts, Michael R.},
-	month = dec,
-	year = {2011},
-	pages = {4115--4134},
-	file = {ACS Full Text PDF w/ Links:/Users/mrshirts/zoterodata/storage/CPTXAZZ9/Paliwal and Shirts - 2011 - A Benchmark Test Set for Alchemical Free Energy Tr.pdf:application/pdf;ACS Full Text Snapshot:/Users/mrshirts/zoterodata/storage/ZMJESBWE/ct2003995.html:text/html}
-}
-
-@article{shirts_accurate_2007,
-	title = {Accurate and {Efficient} {Corrections} for {Missing} {Dispersion} {Interactions} in {Molecular} {Simulations}},
-	volume = {111},
-	issn = {1520-6106},
-	url = {http://dx.doi.org/10.1021/jp0735987},
-	doi = {10.1021/jp0735987},
-	abstract = {In simulations, molecular dispersion interactions are frequently neglected beyond a cutoff of around 1 nm. In some cases, analytical corrections appropriate for isotropic systems are applied to the pressure and/or the potential energy. Here, we show that in systems containing macromolecules, either of these approaches introduce statistically significant errors in some observed properties; for example, the choice of cutoff can affect computed free energies of ligand binding to proteins by 1 to 2 kcal/mol. We review current methods for eliminating this cutoff-dependent behavior of the dispersion energy and identify some situations where they fail. We introduce two new formalisms, appropriate for binding free energy calculations, which overcome these failings, requiring minimal computational effort beyond the time required to run the original simulation. When these cutoff approximations are applied, which can be done after all simulations are completed, results are consistent across simulations run with different cutoffs. In many situations, simulations can be run with even shorter cutoffs than typically used, resulting in increased computational efficiency.},
-	number = {45},
-	urldate = {2016-06-20},
-	journal = {J. Phys. Chem. B},
-	author = {Shirts, Michael R. and Mobley, David L. and Chodera, John D. and Pande, Vijay S.},
-	month = nov,
-	year = {2007},
-	pages = {13052--13063},
-	file = {ACS Full Text PDF w/ Links:/Users/mrshirts/zoterodata/storage/ZGWX4H6W/Shirts et al. - 2007 - Accurate and Efficient Corrections for Missing Dis.pdf:application/pdf;ACS Full Text Snapshot:/Users/mrshirts/zoterodata/storage/83S7AUA2/jp0735987.html:text/html}
-}
-
-@article{naden_rapid_2016,
-	title = {Rapid {Computation} of {Thermodynamic} {Properties} over {Multidimensional} {Nonbonded} {Parameter} {Spaces} {Using} {Adaptive} {Multistate} {Reweighting}},
-	volume = {12},
-	issn = {1549-9618},
-	url = {http://dx.doi.org/10.1021/acs.jctc.5b00869},
-	doi = {10.1021/acs.jctc.5b00869},
-	abstract = {We show how thermodynamic properties of molecular models can be computed over a large, multidimensional parameter space by combining multistate reweighting analysis with a linear basis function approach. This approach reduces the computational cost to estimate thermodynamic properties from molecular simulations for over 130,000 tested parameter combinations from over 1000 CPU years to tens of CPU days. This speed increase is achieved primarily by computing the potential energy as a linear combination of basis functions, computed from either modified simulation code or as the difference of energy between two reference states, which can be done without any simulation code modification. The thermodynamic properties are then estimated with the Multistate Bennett Acceptance Ratio (MBAR) as a function of multiple model parameters without the need to define a priori how the states are connected by a pathway. Instead, we adaptively sample a set of points in parameter space to create mutual configuration space overlap. The existence of regions of poor configuration space overlap are detected by analyzing the eigenvalues of the sampled states’ overlap matrix. The configuration space overlap to sampled states is monitored alongside the mean and maximum uncertainty to determine convergence, as neither the uncertainty or the configuration space overlap alone is a sufficient metric of convergence. This adaptive sampling scheme is demonstrated by estimating with high precision the solvation free energies of charged particles of Lennard-Jones plus Coulomb functional form with charges between −2 and +2 and generally physical values of σij and ϵij in TIP3P water. We also compute entropy, enthalpy, and radial distribution functions of arbitrary unsampled parameter combinations using only the data from these sampled states and use the estimates of free energies over the entire space to examine the deviation of atomistic simulations from the Born approximation to the solvation free energy.},
-	number = {4},
-	urldate = {2016-06-20},
-	journal = {J. Chem. Theory Comput.},
-	author = {Naden, Levi N. and Shirts, Michael R.},
-	month = apr,
-	year = {2016},
-	pages = {1806--1823},
-	file = {ACS Full Text PDF w/ Links:/Users/mrshirts/zoterodata/storage/XEFJADVN/Naden and Shirts - 2016 - Rapid Computation of Thermodynamic Properties over.pdf:application/pdf;ACS Full Text Snapshot:/Users/mrshirts/zoterodata/storage/MHMIRCRS/acs.jctc.html:text/html}
-}
-
-@article{lee_charmm-gui_2016,
-	title = {{CHARMM}-{GUI} {Input} {Generator} for {NAMD}, {GROMACS}, {AMBER}, {OpenMM}, and {CHARMM}/{OpenMM} {Simulations} {Using} the {CHARMM}36 {Additive} {Force} {Field}},
-	volume = {12},
-	issn = {1549-9618},
-	url = {http://dx.doi.org/10.1021/acs.jctc.5b00935},
-	doi = {10.1021/acs.jctc.5b00935},
-	abstract = {Proper treatment of nonbonded interactions is essential for the accuracy of molecular dynamics (MD) simulations, especially in studies of lipid bilayers. The use of the CHARMM36 force field (C36 FF) in different MD simulation programs can result in disagreements with published simulations performed with CHARMM due to differences in the protocols used to treat the long-range and 1-4 nonbonded interactions. In this study, we systematically test the use of the C36 lipid FF in NAMD, GROMACS, AMBER, OpenMM, and CHARMM/OpenMM. A wide range of Lennard-Jones (LJ) cutoff schemes and integrator algorithms were tested to find the optimal simulation protocol to best match bilayer properties of six lipids with varying acyl chain saturation and head groups. MD simulations of a 1,2-dipalmitoyl-sn-phosphatidylcholine (DPPC) bilayer were used to obtain the optimal protocol for each program. MD simulations with all programs were found to reasonably match the DPPC bilayer properties (surface area per lipid, chain order parameters, and area compressibility modulus) obtained using the standard protocol used in CHARMM as well as from experiments. The optimal simulation protocol was then applied to the other five lipid simulations and resulted in excellent agreement between results from most simulation programs as well as with experimental data. AMBER compared least favorably with the expected membrane properties, which appears to be due to its use of the hard-truncation in the LJ potential versus a force-based switching function used to smooth the LJ potential as it approaches the cutoff distance. The optimal simulation protocol for each program has been implemented in CHARMM-GUI. This protocol is expected to be applicable to the remainder of the additive C36 FF including the proteins, nucleic acids, carbohydrates, and small molecules.},
-	number = {1},
-	urldate = {2016-06-20},
-	journal = {J. Chem. Theory Comput.},
-	author = {Lee, Jumin and Cheng, Xi and Swails, Jason M. and Yeom, Min Sun and Eastman, Peter K. and Lemkul, Justin A. and Wei, Shuai and Buckner, Joshua and Jeong, Jong Cheol and Qi, Yifei and Jo, Sunhwan and Pande, Vijay S. and Case, David A. and Brooks, Charles L. and MacKerell, Alexander D. and Klauda, Jeffery B. and Im, Wonpil},
-	month = jan,
-	year = {2016},
-	pages = {405--413},
-	file = {ACS Full Text PDF w/ Links:/Users/mrshirts/zoterodata/storage/5HW5UGIR/Lee et al. - 2016 - CHARMM-GUI Input Generator for NAMD, GROMACS, AMBE.pdf:application/pdf;ACS Full Text Snapshot:/Users/mrshirts/zoterodata/storage/HNE376IF/acs.jctc.html:text/html}
-}
-
-@article{sousa_da_silva_acpype_2012,
-	title = {{ACPYPE} - {AnteChamber} {PYthon} {Parser} {interfacE}},
-	volume = {5},
-	issn = {1756-0500},
-	url = {http://dx.doi.org/10.1186/1756-0500-5-367},
-	doi = {10.1186/1756-0500-5-367},
-	abstract = {ACPYPE (or AnteChamber PYthon Parser interfacE) is a wrapper script around the ANTECHAMBER software that simplifies the generation of small molecule topologies and parameters for a variety of molecular dynamics programmes like GROMACS, CHARMM and CNS. It is written in the Python programming language and was developed as a tool for interfacing with other Python based applications such as the CCPN software suite (for NMR data analysis) and ARIA (for structure calculations from NMR data). ACPYPE is open source code, under GNU GPL v3, and is available as a stand-alone application at                     http://www.ccpn.ac.uk/acpype                                       and as a web portal application at                     http://webapps.ccpn.ac.uk/acpype                                      .},
-	urldate = {2016-06-19},
-	journal = {BMC Research Notes},
-	author = {Sousa da Silva, Alan W. and Vranken, Wim F.},
-	year = {2012},
-	keywords = {AMBER, ANTECHAMBER, CNS, GROMACS, Ligand, MD, NMR, Topology},
-	pages = {367},
-	file = {Snapshot:/Users/mrshirts/zoterodata/storage/FCR3S2NU/1756-0500-5-367.html:text/html}
-}
-
-@article{wang_development_2004,
-	title = {Development and testing of a general {Amber} force field.},
-	volume = {25},
-	copyright = {(c)2004 IEE; Institute for Scientific Information, Inc.},
-	abstract = {We describe here a general Amber force field (GAFF) for organic molecules. GAFF is designed to be compatible with existing Amber force fields for proteins and nucleic acids, and has parameters for most organic and pharmaceutical molecules that are composed of H, C, N, O, S, P, and halogens. It uses a simple functional form and a limited number of atom types, but incorporates both empirical and heuristic models to estimate force constants and partial atomic charges. The performance of GAFF in test cases is encouraging. In test I, 74 crystallographic structures were compared to GAFF minimized structures, with a root-mean-square displacement of 0.26 AA, which is comparable to that of the Tripos 5.2 force field (0.25 AA) and better than those of MMFF 94 and CHARMm (0.47 and 0.44 AA, respectively). In test II, gas phase minimizations were performed on 22 nucleic acid base pairs, and the minimized structures and intermolecular energies were compared to MP2/6-31G* results. The RMS of displacements and relative energies were 0.25 AA and 1.2 kcal/mol, respectively. These data are comparable to results from Parm99/RESP (0.16 AA and 1.18 kcal/mol, respectively), which were parameterized to these base pairs. Test III looked at the relative energies of 71 conformational pairs that were used in development of the Parm99 force field. The RMS error in relative energies (compared to experiment) is about 0.5 kcal/mol. GAFF can be applied to wide range of molecules in an automatic fashion, making it suitable for rational drug design and database searching. (29 refs.)},
-	number = {9},
-	journal = {Journal Of Computational Chemistry},
-	author = {Wang, J. M. and Wolf, R. M. and Caldwell, J. W. and Kollman, P. A. and Case, D. A.},
-	month = jul,
-	year = {2004},
-	keywords = {additive force field; Additive force field; AM1-BCC MODEL; ATOMIC CHARGES; Biomolecular structure, and mathematical biophysics (A8710); general AMBER force field; General Amber force field; H; Halogens; Heuristic models; Intermolecular energy; Intermolecular forces; Macromolecular configuration (bonds, Bonds (chemical), configuration, conformation, CONFORMATIONAL ENERGIES, Conformational pairs, Crystallographic structures, Database searching, dimensions) (A3620H); Minimized structures; Molecular biophysics; Molecular configurations; Molecular force constants; MOLECULAR MECHANICS; Molecular rotation, DRUGS, EFFICIENT GENERATION, Force constants, Force field parameterization, Gas phase minimizations, General, Nucleic acid base pairs, NUCLEIC-ACIDS, Nucleic acids, Organic molecules, PARAMETERIZATION, Partial atomic charges, PERFORMANCE, Pharmaceutical molecules, PROTEINS, Rational drug design, Relative energy, RESP MODEL, Restrained electrostatic potential, restrained electrostatic potential (RESP), Root mean square displacement, Simple functional form, theoretical, vibration},
-	pages = {1157 -- 74},
-	file = {Wiley Interscience PDF:/Users/mrshirts/zoterodata/storage/9XJMSB2N/Wang et al. - 2004 - Development and testing of a general amber force f.pdf:application/pdf}
-}
-
-@article{plimpton_fast_1995,
-	title = {Fast {Parallel} {Algorithms} for {Short}-{Range} {Molecular} {Dynamics}},
-	volume = {117},
-	issn = {0021-9991},
-	url = {http://www.sciencedirect.com/science/article/B6WHY-45NJN1B-3N/2/58aa2a309d2ebbbe60e0f417d398b0ef},
-	doi = {10.1006/jcph.1995.1039},
-	abstract = {Three parallel algorithms for classical molecular dynamics are presented. The first assigns each processor a fixed subset of atoms; the second assigns each a fixed subset of inter-atomic forces to compute; the third assigns each a fixed spatial region. The algorithms are suitable for molecular dynamics models which can be difficult to parallelize efficiently--those with short-range forces where the neighbors of each atom change rapidly. They can be implemented on any distributed-memory parallel machine which allows for message-passing of data between independently executing processors. The algorithms are tested on a standard Lennard-Jones benchmark problem for system sizes ranging from 500 to 100,000,000 atoms on several parallel supercomputers--the nCUBE 2, Intel iPSC/860 and Paragon, and Cray T3D. Comparing the results to the fastest reported vectorized Cray Y-MP and C90 algorithm shows that the current generation of parallel machines is competitive with conventional vector supercomputers even for small problems. For large problems, the spatial algorithm achieves parallel efficiencies of 90\% and a 1840-node Intel Paragon performs up to 165 faster than a single Cray C9O processor. Trade-offs between the three algorithms and guidelines for adapting them to more complex molecular dynamics simulations are also discussed.},
-	number = {1},
-	urldate = {2010-02-14},
-	journal = {Journal of Computational Physics},
-	author = {Plimpton, Steve},
-	month = mar,
-	year = {1995},
-	keywords = {Computers, decomposition, DESIGN, implementation, link-cell, network, particles, SIMULATIONS, strategy, surfaces},
-	pages = {1--19},
-	file = {ScienceDirect Full Text PDF:/Users/mrshirts/zoterodata/storage/X4D2TDSR/Plimpton - 1995 - Fast Parallel Algorithms for Short-Range Molecular.pdf:application/pdf;ScienceDirect Snapshot:/Users/mrshirts/zoterodata/storage/ATHFV83U/science.html:text/html}
-}
-
-@article{hess_gromacs_2008,
-	title = {{GROMACS} 4: {Algorithms} for highly efficient, load-balanced, and scalable molecular simulation},
-	volume = {4},
-	journal = {J. Chem. Theo. Comput.},
-	author = {Hess, B. and Kutzner, C. and Spoel, D. van der and Lindahl, E.},
-	year = {2008},
-	pages = {435--447}
+	pages = {3767--3772}
 }
 
 @article{brooks_charmm:_1983,
@@ -241,21 +144,146 @@
 	pages = {187--217}
 }
 
-@article{guthrie_blind_2009,
-	title = {A {Blind} {Challenge} for {Computational} {Solvation} {Free} {Energies}: {Introduction} and {Overview}},
-	volume = {113},
-	issn = {1520-6106},
-	shorttitle = {A {Blind} {Challenge} for {Computational} {Solvation} {Free} {Energies}},
-	url = {http://dx.doi.org/10.1021/jp806724u},
-	doi = {10.1021/jp806724u},
-	abstract = {The accompanying set of papers arose from a recent blind challenge to computational solvation energies. The challenge was based on a set of 63 drug-like molecules for which solvation energies could be extracted from the literature. While the results are encouraging, there is still need for improvement.},
+@article{lee_charmm-gui_2016,
+	title = {{CHARMM}-{GUI} {Input} {Generator} for {NAMD}, {GROMACS}, {AMBER}, {OpenMM}, and {CHARMM}/{OpenMM} {Simulations} {Using} the {CHARMM}36 {Additive} {Force} {Field}},
+	volume = {12},
+	issn = {1549-9618},
+	abstract = {Proper treatment of nonbonded interactions is essential for the accuracy of molecular dynamics (MD) simulations, especially in studies of lipid bilayers. The use of the CHARMM36 force field (C36 FF) in different MD simulation programs can result in disagreements with published simulations performed with CHARMM due to differences in the protocols used to treat the long-range and 1-4 nonbonded interactions. In this study, we systematically test the use of the C36 lipid FF in NAMD, GROMACS, AMBER, OpenMM, and CHARMM/OpenMM. A wide range of Lennard-Jones (LJ) cutoff schemes and integrator algorithms were tested to find the optimal simulation protocol to best match bilayer properties of six lipids with varying acyl chain saturation and head groups. MD simulations of a 1,2-dipalmitoyl-sn-phosphatidylcholine (DPPC) bilayer were used to obtain the optimal protocol for each program. MD simulations with all programs were found to reasonably match the DPPC bilayer properties (surface area per lipid, chain order parameters, and area compressibility modulus) obtained using the standard protocol used in CHARMM as well as from experiments. The optimal simulation protocol was then applied to the other five lipid simulations and resulted in excellent agreement between results from most simulation programs as well as with experimental data. AMBER compared least favorably with the expected membrane properties, which appears to be due to its use of the hard-truncation in the LJ potential versus a force-based switching function used to smooth the LJ potential as it approaches the cutoff distance. The optimal simulation protocol for each program has been implemented in CHARMM-GUI. This protocol is expected to be applicable to the remainder of the additive C36 FF including the proteins, nucleic acids, carbohydrates, and small molecules.},
+	number = {1},
+	urldate = {2016-06-20},
+	journal = {J. Chem. Theory Comput.},
+	author = {Lee, Jumin and Cheng, Xi and Swails, Jason M. and Yeom, Min Sun and Eastman, Peter K. and Lemkul, Justin A. and Wei, Shuai and Buckner, Joshua and Jeong, Jong Cheol and Qi, Yifei and Jo, Sunhwan and Pande, Vijay S. and Case, David A. and Brooks, Charles L. and MacKerell, Alexander D. and Klauda, Jeffery B. and Im, Wonpil},
+	month = jan,
+	year = {2016},
+	pages = {405--413}
+}
+
+@article{wang_development_2004,
+	title = {Development and testing of a general {Amber} force field.},
+	volume = {25},
+	copyright = {(c)2004 IEE; Institute for Scientific Information, Inc.},
+	abstract = {We describe here a general Amber force field (GAFF) for organic molecules. GAFF is designed to be compatible with existing Amber force fields for proteins and nucleic acids, and has parameters for most organic and pharmaceutical molecules that are composed of H, C, N, O, S, P, and halogens. It uses a simple functional form and a limited number of atom types, but incorporates both empirical and heuristic models to estimate force constants and partial atomic charges. The performance of GAFF in test cases is encouraging. In test I, 74 crystallographic structures were compared to GAFF minimized structures, with a root-mean-square displacement of 0.26 AA, which is comparable to that of the Tripos 5.2 force field (0.25 AA) and better than those of MMFF 94 and CHARMm (0.47 and 0.44 AA, respectively). In test II, gas phase minimizations were performed on 22 nucleic acid base pairs, and the minimized structures and intermolecular energies were compared to MP2/6-31G* results. The RMS of displacements and relative energies were 0.25 AA and 1.2 kcal/mol, respectively. These data are comparable to results from Parm99/RESP (0.16 AA and 1.18 kcal/mol, respectively), which were parameterized to these base pairs. Test III looked at the relative energies of 71 conformational pairs that were used in development of the Parm99 force field. The RMS error in relative energies (compared to experiment) is about 0.5 kcal/mol. GAFF can be applied to wide range of molecules in an automatic fashion, making it suitable for rational drug design and database searching. (29 refs.)},
+	number = {9},
+	journal = {Journal Of Computational Chemistry},
+	author = {Wang, J. M. and Wolf, R. M. and Caldwell, J. W. and Kollman, P. A. and Case, D. A.},
+	month = jul,
+	year = {2004},
+	keywords = {additive force field; Additive force field; AM1-BCC MODEL; ATOMIC CHARGES; Biomolecular structure, and mathematical biophysics (A8710); general AMBER force field; General Amber force field; H; Halogens; Heuristic models; Intermolecular energy; Intermolecular forces; Macromolecular configuration (bonds, Bonds (chemical), configuration, conformation, CONFORMATIONAL ENERGIES, Conformational pairs, Crystallographic structures, Database searching, dimensions) (A3620H); Minimized structures; Molecular biophysics; Molecular configurations; Molecular force constants; MOLECULAR MECHANICS; Molecular rotation, DRUGS, EFFICIENT GENERATION, Force constants, Force field parameterization, Gas phase minimizations, General, Nucleic acid base pairs, Nucleic acids, NUCLEIC-ACIDS, Organic molecules, PARAMETERIZATION, Partial atomic charges, PERFORMANCE, Pharmaceutical molecules, PROTEINS, Rational drug design, Relative energy, RESP MODEL, Restrained electrostatic potential, restrained electrostatic potential (RESP), Root mean square displacement, Simple functional form, theoretical, vibration},
+	pages = {1157 -- 74}
+}
+
+@article{jakalian_fast_2002,
+	title = {Fast, efficient generation of high-quality atomic charges. {AM}1-{BCC} model: {II}. {Parameterization} and validation},
+	volume = {23},
+	issn = {1096-987X},
+	shorttitle = {Fast, efficient generation of high-quality atomic charges. {AM}1-{BCC} model},
+	abstract = {We present the first global parameterization and validation of a novel charge model, called AM1-BCC, which quickly and efficiently generates high-quality atomic charges for computer simulations of organic molecules in polar media. The goal of the charge model is to produce atomic charges that emulate the HF/6-31G* electrostatic potential (ESP) of a molecule. Underlying electronic structure features, including formal charge and electron delocalization, are first captured by AM1 population charges; simple additive bond charge corrections (BCCs) are then applied to these AM1 atomic charges to produce the AM1-BCC charges. The parameterization of BCCs was carried out by fitting to the HF/6-31G* ESP of a training set of {\textgreater}2700 molecules. Most organic functional groups and their combinations were sampled, as well as an extensive variety of cyclic and fused bicyclic heteroaryl systems. The resulting BCC parameters allow the AM1-BCC charging scheme to handle virtually all types of organic compounds listed in The Merck Index and the NCI Database. Validation of the model was done through comparisons of hydrogen-bonded dimer energies and relative free energies of solvation using AM1-BCC charges in conjunction with the 1994 Cornell et al. forcefield for AMBER.13 Homo- and hetero-dimer hydrogen-bond energies of a diverse set of organic molecules were reproduced to within 0.95 kcal/mol RMS deviation from the ab initio values, and for DNA dimers the energies were within 0.9 kcal/mol RMS deviation from ab initio values. The calculated relative free energies of solvation for a diverse set of monofunctional isosteres were reproduced to within 0.69 kcal/mol of experiment. In all these validation tests, AMBER with the AM1-BCC charge model maintained a correlation coefficient above 0.96. Thus, the parameters presented here for use with the AM1-BCC method present a fast, accurate, and robust alternative to HF/6-31G* ESP-fit charges for general use with the AMBER force field in computer simulations involving organic small molecules. © 2002 Wiley Periodicals, Inc. J Comput Chem 23: 1623–1641, 2002},
+	language = {en},
+	number = {16},
+	urldate = {2016-06-20},
+	journal = {J. Comput. Chem.},
+	author = {Jakalian, Araz and Jack, David B. and Bayly, Christopher I.},
+	month = dec,
+	year = {2002},
+	keywords = {AMBER, atomic charges, electrostatic potential fit charges, force-field simulations, organic small molecules},
+	pages = {1623--1641}
+}
+
+@article{plimpton_fast_1995,
+	title = {Fast {Parallel} {Algorithms} for {Short}-{Range} {Molecular} {Dynamics}},
+	volume = {117},
+	issn = {0021-9991},
+	abstract = {Three parallel algorithms for classical molecular dynamics are presented. The first assigns each processor a fixed subset of atoms; the second assigns each a fixed subset of inter-atomic forces to compute; the third assigns each a fixed spatial region. The algorithms are suitable for molecular dynamics models which can be difficult to parallelize efficiently--those with short-range forces where the neighbors of each atom change rapidly. They can be implemented on any distributed-memory parallel machine which allows for message-passing of data between independently executing processors. The algorithms are tested on a standard Lennard-Jones benchmark problem for system sizes ranging from 500 to 100,000,000 atoms on several parallel supercomputers--the nCUBE 2, Intel iPSC/860 and Paragon, and Cray T3D. Comparing the results to the fastest reported vectorized Cray Y-MP and C90 algorithm shows that the current generation of parallel machines is competitive with conventional vector supercomputers even for small problems. For large problems, the spatial algorithm achieves parallel efficiencies of 90\% and a 1840-node Intel Paragon performs up to 165 faster than a single Cray C9O processor. Trade-offs between the three algorithms and guidelines for adapting them to more complex molecular dynamics simulations are also discussed.},
+	number = {1},
+	urldate = {2010-02-14},
+	journal = {Journal of Computational Physics},
+	author = {Plimpton, Steve},
+	month = mar,
+	year = {1995},
+	keywords = {Computers, decomposition, DESIGN, implementation, link-cell, network, particles, SIMULATIONS, strategy, surfaces},
+	pages = {1--19}
+}
+
+@article{hess_gromacs_2008,
+	title = {{GROMACS} 4: {Algorithms} for highly efficient, load-balanced, and scalable molecular simulation},
+	volume = {4},
+	journal = {J. Chem. Theo. Comput.},
+	author = {Hess, B. and Kutzner, C. and Spoel, D. van der and Lindahl, E.},
+	year = {2008},
+	pages = {435--447}
+}
+
+@article{gan_guest-mediated_2013,
+	title = {Guest-mediated switching of the assembly state of a water-soluble deep-cavity cavitand},
+	volume = {49},
+	issn = {1364-548X},
+	abstract = {Deep-cavity cavitand TEMOA (2) is shown to assemble via the hydrophobic effect into tetrameric and hexameric assemblies. With inner volumes of 1400–1500 Å3 and 3200–3700 Å3 respectively, these well-defined and mono-dispersed assemblies represent the largest of their type to date.},
+	language = {en},
 	number = {14},
-	urldate = {2016-06-19},
-	journal = {J. Phys. Chem. B},
-	author = {Guthrie, J. Peter},
+	urldate = {2016-07-04},
+	journal = {Chem. Commun.},
+	author = {Gan, Haiying and Gibb, Bruce C.},
+	month = jan,
+	year = {2013},
+	pages = {1395--1397},
+	file = {Full Text PDF:/Users/mrshirts/Library/Application Support/Zotero/Profiles/7au660g8.default/zotero/storage/VRWVTZVU/Gan and Gibb - 2013 - Guest-mediated switching of the assembly state of .pdf:application/pdf;Snapshot:/Users/mrshirts/Library/Application Support/Zotero/Profiles/7au660g8.default/zotero/storage/P36386US/c2cc38227j.html:text/html}
+}
+
+@article{wu_isotropic_2005,
+	title = {Isotropic periodic sum: a method for the calculation of long-range interactions},
+	volume = {122},
+	issn = {0021-9606},
+	shorttitle = {Isotropic periodic sum},
+	abstract = {This work presents an accurate and efficient approach to the calculation of long-range interactions for molecular modeling and simulation. This method defines a local region for each particle and describes the remaining region as images of the local region statistically distributed in an isotropic and periodic way, which we call isotropic periodic images. Different from lattice sum methods that sum over discrete lattice images generated by periodic boundary conditions, this method sums over the isotropic periodic images to calculate long-range interactions, and is referred to as the isotropic periodic sum (IPS) method. The IPS method is not a lattice sum method and eliminates the need for a reciprocal space sum. Several analytic solutions of IPS for commonly used potentials are presented. It is demonstrated that the IPS method produces results very similar to that of Ewald summation, but with three major advantages, (1) it eliminates unwanted symmetry artifacts raised from periodic boundary conditions, (2) it can be applied to potentials of any functional form and to fully and partially homogenous systems as well as finite systems, and (3) it is more computationally efficient and can be easily parallelized for multiprocessor computers. Therefore, this method provides a general approach to an efficient calculation of long-range interactions for various kinds of molecular systems.},
+	language = {eng},
+	number = {4},
+	journal = {J Chem Phys},
+	author = {Wu, Xiongwu and Brooks, Bernard R.},
+	month = jan,
+	year = {2005},
+	pmid = {15740235},
+	pages = {44107}
+}
+
+@article{jordan_molecular_2014,
+	title = {Molecular containers assembled through the hydrophobic effect},
+	volume = {44},
+	issn = {1460-4744},
+	abstract = {This review focuses on molecular containers formed by assembly processes driven by the hydrophobic effect, and summarizes the progress made in the field over the last ten years. This small but growing facet of supramolecular chemistry discusses three classes of molecules used by researchers to investigate how self-assembly can be applied to form discrete, mono-dispersed, and structurally well-defined supramolecular entities. The approaches demonstrate the importance of preorganization of arrays of rigid moieties to define a specific form predisposed to bind, fold, or assemble. As the examples demonstrate, studying these systems and their properties is teaching us how to control supramolecular chemistry in water, shedding light on aspects of aqueous solutions chemistry, and illustrating novel applications that harness the unique properties of the hydrophobic effect.},
+	language = {en},
+	number = {2},
+	urldate = {2016-07-04},
+	journal = {Chem. Soc. Rev.},
+	author = {Jordan, Jacobs H. and Gibb, Bruce C.},
+	month = dec,
+	year = {2014},
+	pages = {547--585},
+	file = {Full Text PDF:/Users/mrshirts/Library/Application Support/Zotero/Profiles/7au660g8.default/zotero/storage/DJCR3VPE/Jordan and Gibb - 2014 - Molecular containers assembled through the hydroph.pdf:application/pdf;Snapshot:/Users/mrshirts/Library/Application Support/Zotero/Profiles/7au660g8.default/zotero/storage/79SXNFVF/C4CS00191E.html:text/html}
+}
+
+@article{naden_rapid_2016,
+	title = {Rapid {Computation} of {Thermodynamic} {Properties} over {Multidimensional} {Nonbonded} {Parameter} {Spaces} {Using} {Adaptive} {Multistate} {Reweighting}},
+	volume = {12},
+	issn = {1549-9618},
+	abstract = {We show how thermodynamic properties of molecular models can be computed over a large, multidimensional parameter space by combining multistate reweighting analysis with a linear basis function approach. This approach reduces the computational cost to estimate thermodynamic properties from molecular simulations for over 130,000 tested parameter combinations from over 1000 CPU years to tens of CPU days. This speed increase is achieved primarily by computing the potential energy as a linear combination of basis functions, computed from either modified simulation code or as the difference of energy between two reference states, which can be done without any simulation code modification. The thermodynamic properties are then estimated with the Multistate Bennett Acceptance Ratio (MBAR) as a function of multiple model parameters without the need to define a priori how the states are connected by a pathway. Instead, we adaptively sample a set of points in parameter space to create mutual configuration space overlap. The existence of regions of poor configuration space overlap are detected by analyzing the eigenvalues of the sampled states’ overlap matrix. The configuration space overlap to sampled states is monitored alongside the mean and maximum uncertainty to determine convergence, as neither the uncertainty or the configuration space overlap alone is a sufficient metric of convergence. This adaptive sampling scheme is demonstrated by estimating with high precision the solvation free energies of charged particles of Lennard-Jones plus Coulomb functional form with charges between −2 and +2 and generally physical values of σij and ϵij in TIP3P water. We also compute entropy, enthalpy, and radial distribution functions of arbitrary unsampled parameter combinations using only the data from these sampled states and use the estimates of free energies over the entire space to examine the deviation of atomistic simulations from the Born approximation to the solvation free energy.},
+	number = {4},
+	urldate = {2016-06-20},
+	journal = {J. Chem. Theory Comput.},
+	author = {Naden, Levi N. and Shirts, Michael R.},
 	month = apr,
-	year = {2009},
-	pages = {4501--4507}
+	year = {2016},
+	pages = {1806--1823}
+}
+
+@inproceedings{bowers_scalable_2006,
+	title = {Scalable {Algorithms} for {Molecular} {Dynamics} {Simulations} on {Commodity} {Clusters}},
+	abstract = {Although molecular dynamics (MD) simulations of biomolecular systems often run for days to months, many events of great scientific interest and pharmaceutical relevance occur on long time scales that remain beyond reach. We present several new algorithms and implementation techniques that significantly accelerate parallel MD simulations compared with current state-of-the-art codes. These include a novel parallel decomposition method and message-passing techniques that reduce communication requirements, as well as novel communication primitives that further reduce communication time. We have also developed numerical techniques that maintain high accuracy while using single precision computation in order to exploit processor-level vector instructions. These methods are embodied in a newly developed MD code called Desmond that achieves unprecedented simulation throughput and parallel scalability on commodity clusters. Our results suggest that Desmond's parallel performance substantially surpasses that of any previously described code. For example, on a standard benchmark, Desmond's performance on a conventional Opteron cluster with 2K processors slightly exceeded the reported performance of IBM's Blue Gene/L machine with 32K processors running its Blue Matter MD code},
+	booktitle = {Proceedings of the {ACM}/{IEEE} {SC} 2006 {Conference}},
+	author = {Bowers, K. J. and Chow, D. E. and Xu, H. and Dror, R. O. and Eastwood, M. P. and Gregersen, B. A. and Klepeis, J. L. and Kolossvary, I. and Moraes, M. A. and Sacerdoti, F. D. and Salmon, J. K. and Shan, Y. and Shaw, D. E.},
+	month = nov,
+	year = {2006},
+	keywords = {Acceleration, biology computing, biomolecular system, Clustering algorithms, Code standards, commodity cluster, Computational modeling, Computer aided instruction, Discrete event simulation, distributed memory systems, Heuristic algorithms, message passing, message-passing technique, molecular biophysics, molecular dynamics method, Molecular Dynamics Simulation, numerical technique, parallel decomposition method, parallel programming, parallel scalability, Pharmaceuticals, processor-level vector instruction, Scalability, Throughput},
+	pages = {43--43}
 }
 
 @article{geballe_sampl2_2010,
@@ -263,8 +291,6 @@
 	volume = {24},
 	issn = {0920-654X, 1573-4951},
 	shorttitle = {The {SAMPL}2 blind prediction challenge},
-	url = {http://link.springer.com/article/10.1007/s10822-010-9350-8},
-	doi = {10.1007/s10822-010-9350-8},
 	abstract = {The interactions between a molecule and the aqueous environment underpin any process that occurs in solution, from simple chemical reactions to protein–ligand binding to protein aggregation. Fundamental measures of the interaction between molecule and aqueous phase, such as the transfer energy between gas phase and water or the energetic difference between two tautomers of a molecule in solution, remain nontrivial to predict accurately using current computational methods. SAMPL2 represents the third annual blind prediction of transfer energies, and the first time tautomer ratios were included in the challenge. Over 60 sets of predictions were submitted, and each participant also attempted to estimate the error in their predictions, a task that proved difficult for most. The results of this blind assessment of the state of the field for transfer energy and tautomer ratio prediction both indicate where the field is performing well and point out flaws in current methods.},
 	language = {en},
 	number = {4},
@@ -275,4 +301,20 @@
 	year = {2010},
 	keywords = {Animal Anatomy / Morphology / Histology, Blind prediction, Computer Applications in Chemistry, Physical Chemistry, Solvation, Tautomers, Transfer energy, Validation},
 	pages = {259--279}
+}
+
+@article{vermaas_topogromacs:_2016,
+	title = {{TopoGromacs}: {Automated} {Topology} {Conversion} from {CHARMM} to {GROMACS} within {VMD}},
+	volume = {56},
+	issn = {1549-9596},
+	shorttitle = {{TopoGromacs}},
+	abstract = {Molecular dynamics (MD) simulation engines use a variety of different approaches for modeling molecular systems with force fields that govern their dynamics and describe their topology. These different approaches introduce incompatibilities between engines, and previously published software bridges the gaps between many popular MD packages, such as between CHARMM and AMBER or GROMACS and LAMMPS. While there are many structure building tools available that generate topologies and structures in CHARMM format, only recently have mechanisms been developed to convert their results into GROMACS input. We present an approach to convert CHARMM-formatted topology and parameters into a format suitable for simulation with GROMACS by expanding the functionality of TopoTools, a plugin integrated within the widely used molecular visualization and analysis software VMD. The conversion process was diligently tested on a comprehensive set of biological molecules in vacuo. The resulting comparison between energy terms shows that the translation performed was lossless as the energies were unchanged for identical starting configurations. By applying the conversion process to conventional benchmark systems that mimic typical modestly sized MD systems, we explore the effect of the implementation choices made in CHARMM, NAMD, and GROMACS. The newly available automatic conversion capability breaks down barriers between simulation tools and user communities and allows users to easily compare simulation programs and leverage their unique features without the tedium of constructing a topology twice.},
+	number = {6},
+	urldate = {2016-07-04},
+	journal = {J. Chem. Inf. Model.},
+	author = {Vermaas, Josh V. and Hardy, David J. and Stone, John E. and Tajkhorshid, Emad and Kohlmeyer, Axel},
+	month = jun,
+	year = {2016},
+	pages = {1112--1116},
+	file = {ACS Full Text PDF w/ Links:/Users/mrshirts/Library/Application Support/Zotero/Profiles/7au660g8.default/zotero/storage/K4D3TXFC/Vermaas et al. - 2016 - TopoGromacs Automated Topology Conversion from CH.pdf:application/pdf;ACS Full Text Snapshot:/Users/mrshirts/Library/Application Support/Zotero/Profiles/7au660g8.default/zotero/storage/Z6N5MJ4C/acs.jcim.html:text/html}
 }
