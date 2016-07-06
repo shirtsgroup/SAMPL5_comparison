@@ -1,77 +1,78 @@
 README.txt - This file.
 
-configurations/: converted input simulation files in AMBER, CHARMM,
-DESMOND, GROMACS, and LAMMPS formats for the 22 host-guest systems.
-Alternate configurations for the comparison of average simulation
-energies are only included with the original AMBER files for storage
-space reasons (1.3 GB instead of 250 MB).
+configuration files (CBC.tgz, OAH.tgz, OAMe.tgz) converted input
+simulation files in AMBER, CHARMM, DESMOND, GROMACS, and LAMMPS
+formats for the 22 host-guest systems.  20 configurations used in the
+paper for the comparison of average simulation energies are only
+included with the original AMBER files for storage space reasons (1.3
+GB total).
                
-	CBC/
-		CBC-G*/
-			amber/
-				CBC-G*.prmtop
-				CBC-G*.rst7
-			charmm/
-				CBC-G*_converted.crd
-				CBC-G*_converted.inp
-				CBC-G*_converted.prm
-				CBC-G*_converted.psf
-				CBC-G*_converted.rtf
-			desmond/
-				CBC-G*-converted.cms
-			gromacs/
-				CBC-G*-converted.gro
-				CBC-G*-converted.top
-			lammps/
-				CBC-G*-converted.lmp
-				CBC-G*-converted.input
+CBC/(.tarred and gzipped as CBC.tgz)
+	CBC-G*/ 
+		amber/
+			CBC-G*.prmtop
+			CBC-G*.rst7
+		charmm/
+			CBC-G*_converted.crd
+			CBC-G*_converted.inp
+			CBC-G*_converted.prm
+			CBC-G*_converted.psf
+			CBC-G*_converted.rtf
+		desmond/
+			CBC-G*-converted.cms
+		gromacs/
+			CBC-G*-converted.gro
+			CBC-G*-converted.top
+		lammps/
+			CBC-G*-converted.lmp
+			CBC-G*-converted.input
 
-	OAH/
-		OAH-G*/
-			amber/
-				OAH-G*.prmtop
-				OAH-G*.rst7
-				altconfs/
-					OAH-G*_%.prmtop: where % runs from 0-19
-					OAH-G*_*.rst7: where % runs from 0-19
-			charmm/
-				OAH-G*_converted.crd
-				OAH-G*_converted.inp
-				OAH-G*_converted.prm
-				OAH-G*_converted.psf
-				OAH-G*_converted.rtf
-			desmond/
-				OAH-G*-converted.cms
-			gromacs/
-				OAH-G*-converted.gro
-				OAH-G*-converted.top
-			lammps/
-				OAH-G*-converted.lmp
-				OAH -G*-converted.input
+OAH/ (.tarred and gzipped as OAH.tgz)
+	OAH-G*/ 
+		amber/
+			OAH-G*.prmtop
+			OAH-G*.rst7
+			altconfs/
+				OAH-G*_%.prmtop: where % runs from 0-19
+				OAH-G*_*.rst7: where % runs from 0-19
+		charmm/
+			OAH-G*_converted.crd
+			OAH-G*_converted.inp
+			OAH-G*_converted.prm
+			OAH-G*_converted.psf
+			OAH-G*_converted.rtf
+		desmond/
+			OAH-G*-converted.cms
+		gromacs/
+			OAH-G*-converted.gro
+			OAH-G*-converted.top
+		lammps/
+			OAH-G*-converted.lmp
+			OAH -G*-converted.input
 
-	OAMe/
-		OAMe-G*/
-			amber/
-				OAMe-G*.prmtop
-				OAMe-G*.rst7
-					OAMe-G*_%.prmtop: where % runs from 0-19
-					OAMe-G*_*.rst7: where % runs from 0-19
-			charmm/
-				OAMe-G*_converted.crd
-				OAMe-G*_converted.inp
-				OAMe-G*_converted.prm
-				OAMe-G*_converted.psf
-				OAMe-G*_converted.rtf
-			desmond/
-				OAMe-G*-converted.cms
-			gromacs/
-				OAMe-G*-converted.gro
-				OAMe-G*-converted.top
-			lammps/
-				OAMe-G*-converted.lmp
-				OAMe-G*-converted.input
+OAMe/ (.tarred and gzipped as OAMe.tgz)
+	OAMe-G*/ 
+		amber/
+			OAMe-G*.prmtop
+			OAMe-G*.rst7
+				OAMe-G*_%.prmtop: where % runs from 0-19
+				OAMe-G*_*.rst7: where % runs from 0-19
+		charmm/
+			OAMe-G*_converted.crd
+			OAMe-G*_converted.inp
+			OAMe-G*_converted.prm
+			OAMe-G*_converted.psf
+			OAMe-G*_converted.rtf
+		desmond/
+			OAMe-G*-converted.cms
+		gromacs/
+			OAMe-G*-converted.gro
+			OAMe-G*-converted.top
+		lammps/
+			OAMe-G*-converted.lmp
+			OAMe-G*-converted.input
 
-runfiles/  Simulation command files to run the files above.
+runfiles/  (as runfiles.tgz) Simulation command files to run the files above.
 	ideal/
 		min_ideal.in: AMBER simulation run file	
 		grompp_ideal.mdp: GROMACS simulation run file
@@ -88,7 +89,7 @@ runfiles/  Simulation command files to run the files above.
 			vdw vips cutnb 12. cutim  12. ctofnb 10. ctonnb 9.
 		lammps: pair_style lj/cut/coul/long 9.0 9.0\npair_modify tail yes\nkspace_style pppm 1.0e-5 
 
-analysis/
+analysis/ (as analysis.tgz)
 	main_results/
 	    * full_results_ideal_settings.txt: main results with energies of 22 host-guest 
 	      complexes with simulation parameters at 'ideal' settings (as described in text)
