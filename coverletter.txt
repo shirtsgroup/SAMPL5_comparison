@@ -1,0 +1,26 @@
+Dear Editors, 
+
+We are submitting our manuscript "Lessons learned from comparing
+molecular dynamics engines on the SAMPL5 dataset", by Michael
+R. Shirts, Christoph Klein, Jason M. Swails, Jian Yin, Michael
+K. Gilson, David L. Mobley, David A. Case, Ellen D. Zhong for
+inclusion in the SAMPL5 Special issue of J. Comput. Aided Mol. Design
+as an article.
+
+This article details the conversion between different molecular
+simulation input files for the SAMPL5 blind test, and the energy
+comparison of these files. Energy comparisons are mostly good
+agreement, but a few minor statistically significant differences (such
+as errors arising from incorrect Columb's constant) are noted and
+examined. We believe this is the first time that this many programs
+have been compared after automated conversion, opening the door to new
+large-scale simulation pipelines that use automated conversion between
+molecular simulation file inputs.
+
+Suggested reviewers:
+
+Mike Crowley (NREL: Michael.Crowley@nrel.gov)
+Carlos Simmerling (UC-Stony Brook: carlos.simmerling@stonybrook.edu)
+Adrian Roitberg (UF: roitberg@ufl.edu)
+Berk Hess (KTH: hess@kth.se)
+Frank Pickard (NIH-NHLBI: frank.pickard@nih.gov)
