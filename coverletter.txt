@@ -21,6 +21,6 @@ Suggested reviewers:
 
 Mike Crowley (NREL: Michael.Crowley@nrel.gov)
 Carlos Simmerling (UC-Stony Brook: carlos.simmerling@stonybrook.edu)
-Adrian Roitberg (UF: roitberg@ufl.edu)
+Adrian Roitberg (Universty of Florida: roitberg@ufl.edu)
 Berk Hess (KTH: hess@kth.se)
-Frank Pickard (NIH-NHLBI: frank.pickard@nih.gov)
+Justin Lemkul (University of Maryland: jalemkul@outerbanks.umaryland.edu)
