@@ -228,7 +228,7 @@ thus statistical quantities with associated statistical error. Since
 the uncertainty scales as (simulation time)$^{-1/2}$, increasing the
 accuracy by a factor of 10 requires 100 times as much simulation
 time. Small differences in the parameters used to run the simulations
-simulations give rise to similarly small changes in the ensemble
+give rise to similarly small changes in the ensemble
 averages. If we attempt to calculate a small difference between
 ensemble averages $\langle O \rangle_1$ and $\langle O \rangle_2$,
 carried out at simulation parameter sets 1 and 2, with statistical
@@ -246,7 +246,7 @@ uncertainty down to, say, a 95\% confidence interval of 1 kJ/mol would
 take approximately (2 standard deviations $\times$ 14)$^2$ $\approx 800$ times as much
 simulation as determining $\langle O \rangle$ itself to one part in
 10$^{-6}$.  Reweighting approaches have recently been developed to
-include the correlation between variables, allowing in may cases the
+include the correlation between variables, allowing in many cases the
 uncertainty to be calculated by one to three orders of magnitude more
 efficiently.~\cite{Paliwal2013} However, even with this acceleration,
 it is still extremely expensive.
@@ -311,15 +311,15 @@ between different simulation programs.
 
 Comparison between simulation programs are typically tedious and error
 prone, because the input configurations and model must be converted.
-This is done either is done using painstaking manual copy-and-pasting,
+This is either done using painstaking manual copy-and-pasting,
 one-off scripts, or occasionally existing scripts that can convert
 from one specific program to another.  Some examples include ACPYPE, a
 converter from AMBER to GROMACS~\citep{sousa_da_silva_acpype_2012},
 CHAMBER~\citep{crowley_chamber:_2009} a converter from CHARMM to
-AMBER, TopoGromacs, a converted from CHARMM to
+AMBER, TopoGromacs, a converter from CHARMM to
 GROMACS~\citep{vermaas_topogromacs:_2016},
 CHARMM-GUI~\citep{lee_charmm-gui_2016} which can convert from CHARMM
-to GROMACS (and uses ParmEd to manipulate AMBER files), and{\tt
+to GROMACS (and uses ParmEd to manipulate AMBER files), and {\tt
   amber2lmp}, a script converting between LAMMPS and AMBER
 files. However, converting between a large number of simulation
 programs has not, to the best of our knowledge, previously been done
@@ -346,7 +346,7 @@ different results can be obtained by different users of the same code,
 and the recommended or default behavior of each code will almost
 certainly differ from program to program to some degree.
 
-This study therefore focus on the automated conversion of molecular
+This study therefore focuses on the automated conversion of molecular
 simulation input files using (to the extent possible) automated
 all-to-all conversion tools, and the comparison and validation of the
 energies of single configurations among these programs. In this
@@ -574,7 +574,7 @@ for Lennard-Jones
 %[MRS: is this an abrupt cutoff, or is it scaled somehow?] 
 For GROMACS, a Fourier spacing of 0.1 nm is used For
 LAMMPS, we use pair\_style lj/cut/coul/long 9.0 9.0.  We include a
-dispersion correction, and use PPPM, with $10^{-8}$ 
+dispersion correction, and use PPPM, with $10^{-8}$ as the tolerance
 %[MRS: right choice?].
 
 All input files used are documented in the ``runfiles.tgz'' directory
@@ -639,7 +639,7 @@ significant error.
 %MRS:tried to address. 
 
 Another source of differences in energy relates to the precision of
-the binary.  We therefore also compare the the deviation from the
+the binary.  We therefore also compare the deviation from the
 program average for the same version of GROMACS compiled in double
 precision (the precision that is used in the reference calculations)
 and in single precision.
@@ -828,7 +828,7 @@ significant deviation from the best experimental value.  Personal
 communication with Amber developers suggests that this difference may
 come from mostly from in the 70's using Bohr's radius to calculate
 Coulomb's constant assuming a value of 0.529167~\AA (versus an
-improved value of 0.592177~\AA today, but there appears to be no clear
+improved value of 0.592177~\AA~today, but there appears to be no clear
 historical answer.  Of course, the more important question is, how
 much this deviation affects the results?
 
@@ -971,7 +971,7 @@ The deviations in the program average of the total potential energy is
 dominated by the differences in the nonbonded terms, since those are
 so much larger than differences in the bonded energy.  For CHARMM and
 AMBER, differences in the electrostatic nonbonded energy
-dominates. DESMOND total potential energies differences from the
+dominates. DESMOND total potential energy differences from the
 program average are almost the same as GROMACS and LAMMPS, indicating
 that since the bonded interactions match the two programs well, the
 nonbonded also must agree relatively well.
@@ -997,7 +997,7 @@ nonbonded also must agree relatively well.
 %CTK: This figure is never cited within the text as far as I can tell...
 
 We also are interested in the deviations of energies as a function of
-the number of coordinates used in the output file. The results of the
+the number of coordinate digits used in the output file. The results of the
 comparison between AMBER (full precision input) and GROMACS (reduced
 precision output) are shown in Fig.~\ref{fig:precision}.  We choose
 only to show GROMACS as the other programs show similar behavior. We
@@ -1231,10 +1231,10 @@ uses the presence of dihedrals to define 1-4 interactions. A dihedral
 with zero energy in GROMACS is essentially redundant and can be
 eliminated without affecting the energy, but creates 1-4 interactions
 in AMBER.  Additionally, the same interaction in different programs
-may have different names, functional formats. This can either be
+may have different names and functional formats. This can either be
 handled by hard-coded conversions (ParmEd) or converting all
-interactiosn to an from a canonical form (InterMol).  The first has
-the advantage of readabilty, whereas the second is more general.  It
+interactions from a canonical form (InterMol).  The first has
+the advantage of readability, whereas the second is more general.  It
 is not yet clear what the optimal strategy should be.
 
  One of the most challenging problems in conversion of molecular
@@ -1244,7 +1244,7 @@ is not yet clear what the optimal strategy should be.
  the needs for manual unit conversion. This is handled by creating
  data types that carry units with them, making conversion much
  simpler.  Without such unit-carrying data types, doing anything other
- than one-to-one conversion becomes signficantly harder.
+ than one-to-one conversion becomes significantly harder.
 
 \subsection*{Issues in matching energies}
 
@@ -1276,14 +1276,14 @@ described in the 'README.txt' supporting information file.
 The results presented here show that the simulation input files are
 properly converted by the very strong agreement, essentially within
 single precision calculations, for all bonded terms, Lennard-Jones 1-4
-terms and (with one caveat outlined below) Coulomb 1-4 interations. 
+terms and (with one caveat outlined below) Coulomb 1-4 interactions. 
 
 We believe that this study represents the largest automated comparison
 between different programs that has been performed so far, a process
 only possible because of the automated conversion. The pipeline
 described in this program, properly scaled up for diverse ranges of
 systems, could be useful for a range of comparison studies that
-require the precise comparsison across multiple simulation engines, or
+require the precise comparison across multiple simulation engines, or
 in modeling pipelines that require one simulation program for part of
 the pipeline, and another simulation engine for a different part.
 
@@ -1362,4 +1362,4 @@ InterMol. DLM thanks NSF (CHE 1352608) for financial support.
 % LocalWords:  configurationally Zotero prmtop n FEP TI TopoGromacs GROmacs PDF
 % LocalWords:  topogromacs interconversion OpenMM DC gibb gan jordan tetra endo
 % LocalWords:  TEMOA zhang FF antechamber KSPACE DOMDEC GPU webpage CBC vermaas
-% LocalWords:  uh Bohr's
+% LocalWords:  uh Bohr's runfiles tgz txt gzipped PMEMD prec CHE
