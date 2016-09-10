@@ -290,7 +290,7 @@ for o in ofinterest:
 
     ax.set_xlabel('Energy Component', fontsize=20)
     ax.set_ylabel('Fraction of Conformational Variance', fontsize=18)
-    ax.set_title('Fraction of Conformational Variance Betweeen Programs in Energy Output', fontsize=24)
+    ax.set_title('Fraction of Conformational Variance Between Programs in Energy Output', fontsize=24)
     ax.set_xticks(index + bar_width + 0.2)
     ax.set_xticklabels(ofinterest, fontsize=14)
     ax.legend(loc = 'upper left')

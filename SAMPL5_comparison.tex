@@ -84,7 +84,7 @@
 %placed here. General acknowledgments should be placed at the end of the article.}
 %\subtitle{Do you have a subtitle?\\ If so, write it here}
 
-\titlerunning{Lessons learned from comparing molecular dynamics simulation engines}        % if too long for running head
+\titlerunning{Lessons learned comparing molecular dynamics engines}        % if too long for running head
 
 \author{Michael R. Shirts \and Christoph Klein \and Jason M. Swails \and Jian Yin \and Michael K. Gilson \and David L. Mobley \and David A. Case \and Ellen D. Zhong}
 
@@ -121,17 +121,18 @@ programs. All conversions were fully automated from the originally
 prepared AMBER input files using a combination of the ParmEd and
 InterMol conversion programs.
 
-We find that all molecular dynamics engines agree to a better than
-0.1\% relative absolute energy for all energy components, and in most
-cases an order of magnitude better, when reasonable choices are made
-for different cutoff parameters, though there are some surprising
-sources of statistically significant differences. Most significantly,
-different choices of Coulomb's constant between programs are one of
-the largest sources of discrepancies in energies. We discuss the
-measures required to get good agreement in the energies for equivalent
-starting configurations between the simulation programs, and the
-energy differences that occur when simulations are run with
-program-specific default simulation parameter values.
+We find that the energy calculations for all molecular dynamics
+engines for this molecular set agree to a better than 0.1\% relative
+absolute energy for all energy components, and in most cases an order
+of magnitude better, when reasonable choices are made for different
+cutoff parameters. However, there are some surprising sources of
+statistically significant differences. Most importantly, different
+choices of Coulomb's constant between programs are one of the largest
+sources of discrepancies in energies. We discuss the measures required
+to get good agreement in the energies for equivalent starting
+configurations between the simulation programs, and the energy
+differences that occur when simulations are run with program-specific
+default simulation parameter values.
 %DLM: What does it mean "run at their program-specific default values"?
 %JMS: I read this as the default values suggested by those programs (e.g.,
 %     CHARMM with fswitch/12A cutoff, Amber with dispersion correction and 8 A
@@ -153,19 +154,20 @@ The goal of the ongoing SAMPL blind prediction
 challenges~\citep{Muddana2014SAMPL4,Muddana2012a,geballe_sampl2_2010,guthrie_blind_2009}
 is to compare purely computational blind predictions of thermodynamic
 properties, such as hydration free energies, partition coefficients,
-and binding free energies, for a range of both model and more realistic
-systems. Such blind prediction challenges can be very useful in
-identifying unexpected reasons for differences between methods that
-should, in theory, yield the same result. For example, the same program used
-with what is listed as the same force field can sometimes still yield
-significantly different results. In the SAMPL4 blind test, two
-different sets of simulations performed with GROMACS, TIP3P water, and
-GAFF/AM1-BCC parameters had differences of $0.5 \pm 0.1$
-kcal/mol that were ultimately tracked down to whether the large host
-molecule had AM1/BCC partial charges determined fragment-wise or for
-the entire molecule at the same time. This level of detail often
-does not make it into publication,~\cite{Monroe2014} which can severely hamper
-efforts in reproducing results.
+and binding free energies, for a range of both model and more
+realistic systems. Such blind prediction challenges can be very useful
+in identifying unexpected reasons for differences between methods that
+should, in theory, yield the same result. For example, the same
+program used with what is listed as the same force field can sometimes
+still yield significantly different results. In the SAMPL4 blind test,
+two different sets of simulations performed with GROMACS, TIP3P water,
+and GAFF/AM1-BCC parameters had differences of $2 \pm 0.5$ kJ/mol that
+were ultimately tracked down to whether the large host molecule had
+AM1/BCC partial charges determined fragment-wise or for the entire
+molecule at the same time. This level of detail often does not make it
+into publication,~\cite{Monroe2014} which can severely hamper efforts
+in reproducing results.
+{\color{red}MRS: can any of you think of another good example?}
 
 One particular question that can be difficult to address is to what
 extent methods that are supposed to be identical will give different
@@ -177,17 +179,18 @@ GROMACS~\citep{hess_gromacs_2008}, LAMMPS~\citep{plimpton_fast_1995},
 and DESMOND~\citep{bowers_scalable_2006}). To ensure that the
 simulation inputs were translated correctly between programs, it was
 also necessary to compare the evaluated energies of the initial
-configurations in the native simulation programs corresponding to file
-format to ensure that the translation had been done correctly.  This
-also involved determining the necessary simulation conditions and
+configurations in the simulation programs that were native to each
+file format to ensure that the translation had been done correctly.
+This also involved determining the necessary simulation conditions and
 parameter choices for each program to give the same, or sufficiently
 the same, energy.  To make this task feasible for the 22 host-guest
 systems and 190 distribution coefficient systems, this process was
 necessarily highly automated. We present here the results of energy
-comparisons carried out for SAMPL5 preparation.  One important change
-from the initial work carried out for SAMPL5 and this paper is adding
-CHARMM-format starting files as well as the initial energies generated
-with the CHARMM simulation program.
+comparisons carried out in the process of SAMPL5 preparation and
+validation.  One important change from the initial work carried out
+for SAMPL5 and this paper is adding CHARMM-format starting files as
+well as the initial energies generated with the CHARMM simulation
+program.
 
 %In this study, we have chosen to compare only the energies of initial
 %structures and not the values of thermodynamic observables such as
@@ -212,7 +215,11 @@ configuration. There are therefore two types of comparison that can be
 done between simulation engines.  The first is to take one (or a few)
 configurations and compare the potential energies engines generate.
 The second is to compare the observables, such as density or enthalpy,
-that the simulations generate.
+that the simulations generate after the generation of an ensemble of
+configurations. The comparison of the final experimental observables
+calculated from simulation ensembles is the most fundamentally
+important type of comparison, since it corresponds directly to
+experiment. 
 
 However, this second task requires a large number of different
 decisions that are made mostly independently of the assignment of
@@ -255,14 +262,15 @@ Because of the difficulties of comparing the simulation ensemble
 averages, as outlined above, this study focuses on validation of the
 first task of molecular simulation engines, the generation of energies
 from a configuration of a molecular system and a well-defined model
-for that molecular system. Addressing the multitude of possible ways
+for that molecular system, testing only those parts of the molecular
+dynamic simulation engines.  Addressing the multitude of possible ways
 that simulations could differ using different integration schemes and
 running simulations long enough to detect small changes is beyond the
-scope of this study. The validation presented here serves as a
-necessary building block for later studies to more easily evaluate the
-differences between simulation engines in calculating simulation
-observables, and the comparison of more advanced simulation methods
-between different simulation programs.
+scope of this study. The validation of the energy generation presented
+here serves as a necessary building block for later studies to more
+easily evaluate the differences between simulation engines in
+calculating simulation observables, and the comparison of more
+advanced simulation methods between different simulation programs.
 
 %To pick one example, molecular dynamics
 %averages are slightly dependent on the time step, and using longer
@@ -374,7 +382,8 @@ native formats for the GROMACS, AMBER, CHARMM, and OpenMM programs.
 
 We took advantage of this overlap in conversion functionality to
 provide output files in five formats. The process is as follows: We
-took files initially parameterized in AMBER format using AmberTools
+took files initially parameterized in AMBER format with GAFF/RESP force field 
+parameters using AmberTools, as described in the SAMPL5 overview paper~\cite{SAMPL5Overview}
 and read them using ParmEd. We then used ParmEd to convert them into
 GROMACS input file formats. We then convert from these GROMACS files
 into LAMMPS and DESMOND input files using InterMol.  ParmEd was also
@@ -382,7 +391,7 @@ used for this study (though not the original SAMPL5 release) to
 convert the AMBER simulation files into CHARMM simulation files
 directly.
 
-We use the InterMol convert.py tool to manage all of the conversions
+We use the InterMol {\tt convert.py} tool to manage all of the conversions
 (including interfacing with the ParmEd API). InterMol allows control
 of simulation input parameters by either reading a user-defined (or
 default) sample simulation parameter file (for DESMOND, AMBER, and
@@ -467,9 +476,6 @@ little difference in the results between the current study and the
 SAMPL5 study, but in some cases as noted, the results do change. Units
 are given in SI units (kJ/mol and nm, for example), though different
 programs use different default units. 
-%DLM: You pick. No strong preference. 
-%CTK: Agree on sticking to one. Slight preference for SI
-%MRS: OK kJ/mol and nm it is.
 
 The five programs were:
 \begin{itemize} 
@@ -500,11 +506,19 @@ suite, and run on the same desktop computer.
 It is difficult to choose simulation parameters that agree among all
 simulation engines. For example, each program generally has different
 types of default switching functions to taper nonbonded
-interactions. For this comparison, we tried to chose for our nonbonded
+interactions. There is certainly an argument to be made that any
+parameters that affect the energy, such as switching scheme, cutoff,
+and Coulomb's constant should be considered part of the forcefield,
+but in essentially all common usage, they are not---`force field' in
+general usage refers to the specification of partial charges, atom
+types, van der Waals parameters, mixing rules, and bond/angle/torsion
+parameters.
+
+For this comparison, we tried to chose for our nonbonded
 interactions methods that were sufficiently cutoff independent that
 differences in the cutoff scheme between programs would minimally
 affect the results, given the limitations imposed by the size of the
-system.
+system. 
 
 For electrostatic interactions, we chose either particle mesh Ewald
 (PME) implementations (CHARMM, AMBER, GROMACS, CHARMM) or
@@ -520,8 +534,7 @@ For AMBER and
 CHARMM, we used a PME mesh grid of 48 $\times$ 48 $\times$ 48 grid
 points with 4th order interpolation. DESMOND allows significantly less
 control over the PME parameters at the MAESTRO interface level, and we
-used a PME relative tolerance of $1\times 10^{-10}$. 
-%[MRS: look up what that setting means again]
+used an PME relative tolerance ({\tt ewald\_tol}) of $1\times 10^{-10}$. 
 
 For Lennard-Jones interactions, we avoid the problems of trying to
 match switching schemes between programs, which are usually quite
@@ -540,8 +553,9 @@ Lennard-Jones energies is expected for systems that are homogeneous at
 long range, such as a host-guest system surrounded by water.  However,
 this approach will not be cutoff-independent for a heterogeneous
 system such as a lipid bilayer or a liquid/vapor
-interface~\cite{veld_application_2007}.
-
+interface~\cite{veld_application_2007}. The parameters listed above
+are referred to in this study as the 'ideal' parameters, and listed in
+Table~\ref{table:parameterlist}.
 
 \begin{table}
 \caption{\label{table:ljcutchange}Using an analytical correction, the
@@ -555,27 +569,31 @@ interface~\cite{veld_application_2007}.
 \begin{tabulary}{\textwidth}{|C|CC|}
 \hline
 Distance (nm) & GROMACS  
-Potential Energy (kcal/mol) & CHARMM Potential Energy (kcal/mol)\\
+Van der waals Energy (kJ/mol) & CHARMM Van der waals Energy (kJ/mol)\\
 \hline 
-1.5 & 2921.4840 & 2921.54699\\
-1.4 & 2921.4923 & 2921.54623\\
-1.3 & 2921.5265 & 2921.54597\\
-1.2 & 2921.5246 & 2921.54456\\
+1.5 & 12223.489 & 12223.753\\
+1.4 & 12223.524 & 12223.749\\
+1.3 & 12223.667 & 12223.748\\
+1.2 & 12223.659 & 12223.742\\
 \hline
 \end{tabulary}
 \end{center}
 \end{table}
 
 We also ran the test with an attempt to be as close to default
-parameters as possible. For AMBER, we use a 0.9 nm cutoff, with the
-same Ewald parameters (48$\times$48$\times$48 Fourier points in the
-grid), with the isotropic analytical dispersion correction included
-for Lennard-Jones 
-%[MRS: is this an abrupt cutoff, or is it scaled somehow?] 
-For GROMACS, a Fourier spacing of 0.1 nm is used For
-LAMMPS, we use pair\_style lj/cut/coul/long 9.0 9.0.  We include a
-dispersion correction, and use PPPM, with $10^{-8}$ as the tolerance
-%[MRS: right choice?].
+parameters as possible and still have comparable energies. For all
+simulations, we used a 0.9 nm abrupt cutoff, as differences in
+switching methods lead to significantly different Lennard-Jones
+energies. For AMBER, we used the same Ewald parameters
+(48$\times$48$\times$48 Fourier points in the grid), with the
+isotropic analytical dispersion correction included for Lennard-Jones.
+For GROMACS, a Fourier spacing of 0.1 nm is used. For LAMMPS, we set
+pair\_style lj/cut/coul/long 9.0 9.0.  We include a dispersion
+correction, and use PPPM, with $10^{-8}$ as the tolerance. For
+DESMOND, default ewald parameters were used, with {\tt ewald\_tol}
+equal to $10^{-9}$.  These parameters are referred to as the 'default'
+parameters in this study, and listed in
+Table~\ref{table:parameterlist}.
 
 All input files used are documented in the ``runfiles.tgz'' directory
 of the Supporting Information (with details given in the README.txt)
@@ -589,7 +607,7 @@ We also examined how dependent the energy differences are on the
 individual configurations. For twelve of the systems (the six OAMe and
 the six OAH octa-acid host-guest systems), we take 20 different
 configurations. These configurations were generated with electrostatic
-parameters and Lennard-Jones parameters as listed in the 'default'
+parameters and Lennard-Jones parameters as listed in the `default'
 parameter section. Temperature was maintained at 298.15 K with the
 Langevin thermostat with a damping constant $\gamma$ of 1 ps$^{-1}$
 with a timestep of 2 fs with constrained bonds involving
@@ -612,14 +630,13 @@ than other programs. Although nonbondeds were truncated at 7
 significant figures, no rounding with respect to the other programs
 occurred for this dataset.
 
-However, matching the
-precision in the coordinates in two file formats is also important in
-order to verify energies. We examined the importance of matching the
-precision in coordinates.  While keeping the precision of the input
-files the same, we truncated the precision of the converted files to a
-range of different precisions, ranging from four decimal places to
-nine decimal places to see how the precision of the energy components
-are affected.
+However, matching the precision in the coordinates in two file formats
+is also important in order to verify energies. We examined the
+importance of matching the precision in coordinates.  While keeping
+the precision of the input files the same, we truncated the precision
+of the converted files to a range of different precisions, ranging
+from four decimal places to nine decimal places to see how the
+precision of the energy components are affected.
  
 %DLM: Clarify? I know what you mean but I am not convinced I'd understand this statement if I didn't know the background. Maybe something like, 
 %MRS: fixed.
@@ -636,13 +653,19 @@ re-evaluate the energy contributions, as low precision coordinates could introdu
 significant error.
 
 %DLM: I don't understand this last sentence. Are you just saying that the precision will matter if we are re-evaluating energy contributions based on stored files?
-%MRS:tried to address. 
+%MRS: tried to address. 
 
 Another source of differences in energy relates to the precision of
-the binary.  We therefore also compare the deviation from the
-program average for the same version of GROMACS compiled in double
-precision (the precision that is used in the reference calculations)
-and in single precision.
+the binary.  We therefore also compare the deviation from the program
+average for the same version of GROMACS compiled in double precision
+(the precision that is used in the reference calculations) and in a
+reduced precision version of the binary. In GROMACS, ``mixed
+precision'' is the official name for this reduced precision version,
+which uses single precision for the state vectors (velocity, position)
+and forces, but not for particularly sensitive calculations like the
+virial and the integration. It is essentially, therefore, single
+precision, and we will refer to this in the text, since the energies
+are being computed in single precision.
 
 %The default interactions lead to energy differences of 2-10 kcal/mol
 %for these systems - need to adjust
@@ -667,25 +690,25 @@ and in single precision.
 \hline
  & \multicolumn{2}{c}{AMBER} & \multicolumn{2}{c}{GROMACS} &\multicolumn{2}{c}{LAMMPS}& \multicolumn{2}{c}{DESMOND}&\multicolumn{2}{c}{CHARMM}\\
 \hline
-  & default settings & ideal settings  & default settings & ideal settings  & default settings & ideal settings  & default settings & ideal settings  & default settings & ideal settings  \\
+  & ideal settings & default settings  & ideal settings & default settings  & ideal settings & default settings  & ideal settings & default settings  & ideal settings & default settings  \\
 van der Waals cutoff & 1.5 nm, abrupt & 0.9 nm, abrupt & 1.5 nm, abrupt & 0.9 nm, abrupt & 1.5 nm, abrupt & 0.9 nm, abrupt & 1.5 nm, abrupt & 0.9 nm, abrupt & 1.5 nm, abrupt & 0.9 nm, abrupt \\
 Coulombic cutoff & 1.5 nm real space & 0.9 nm real space & 1.5 nm real space & 0.9 nm real space & 1.5 nm real space & 0.9 nm real space & 1.5 nm real space & 0.9 nm real space & 1.5 nm real space & 0.9 nm real space \\
 Long-range electrostatics & Ewald, Fourier points 48$^3$, order 4, real
 space error 10${-5}$ & Ewald, Fourier points 48$^3$, real space error
 10${-5}$ & Ewald, Fourier points 48$^3$ & Ewald, Fourier spacing 0.1 nm &
 PPPM, 10$^{-8}$ tolerance & PPPM, 10$^{-8}$ tolerance & Ewald, 10$^{-10}$
-relative tolerance & Ewald, 10$^{-10}$ relative tolerance &Ewald,  Fourier
+relative tolerance & Ewald, 10$^{-9}$ relative tolerance &Ewald,  Fourier
 points 48$^3$ & Ewald, Fourier points 48$^3$ \\
 Long-range van der Waals & Isotropic correction & Isotropic correction & Isotropic correction & Isotropic correction & Isotropic correction & Isotropic correction & Isotropic correction & Isotropic correction & Isotropic periodic sum & Isotropic periodic sum \\ 
 \end{tabulary}}
 \end{center}
-\caption{Key nonbonded parameters used in this study for both default and ideal energy validation test. $n^3$ is shorthand of lattice numbers $n\times n \times n$ in the $x$, $y$ and $z$ direction.} 
+\caption{Key nonbonded parameters used in this study for both default and ideal energy validation test. $n^3$ is shorthand of lattice numbers $n\times n \times n$ in the $x$, $y$ and $z$ direction.~\label{table:parameterlist}} 
 \end{table}
 
 \section*{Results}
 We first compare ten different energy terms between the five different
 simulation programs with the ideal nonbonded parameters.  Results are
-shown in Table~\ref{fig:mainfig}. All results are averaged over the 22
+shown in Fig.~\ref{fig:mainfig}. All results are averaged over the 22
 host-guest molecules included in the SAMPL5 blind prediction
 challenge. To avoid picking a favored reference program, we look at
 the deviation of each term from the average of all five programs,
@@ -705,19 +728,29 @@ and Coulomb long range forces, ``van der Waals'' is the sum of
 ``Nonbonded'' is the sum of ``Electrostatic'' and ``van der Waals''
 terms.
 
-We examine three statistics to describe the deviations between the
-programs: the average differences from the program average over all
-molecules, the average of the absolute value of the difference from
-the program average, and the average of the relative absolute value of
-the difference. Each statistic gives somewhat different information
-about the trials. The average gives information about the manner in
-which energy component deviates from the program average, while the
-absolute value of the differences shows the magnitude of the
-deviation, avoiding any cancellation due to different signs.  Because
-many terms are much smaller than others, for example, the bonded
-energy terms being two to three orders of magnitude smaller than the
-electrostatic term, the relative absolute difference shows the
-fractional error in each term.
+We examine three statistical measures to describe the deviations
+between the programs: the average differences from the program average
+over all molecules, the average of the absolute value of the
+difference from the program average, and the average of the relative absolute value of the difference. 
+The program average is defined as: 
+\[  \overline{E}_{prog} = \frac{1}{N_{prog}}\sum_{i=1}^{N_{prog}} E_i \]
+
+Where the sum is over molecular simulation programs of interest, and $E_i$ is the energy term of interest from the $i$th simulation program.  The average difference from the program average is: 
+\[  \overline{\Delta E}_{prog} = \frac{1}{N_{prog}}\sum_{i=1}^{N_{prog}} E_i - \overline{E}_{prog} \]
+The average of the absolute value of the difference from the program average is defined as:
+\[  \overline{\left|\Delta E_{prog}\right|} = \frac{1}{N_{prog}}\sum_{i=1}^{N_{prog}} \left|E_i - \overline{E}_{prog}\right| \]
+The average of the relative absolute value of the difference is defined as:
+\[  \overline{\left|\Delta E_{prog}\right|}_{rel} = \frac{1}{N_{prog}}\sum_{i=1}^{N_{prog}} \left|\frac{E_i - \overline{E}_{prog}}{\overline{E}_{prog}}\right| \]
+
+Each statistical measure gives somewhat different information about
+the trials. $\overline{\Delta E}_{prog}$ gives information about the manner
+in which energy component deviates from the program average, while the
+absolute value of the differences from the average $\overline{\left|\Delta E_{prog}\right|}$ 
+shows the magnitude of the deviation, avoiding any
+cancellation due to different signs.  Because many terms are much
+smaller than others, for example, the bonded energy terms being two to
+three orders of magnitude smaller than the electrostatic term, the
+relative absolute difference $\overline{\left|\Delta E_{prog}\right|}_{rel}$ shows the fractional error in each term.
 
 We find that the bonded terms match very well between all
 programs. Average differences from the program average are below 0.05
@@ -764,10 +797,10 @@ cases generate essentially equivalent bonded energies.
   for the 'ideal' choice of cutoff parameters. For each term, we plot
   the deviation of each program from the average over all programs
   (the program average), to avoid choosing a single arbitrary
-  reference program. All statistics are averaged over the 22 SAMPL5
+  reference program. All statistical measures are averaged over the 22 SAMPL5
   host-guest molecules. We plot the average deviation (top), the
   absolute average deviation (middle), and relative absolute average
-  deviation (top).
+  deviation (bottom).
 \label{fig:mainfig}}
 \end{figure}
 %DLM: Should the "average deviation" graph use some kind of log scale? Or a different scale for each component? Otherwise it seems sort of useless in that basically it just says that only the electrostatics is different by this metric. The "average absolute deviation" graph is similar except vdW starts showing up a hair more. On the other hand, maybe that's the point. I'm not sure - just a question, so use your judgment.
@@ -813,29 +846,28 @@ the difference must come from some other source.
 
 After further analysis of the data, it became clear that the value of
 Coulomb's constant $\frac{1}{4 \pi \epsilon_0}$, the constant of
-proportionality $k$ in $U = k\frac{q_1q_2}{r}$ is the main cause of the
+proportionality $f$ in $U = f\frac{q_1q_2}{r}$ is the main cause of the
 differences in the Coulomb 1-4 terms. In Table~\ref{tab:delfromnist},
 we show the value of Coulomb's constant in a range of different
 simulation programs compared to the NIST 2014 CODATA value.  We list
 the AMBER number as``AmberTools''
-%DLM: Isn't it "Antechamber" or "antechamber" now?
-%MRS: fixed
 because in AMBER, the constant is set by multiplying the charge by
-$\sqrt{k}$ in the {\tt .prmtop} file, rather than set internally by
+$\sqrt{f}$ in the {\tt .prmtop} file, rather than set internally by
 either {\tt sander} or {\tt PMEMD}, the AMBER molecular dynamics
 engine.  Clearly, AmberTools, and to a lesser extent CHARMM, have
 significant deviation from the best experimental value.  Personal
 communication with Amber developers suggests that this difference may
 come from mostly from in the 70's using Bohr's radius to calculate
 Coulomb's constant assuming a value of 0.529167~\AA (versus an
-improved value of 0.592177~\AA~today, but there appears to be no clear
+improved value of 0.592177~\AA~today), but there appears to be no clear
 historical answer.  Of course, the more important question is, how
 much this deviation affects the results?
 
 \begin{table}
-\caption{Values of Coulomb's constant currently used in molecular
+\caption{Values of Coulomb's constant $f$ currently used in molecular
   simulation programs compared to the value of 332.06371302(32)
-  calculated from NIST 2014 CODATA.  Specific versions of the programs
+  kcal$\cdot$mol$^{-1}$ \AA e$^{-2}$ or 138.93545753(14) kJ/mol nm
+  e$^{-2}$, calculated from NIST 2014 CODATA.  Specific versions of the programs
   used are described in the text. Two versions of GROMACS are listed
   because SAMPL5 energies were originally generated with version
   5.0.4, but the value has been changed since then. Coulomb's constant
@@ -878,8 +910,11 @@ To add a more rigorous control, we looked at the RMS difference in
 energy between AMBER energies and GROMACS energies evaluated with it's
 5.0.4 Coulomb constant, and then with GROMACS recompiled with the
 AmberTools Coulomb's constant.  Results are shown in
-Table~\ref{table:coulchange}. We see that matching Coulomb's constant
-removes 98.8\% of the difference in the Coulomb 1-4 term between the
+Table~\ref{table:coulchange}, where we have used RMSD instead of the
+average differences to examine the variation of errors due to all causes,
+rather than the magnitude of the difference in the previous figures.
+ We see that matching Coulomb's constant
+removes 98.8\% of the variation in the Coulomb 1-4 term between the
 two programs, 69.5\% of the total electrostatic energy difference, and
 74.2\% of the total potential energy difference between the two
 programs, strongly indicating that the lack of agreement of AMBER with
@@ -925,7 +960,7 @@ self term, and so forth.  Thus, it is often difficult to examine
 anything except the total Lennard-Jones or total electrostatic
 energy. This makes it hard to determine exactly the source of any
 discrepancy between programs, and motivates our attempt to find
-`ideal` simulation parameters to best make this comparison.
+`ideal' simulation parameters to best make this comparison.
 
 Discrepancies in the nonbonded energy terms are always much larger in
 magnitude than discrepancies in the bonded interactions for any liquid
@@ -935,13 +970,13 @@ instructive to look first at the average relative absolute deviations
 from the program average. For GROMACS, AMBER, LAMMPS, and CHARMM, the
 fractional difference in the van der Waals energy is approximately
 $1\times 10^{-5}$, which is 2-5 times larger than the difference in
-the bonded energy (DESMOND does not separate this energy out). GROMACS
-and LAMMPS are generally closer to each other, usually within one part
-in $10^6$, and CHARMM and AMBER are clustered together, though not as
-closely as GROMACS and LAMMPS. Because of the close match of
-Lennard-Jones 1-4 parameters, deviations in the total Lennard-Jones
-energy are likely due to differences in the calculation of long range
-interactions.
+the bonded energy (DESMOND does not separate the long-range energy out
+into components). GROMACS and LAMMPS are generally closer to each
+other, usually within one part in $10^6$, and CHARMM and AMBER are
+clustered together, though not as closely as GROMACS and
+LAMMPS. Because of the close match of Lennard-Jones 1-4 parameters,
+deviations in the total Lennard-Jones energy are likely due to
+differences in the calculation of long range interactions.
 
 Differences from the program average in the total electrostatic energy
 are smaller than errors in the total van der Waals energy for GROMACS
@@ -985,28 +1020,46 @@ nonbonded also must agree relatively well.
 \caption{We compare the variation of 10 different energy terms between
   five different simulation programs (AMBER, GROMACS, LAMMPS, DESMOND,
   and CHARMM) for the 'default' choice of cutoff parameters (described
-  in table). As above, for each term, we plot the deviation of each
+  in Table~\ref{table:parameterlist}). As above, for each term, we plot the deviation of each
   program from the average of all programs, to avoid choosing a single
-  arbitrary reference program. All statistics are averaged over 22
+  arbitrary reference program. All statistical measures are averaged over 22
   molecules. We plot the average deviation (top), the absolute average
   deviation (middle), and relative absolute average deviation
-  (top). Nonbonded potential parameter deviations are approximately a
-  factor of 2 larger than using the 'ideal' parameters.
+  (bottom). Nonbonded potential parameter deviations are approximately a
+  factor of 2--5 larger than using the `ideal' parameters.
 \label{fig:defaultfig}}
 \end{figure}
-%CTK: This figure is never cited within the text as far as I can tell...
+
+The energies generated using the `default' parameters are shown in
+Figure~\ref{fig:defaultfig}. The bonded interactions are essentially
+identical, as there are no significant differences between the
+simulation parameters used for the `ideal' and `default'
+simulations. AMBER, GROMACS AND LAMMPS nonbonded deviations from the
+program average are approximately twice as large with the default
+states, while DESMOND nonbonded deviations are approximately five
+times larger.  
+
+The patterns are similar to what is seen with the `ideal' parameters,
+but the larger magnitudes obscure the sources of these deviations in
+energy, requiring the creation of the `ideal' parameter set. In most
+cases of simulating physical observables, these deviations would still
+likely be accurate enough, with relative average absolute difference
+of 0.005\% from each other. 
+
 
 We also are interested in the deviations of energies as a function of
-the number of coordinate digits used in the output file. The results of the
-comparison between AMBER (full precision input) and GROMACS (reduced
-precision output) are shown in Fig.~\ref{fig:precision}.  We choose
-only to show GROMACS as the other programs show similar behavior. We
-plot the $-\log_{10}$ of the average relative absolute difference
-between the GROMACS energy and the AMBER energy as a function of the
-number of decimal places in the output GROMACS coordinates from 8
-digits after the decimal place (measured in nanometers) down to 4
-after the decimal place, what one would obtain from a file downloaded
-from the PDB.  
+the number of coordinate digits used in the output file in order to
+determine what is required to convert between different simulation formats 
+with high fidelity. The results of the comparison between AMBER 
+(full precision input) and GROMACS
+(reduced precision output) are shown in Fig.~\ref{fig:precision}.  We
+choose only to show GROMACS as the other programs show similar
+behavior. We plot the $-\log_{10}$ of the average relative absolute
+difference between the GROMACS energy and the AMBER energy as a
+function of the number of decimal places in the output GROMACS
+coordinates from 8 digits after the decimal place (measured in
+nanometers) down to 4 after the decimal place, what one would obtain
+from a file downloaded from the PDB.
 
 We see that the total energy loses approximately 0.75-1 digits of
 relative precision in the energy for each digit of precision of
@@ -1021,7 +1074,6 @@ Both Lennard-Jones and electrostatic nonbonded energies fall off
 similarly in precision, so large errors in the repulsive $r^{-12}$
 interactions do not seem to be larger than changes in the Coulombic
 $r^{-1}$ terms as the coordinates become more approximate.
-
 Overall, losing just a few digits of precision completely washes out
 any other source of error observed in this study, demonstrating the
 importance of matching the coordinates to high precision in order to
@@ -1030,7 +1082,7 @@ validate the rest of the conversion.
 \begin{figure}[h]
 \includegraphics[width=\textwidth]{precisioncomparison.pdf}   
 \caption{Matches in energy between converted files become rapidly
-  worse as the number of digits of precision in the converted files
+  worse as the number of digits of precision in the converted coordinate files
   decreases. We plot $-\log_{10}$ of the average relative absolute
   value in each energy term between AMBER and GROMACS, with fixed
   input coordinate precision, and variable output precision with the
@@ -1039,17 +1091,21 @@ validate the rest of the conversion.
 \label{fig:precision}}
 \end{figure}
 
-We are also interested in how much changing the precision of the
-binaries affects energy comparisons.  We focus on the comparison
-between single and double precision GROMACS, as it is specifically
-designed to be compiled in either single and double precision, though
-the single precision is the default version most simulations are run
-with. In Table~\ref{fig:singlevdouble}, we compare the RMS differences
-averaged over all 22 compounds between the two GROMACS binaries, AMBER
-and single precision GROMACS, and AMBER and double precision GROMACS.
-This comparison allows us to see both the magnitude of the difference
-due to changes in binary precision, and how much this differences
-affects the comparison to, for example, AMBER.
+We are also interested in how much changing the numerical precision of
+the energy calculation affects energy comparisons.  We focus on the
+comparison between single and double precision GROMACS, as it is
+specifically designed to be compiled in either single and double
+precision, though the single precision is the default version most
+simulations are run with. In Table~\ref{fig:singlevdouble}, we compare
+the RMS differences averaged over all 22 compounds between the two
+GROMACS binaries, AMBER and single precision GROMACS, and AMBER and
+double precision GROMACS.  We use RMS differences instead of average
+deviation statistical measures presented above as the effects of
+precision are most likely to affect the variation of the results,
+rather than the average deviations.  This comparison allows us to see
+both the magnitude of the difference due to changes in binary
+precision, and how much this differences affects the comparison to,
+for example, AMBER.
 
 We see that the differences between single and double precision show
 in Table~\ref{fig:singlevdouble} for bonded terms is 2-8 times larger
@@ -1192,7 +1248,7 @@ is almost entirely conformation dependent, with very little deviation
 in programs between the ensemble average estimate for each molecule,
 the conformational dependence of the total energy is essentially
 determined by the conformational dependence of the electrostatic
-energy. The bonded terms are essentially irrelevant.
+energy. The difference bonded terms are essentially negligible. 
 
 
 \begin{figure}[h]
@@ -1261,6 +1317,22 @@ reference energy to compare the simulations. This resulted in our
 choice to examine deviations from the program average, rather than
 attempt to determine the correct energy. 
 
+One could state that the differences described between the programs
+(what switching scheme is used, what cutoff is used, Coulomb's
+constant), since these properties influence the parameterization of
+the force field, should actually be considered as part of the force
+field to reproduce simulations.  However, explicitly stating all
+possible variants of simulations that might affect the energy would
+require significant additional functionality added to each different
+molecular simulation engine. Instead, it would be preferable to
+implement methods such as periodic summation of Lennard-Jones or long
+range corrections~\cite{wu_isotropic_2005,veld_application_2007} which
+result in simulation parameters such as the cutoff and switching
+scheme not affecting the total energy or force in a statistically
+significant way. This way, the developers of each simulation engine
+could choose the parameter-independent algorithms that best suited
+their needs.
+
 In order to aid further analysis of the energies, all energy output
 and summarized analysis presented here in this paper is provided in
 the 'analysis.tgz' directory in the supporting information, as
@@ -1273,10 +1345,40 @@ described in the 'README.txt' supporting information file.
 %MRS: tried to clarify.
 
 \section*{Conclusions}
-The results presented here show that the simulation input files are
-properly converted by the very strong agreement, essentially within
-single precision calculations, for all bonded terms, Lennard-Jones 1-4
-terms and (with one caveat outlined below) Coulomb 1-4 interactions. 
+The results presented here show that the simulation input files for
+SAMPL5 are properly converted by the very strong agreement,
+essentially within single precision rounding, for all bonded terms,
+Lennard-Jones 1-4 terms and (with one caveat outlined below) Coulomb
+1-4 interactions. Only the long-range interactions deviated by
+moderate amounts between programs, especially the electrostatic
+Fourier-space interactions.  
+
+The results also strongly suggest that all molecular simulation
+programs should choose a sufficiently consistent value for Coulomb's
+constant. A value off of experiment by 0.01 from a value of 332.06371
+(one part in 10$^{-5}$) is simply not accurate enough to allow
+simulations to agree.  The results presented here suggest that once
+the deviation is below 0.0001, any additional error contributes less
+than other sources of error, so a value of 332.06371$\pm$0.00005
+should reduce this sort of discrepancy below the level of differences
+created by other sources of error.  This level of agreement is present
+in all current programs with the exception of CHARMM and AMBER, with
+GROMACS, at the edge of that range, recently improving the precision
+by a factor of 4 in the 5.1 release.
+
+Other than the difference in Coulomb's law, most programs agree quite
+well, likely enough for most practical purposes as most thermodynamic
+quantities cannot be measured that accurately.  Even those differences
+are unlikely to affect most thermodynamics computations to within the
+statistical error generally accepted in simulation studies. The energy
+calculations for all molecular dynamics engines for this molecular set
+agree to a better than 0.1\% relative absolute energy for all energy
+components, and in most cases an order of magnitude better, when
+reasonable choices are made for different cutoff parameters. However,
+to get good agreement, we must use carefully matched cutoff
+treatments, as different ways to shift or switch the cutoffs can
+introduce signficiant differences between the energies of the same
+system evaluated with different simulation engines.
 
 We believe that this study represents the largest automated comparison
 between different programs that has been performed so far, a process
@@ -1287,27 +1389,11 @@ require the precise comparison across multiple simulation engines, or
 in modeling pipelines that require one simulation program for part of
 the pipeline, and another simulation engine for a different part.
 
-The results also strongly suggest that all molecular simulation
-programs should choose a sufficiently consistent value for Coulomb's
-constant. A value off of experiment by 0.01 from a value of 332.06371
-(one part in 10$^{-5}$) is simply not accurate enough to allow
-simulations to agree.  The results presented here suggest that once
-the deviation is below 0.0001, any additional error contributes less
-than other sources of error, so a value of 332.06371$\pm$0.00005
-should reduce this sort of discrepancy below the level of differences
-created by other programs.  This level of agreement is present in all
-current programs with the exception of CHARMM and AMBER, with GROMACS,
-at the edge of that range, recently improving the precision by a
-factor of 4 in the 5.1 release.
-
-Other than the difference in Coulomb's law, most programs agree quite
-well, likely enough for most practical purposes as most thermodynamic
-quantities cannot be measured that accurately.  All conversions were
-performed accurately and the model parameter conversion was validated
-to high precision. Only the long-range interactions deviated by
-moderate amounts between programs, especially the electrostatic
-Fourier-space interactions.  Even those differences are unlikely to
-affect most thermodynamics studies.
+We discuss the measures required
+to get good agreement in the energies for equivalent starting
+configurations between the simulation programs, and the energy
+differences that occur when simulations are run with program-specific
+default simulation parameter values.
 
 \begin{acknowledgements}
 The authors would like to thank Frank Pickard (NIH) for sample CHARMM
@@ -1362,4 +1448,5 @@ InterMol. DLM thanks NSF (CHE 1352608) for financial support.
 % LocalWords:  configurationally Zotero prmtop n FEP TI TopoGromacs GROmacs PDF
 % LocalWords:  topogromacs interconversion OpenMM DC gibb gan jordan tetra endo
 % LocalWords:  TEMOA zhang FF antechamber KSPACE DOMDEC GPU webpage CBC vermaas
-% LocalWords:  uh Bohr's runfiles tgz txt gzipped PMEMD prec CHE
+% LocalWords:  uh Bohr's runfiles tgz txt gzipped PMEMD prec CHE virial veld
+% LocalWords:  ewald
