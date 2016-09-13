@@ -219,7 +219,7 @@ that the simulations generate after the generation of an ensemble of
 configurations. The comparison of the final experimental observables
 calculated from simulation ensembles is the most fundamentally
 important type of comparison, since it corresponds directly to
-experiment. 
+experiment.
 
 However, this second task requires a large number of different
 decisions that are made mostly independently of the assignment of
@@ -339,7 +339,7 @@ in a study.
 % and use ParmEd under the hood for Amber files.  So I would kind of call it a
 % conversion engine.
 
-A additional significant challenge in comparing the output of programs
+A significant additional challenge in comparing the output of programs
 with theoretically the same model occurs when the energy and forces
 are approximated in order to increase the number of molecular dynamics
 or Monte Carlo steps in a fixed amount of computing time. For example,
@@ -382,7 +382,7 @@ native formats for the GROMACS, AMBER, CHARMM, and OpenMM programs.
 
 We took advantage of this overlap in conversion functionality to
 provide output files in five formats. The process is as follows: We
-took files initially parameterized in AMBER format with GAFF/RESP force field 
+took files initially parameterized in AMBER format with GAFF/RESP force field
 parameters using AmberTools, as described in the SAMPL5 overview paper~\cite{SAMPL5Overview}
 and read them using ParmEd. We then used ParmEd to convert them into
 GROMACS input file formats. We then convert from these GROMACS files
@@ -514,11 +514,11 @@ general usage refers to the specification of partial charges, atom
 types, van der Waals parameters, mixing rules, and bond/angle/torsion
 parameters.
 
-For this comparison, we tried to chose for our nonbonded
+For this comparison, we tried to choose for our nonbonded
 interactions methods that were sufficiently cutoff independent that
 differences in the cutoff scheme between programs would minimally
 affect the results, given the limitations imposed by the size of the
-system. 
+system.
 
 For electrostatic interactions, we chose either particle mesh Ewald
 (PME) implementations (CHARMM, AMBER, GROMACS, CHARMM) or
@@ -596,8 +596,8 @@ parameters in this study, and listed in
 Table~\ref{table:parameterlist}.
 
 All input files used are documented in the ``runfiles.tgz'' directory
-of the Supporting Information (with details given in the README.txt)
-Converted input simulation files in AMBER, CHARMM, DESMOND, GROMACS,
+of the Supporting Information (with details given in the README.txt).
+Converted input simulation files are availabe in AMBER, CHARMM, DESMOND, GROMACS,
 and LAMMPS formats for the 22 host-guest systems as tar/gzipped files.
 The 20 configurations used in the paper for the comparison of average
 simulation energies are only included with the original AMBER
@@ -707,7 +707,7 @@ Long-range van der Waals & Isotropic correction & Isotropic correction & Isotrop
 
 \section*{Results}
 We first compare ten different energy terms between the five different
-simulation programs with the ideal nonbonded parameters.  Results are
+simulation programs with the ideal nonbonded calculation settings.  Results are
 shown in Fig.~\ref{fig:mainfig}. All results are averaged over the 22
 host-guest molecules included in the SAMPL5 blind prediction
 challenge. To avoid picking a favored reference program, we look at
@@ -769,8 +769,8 @@ deviation of the energy will of course become larger as the system
 becomes larger, so normalizing by the total energy, which will be
 proportional to system size, will result in a more useful comparison.
 With this statistic, we see that the bonded terms are accurate to
-generally about 3 parts in 10$^{-6}$, with CHARMM slightly higher at 7
-parts in 10$^{-6}$. Given that this is approximately the limit of
+generally about 3 parts in 10$^{6}$, with CHARMM slightly higher at 7
+parts in 10$^{6}$. Given that this is approximately the limit of
 precision one would see in single precision calculations, and given
 the fact that some programs only output energies to four (AMBER) or
 five (CHARMM) decimal places, or eight significant digits total
@@ -821,7 +821,7 @@ separated out from other interactions by the simulation program, are
 in good agreement.  In all available cases, the van der Waals 1-4
 interactions have relative absolute differences at least a factor of 2
 better than even the bond and angle interactions, at about 1 part in
-10$^{-7}$. LAMMPS and CHARMM do not calculate 1-4 interactions
+10$^{7}$. LAMMPS and CHARMM do not calculate 1-4 interactions
 independently, but some post-processing tricks involving subtracting
 energies with different input parameters show that the CHARMM van der
 Waals 1-4 energies have similar accuracy, in particular being
@@ -857,11 +857,11 @@ either {\tt sander} or {\tt PMEMD}, the AMBER molecular dynamics
 engine.  Clearly, AmberTools, and to a lesser extent CHARMM, have
 significant deviation from the best experimental value.  Personal
 communication with Amber developers suggests that this difference may
-come from mostly from in the 70's using Bohr's radius to calculate
+primarily come from a decision in the 1970's to use Bohr's radius to calculate
 Coulomb's constant assuming a value of 0.529167~\AA (versus an
 improved value of 0.592177~\AA~today), but there appears to be no clear
 historical answer.  Of course, the more important question is, how
-much this deviation affects the results?
+much does this deviation affect the results?
 
 \begin{table}
 \caption{Values of Coulomb's constant $f$ currently used in molecular
@@ -907,8 +907,8 @@ NAMD & 332.0636 & 510 \\
 
 We tested the effect of changes in Coulomb's constant on the energy.
 To add a more rigorous control, we looked at the RMS difference in
-energy between AMBER energies and GROMACS energies evaluated with it's
-5.0.4 Coulomb constant, and then with GROMACS recompiled with the
+energy between AMBER energies and GROMACS energies evaluated with the
+Coulomb constant from version 5.0.4, and then with GROMACS recompiled with the
 AmberTools Coulomb's constant.  Results are shown in
 Table~\ref{table:coulchange}, where we have used RMSD instead of the
 average differences to examine the variation of errors due to all causes,
@@ -967,7 +967,7 @@ magnitude than discrepancies in the bonded interactions for any liquid
 phase simulation, since there are many more intermolecular
 interactions than intramolecular interactions.  It is therefore
 instructive to look first at the average relative absolute deviations
-from the program average. For GROMACS, AMBER, LAMMPS, and CHARMM, the
+from the program average (Figure~\ref{fig:mainfig}). For GROMACS, AMBER, LAMMPS, and CHARMM, the
 fractional difference in the van der Waals energy is approximately
 $1\times 10^{-5}$, which is 2-5 times larger than the difference in
 the bonded energy (DESMOND does not separate the long-range energy out
@@ -1117,7 +1117,7 @@ AMBER.  Differences between precisions for Coulomb-14 terms is as low
 as the difference between LJ-14, which is of course much less than the
 GROMACS to AMBER difference, because of the previously described
 difference in Coulomb constant. The differences in precision for the
-total van der Waals is an order of magnitude lower than the difference
+total van der Waals energy is an order of magnitude lower than the difference
 between AMBER and either GROMACS precision caused by differences in
 calculating the long-range nonbonded terms.  However, single to double
 precision change results in significant difference in the overall
@@ -1176,9 +1176,9 @@ there is low conformation dependent variation.  If instead the
 variation is independent of the specific molecule, and depends on
 interactions from random atoms, independent of the molecule, then the
 RMSD from the configurationally averaged deviations from program
-averages ($\sigma_{molecule}$ would be significantly smaller
+averages,$\sigma_{molecule}$, would be significantly smaller
 (approximately $\sqrt{1/20} \approx 22$\% of the value
-$\sigma_{conformation}$ value.
+$\sigma_{conformation}$ value).
 % Note that the RMSD of the conformationally averaged values
 %must necessarily be lower than the RMSD over all configurations and
 %molecules. 
