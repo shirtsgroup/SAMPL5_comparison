@@ -183,13 +183,12 @@ for i, t in enumerate(types):
     opacity = 1
     colors = ('b','r','c','g','m')
     for  j, n in enumerate(nums):  
-        pdb.set_trace()
         rects = ax.bar(index+bar_width*j, allmeans[nums[n]], 
                        bar_width, alpha=opacity,
                        color=colors[j], label=nums[n])
 
     ax.set_xlabel('Energy Component', fontsize=20)
-    ax.set_ylabel(('%s Deviation \n (%s)' % (t, units[i])), fontsize=18)
+    ax.set_ylabel(('%s Deviation \n (%s)' % (t, units[i])), fontsize=20)
     ax.set_title(('%s Deviation in Energy Components for Each Program' % (t)), fontsize=24)
     ax.set_xticks(index + bar_width + 0.2)
     ax.set_xticklabels(ofinterest, fontsize=16)
